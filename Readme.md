@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Арсен Кильник](https://up.htmlacademy.ru/adaptive/19/user/615091).
-* Наставник: `Неизвестно`.
+* Наставник: [Арсений Матыцин](https://htmlacademy.ru/profile/id225539).
 
 ---
 
