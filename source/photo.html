@@ -9,8 +9,8 @@
 
 <body>
   <header class="page-header">
-    <a href="index.html" class="page-header__logo">
-      <img src="#" alt="Pink" class="page-header__logo-image">
+    <a href="index.html" class="page-header__logo logo">
+      <img src="img/150.png" alt="Pink" class="logo__image">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -19,7 +19,8 @@
           <li class="site-list__item"><a href="index.html">Главная</a></li>
           <li class="site-list__item site-list__item--active"><a>Фотографии</a></li>
           <li class="site-list__item"><a href="form.html">Конкурс</a></li>
-          <li class="site-list__item"><a href="https://htmlacademy.ru/">Html Academy</a></li>
+          <li class="site-list__item"><a href="https://htmlacademy.ru/" rel="nofollow" target="_blank">Html Academy</a>
+          </li>
         </ul>
       </div>
     </nav>
@@ -28,112 +29,149 @@
   <main class="page-main">
     <h1 class="visually-hidden">Делитесь и просматривайте фотографии</h1>
     <section class="intro">
-      <header class="intro__header">
+      <div class="intro__header">
         <h2 class="intro__slogan">Фотографии пользователей</h2>
-      </header>
+      </div>
     </section>
     <section class="user-gallery">
-      <header class="user-gallery__header">
+      <h2 class="visually-hidden">Просмотрите посты наших пользователей</h2>
+      <div class="user-gallery__header">
         <p class="user-gallery__slogan">
           Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
         </p>
-      </header>
-      <article class="user-gallery__post user-post user-post--panorama">
-        <img src="#" alt="Фото пользоватиля Анна" class="user-post__image">
-        <div class="user-post__content">
-          <span class="user-post__user-name">Анна</span>
-          <p class="user-post__time">(<span class="user-post__time-counter">5 минут</span> назад)</p>
-          <p class="user-post__text">
-            Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои
-          </p>
-          <div class="user-post__actions">
-            <button class="user-post__like-button" type="button">Лайк</button>
-            <p class="user-post__likes">Нравиться: <span class="user-post__like-counter">215</span></p>
-          </div>
-        </div>
-      </article>
+      </div>
       <div class="user-gallery__wrapper">
-        <article class="user-gallery__post user-post">
-          <img src="#" alt="Фото пользоватиля Левон" class="user-post__image">
+        <article class="user-gallery__post user-post user-post--panorama">
+          <h3 class="visually-hidden">Прост пользоватиля <span class="user-post__user-name">Анна</span></h3>
+          <img src="img/150.png" alt="Фото пользоватиля Анна" class="user-post__image">
           <div class="user-post__content">
-            <span class="user-post__user-name">Левон</span>
-            <p class="user-post__time">(<span class="user-post__time-counter">5 часов</span> назад)</p>
+            <p class="user-post__info">
+              <span class="user-post__user-name">Анна</span> (<span class="user-post__time-counter">5 минут</span>
+              назад)
+            </p>
+            <p class="user-post__text">
+              Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте
+              свои
+            </p>
+            <div class="user-post__action post-action">
+              <button class="post-action__like-button" type="button">
+                Лайк
+                <span class="post-action__likes">Нравиться: 215</span>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article class="user-gallery__post user-post">
+          <h3 class="visually-hidden">Прост пользоватиля <span class="user-post__user-name">Левон</span></h3>
+          <img src="img/150.png" alt="Фото пользоватиля Левон" class="user-post__image">
+          <div class="user-post__content">
+            <p class="user-post__info">
+              <span class="user-post__user-name">Левон</span> (<span class="user-post__time-counter">5 часов</span>
+              назад)
+            </p>
             <p class="user-post__text">
               Вчера он на луну летал, сегодня в руки к нам попал.
             </p>
-            <div class="user-post__actions">
-              <button class="user-post__like-button" type="button">Лайк</button>
-              <p class="user-post__likes">Нравиться: <span class="user-post__like-counter">356</span></p>
+            <div class="user-post__action post-action">
+              <button class="post-action__like-button" type="button">
+                Лайк
+                <span class="post-action__likes">Нравиться: 356</span>
+              </button>
             </div>
           </div>
         </article>
         <article class="user-gallery__post user-post">
-          <img src="#" alt="Фото пользоватиля Антон" class="user-post__image">
+          <h3 class="visually-hidden">Прост пользоватиля <span class="user-post__user-name">Антон</span></h3>
+          <img src="img/150.png" alt="Фото пользоватиля Антон" class="user-post__image">
           <div class="user-post__content">
-            <span class="user-post__user-name">Антон</span>
-            <p class="user-post__time">(<span class="user-post__time-counter">12 часов</span> назад)</p>
+            <p class="user-post__info">
+              <span class="user-post__user-name">Антон</span> (<span class="user-post__time-counter">12 часов</span>
+              назад)
+            </p>
             <p class="user-post__text">
               Соседи будут рады!
             </p>
-            <div class="user-post__actions">
-              <button class="user-post__like-button" type="button">Лайк</button>
-              <p class="user-post__likes">Нравиться: <span class="user-post__like-counter">666</span></p>
+            <div class="user-post__action post-action">
+              <button class="post-action__like-button" type="button">
+                Лайк
+                <span class="post-action__likes">Нравиться: 666</span>
+              </button>
             </div>
           </div>
         </article>
         <article class="user-gallery__post user-post">
-          <img src="#" alt="Фото пользоватиля Борис" class="user-post__image">
+          <h3 class="visually-hidden">Прост пользоватиля <span class="user-post__user-name">Борис</span></h3>
+          <img src="img/150.png" alt="Фото пользоватиля Борис" class="user-post__image">
           <div class="user-post__content">
-            <span class="user-post__user-name">Борис</span>
-            <p class="user-post__time">(<span class="user-post__time-counter">20 часов</span> назад)</p>
+            <p class="user-post__info">
+              <span class="user-post__user-name">Борис</span> (<span class="user-post__time-counter">20 часов</span>
+              назад)
+            </p>
             <p class="user-post__text">
               Здесь могла быть ваша цитата о высоком и вечном.
             </p>
-            <div class="user-post__actions">
-              <button class="user-post__like-button" type="button">Лайк</button>
-              <p class="user-post__likes">Нравиться: <span class="user-post__like-counter">215</span></p>
+            <div class="user-post__action post-action">
+              <button class="post-action__like-button" type="button">
+                Лайк
+                <span class="post-action__likes">Нравиться: 215</span>
+              </button>
             </div>
           </div>
         </article>
         <article class="user-gallery__post user-post">
-          <img src="#" alt="Фото пользоватиля Сергей" class="user-post__image">
+          <h3 class="visually-hidden">Прост пользоватиля <span class="user-post__user-name">Сергей</span></h3>
+          <img src="img/150.png" alt="Фото пользоватиля Сергей" class="user-post__image">
           <div class="user-post__content">
-            <span class="user-post__user-name">Сергей</span>
-            <p class="user-post__time">(<span class="user-post__time-counter">25 часов</span> назад)</p>
+            <p class="user-post__info">
+              <span class="user-post__user-name">Сергей</span> (<span class="user-post__time-counter">25 часов</span>
+              назад)
+            </p>
             <p class="user-post__text">
               Самая кубанская в мире!
             </p>
-            <div class="user-post__actions">
-              <button class="user-post__like-button" type="button">Лайк</button>
-              <p class="user-post__likes">Нравиться: <span class="user-post__like-counter">4</span></p>
+            <div class="user-post__action post-action">
+              <button class="post-action__like-button" type="button">
+                Лайк
+                <span class="post-action__likes">Нравиться: 4</span>
+              </button>
             </div>
           </div>
         </article>
         <article class="user-gallery__post user-post">
-          <img src="#" alt="Фото пользоватиля Максим" class="user-post__image">
+          <h3 class="visually-hidden">Прост пользоватиля <span class="user-post__user-name">Максим</span></h3>
+          <img src="img/150.png" alt="Фото пользоватиля Максим" class="user-post__image">
           <div class="user-post__content">
-            <span class="user-post__user-name">Максим</span>
-            <p class="user-post__time">(<span class="user-post__time-counter">40 часов</span> назад)</p>
+            <p class="user-post__info">
+              <span class="user-post__user-name">Максим</span> (<span class="user-post__time-counter">40 часов</span>
+              назад)
+            </p>
             <p class="user-post__text">
               Где снег-то?
             </p>
-            <div class="user-post__actions">
-              <button class="user-post__like-button" type="button">Лайк</button>
-              <p class="user-post__likes">Нравиться: <span class="user-post__like-counter">150</span></p>
+            <div class="user-post__action post-action">
+              <button class="post-action__like-button" type="button">
+                Лайк
+                <span class="post-action__likes">Нравиться: 150</span>
+              </button>
             </div>
           </div>
         </article>
         <article class="user-gallery__post user-post">
-          <img src="#" alt="Фото пользоватиля Надежда" class="user-post__image">
+          <h3 class="visually-hidden">Прост пользоватиля <span class="user-post__user-name">Надежда</span></h3>
+          <img src="img/150.png" alt="Фото пользоватиля Надежда" class="user-post__image">
           <div class="user-post__content">
-            <span class="user-post__user-name">Надежда</span>
-            <p class="user-post__time">(<span class="user-post__time-counter">45 часов</span> назад)</p>
+            <p class="user-post__info">
+              <span class="user-post__user-name">Надежда</span> (<span class="user-post__time-counter">45 часов</span>
+              назад)
+            </p>
             <p class="user-post__text">
               Всем GM и взаимные лайки!
             </p>
-            <div class="user-post__actions">
-              <button class="user-post__like-button" type="button">Лайк</button>
-              <p class="user-post__likes">Нравиться: <span class="user-post__like-counter">2560</span></p>
+            <div class="user-post__action post-action">
+              <button class="post-action__like-button" type="button">
+                Лайк
+                <span class="post-action__likes">Нравиться: 2560</span>
+              </button>
             </div>
           </div>
         </article>
@@ -143,18 +181,25 @@
   </main>
 
   <footer class="page-footer">
-    <section class="page-footer__bottom footer-info">
-      <a href="#" class="footer-info__logo">
-        <img class="footer-info__logo-image" src="#" alt="Логотип Pink">
+    <section class="page-footer__main-info footer-info">
+      <h2 class="visually-hidden">Найдите нас в социальных сетях</h2>
+      <a href="#" class="footer-info__logo footer-logo">
+        <img class="footer-logo__image" src="img/150.png" alt="Логотип Pink">
       </a>
-      <ul class="footer-info__social social">
-        <li class="social__item"><a href="#" class="social__link social__link--twitter">Twitter</a></li>
-        <li class="social__item"><a href="#" class="social__link social__link--facebook">Facebook</a></li>
-        <li class="social__item"><a href="#" class="social__link social__link--youtube">Youtube</a></li>
+      <ul class="footer-info__social socials-list">
+        <li class="socials-list__item"><a href="#" class="socials-list__link socials-list__link--twitter" rel="nofollow"
+            target="_blank">Twitter</a>
+        </li>
+        <li class="socials-list__item"><a href="#" class="socials-list__link socials-list__link--facebook"
+            rel="nofollow" target="_blank">Facebook</a>
+        </li>
+        <li class="socials-list__item"><a href="#" class="socials-list__link socials-list__link--youtube" rel="nofollow"
+            target="_blank">Youtube</a>
+        </li>
       </ul>
       <div class="footer-info__copyright copyright">
         <b class="copyright__text">Разработано:</b>
-        <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
+        <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive" rel="nofollow" target="_blank">
           HTML Academy
         </a>
       </div>

@@ -9,8 +9,8 @@
 
 <body>
   <header class="page-header">
-    <a href="index.html" class="page-header__logo">
-      <img src="#" alt="Pink" class="page-header__logo-image">
+    <a href="index.html" class="page-header__logo logo">
+      <img src="img/150.png" alt="Pink" class="logo__image">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -19,56 +19,60 @@
           <li class="site-list__item site-list__item--active"><a>Главная</a></li>
           <li class="site-list__item"><a href="photo.html">Фотографии</a></li>
           <li class="site-list__item"><a href="form.html">Конкурс</a></li>
-          <li class="site-list__item"><a href="https://htmlacademy.ru/">Html Academy</a></li>
+          <li class="site-list__item"><a href="https://htmlacademy.ru/" rel="nofollow" target="_blank">Html Academy</a>
+          </li>
         </ul>
       </div>
     </nav>
   </header>
 
   <main class="page-main">
-    <h1 class="visually-hidden">Pink - фотоприложение для раскрашивания серых будней</h1>
+    <h1 class="visually-hidden">Pink — фотоприложение для раскрашивания серых будней</h1>
     <section class="intro">
       <h2 class="visually-hidden">Скачайте приложение Pink для вашего устройства</h2>
-      <header class="intro__header">
+      <div class="intro__header">
         <span class="intro__slogan">Взгляните на жизнь иначе!</span>
-      </header>
-      <section class="intro__downloads download-app">
-        <a href="#" class="download-app__button button">Скачать приложение</a>
+      </div>
+      <div class="intro__downloads download-app">
+        <a href="#" class="download-app__button button" rel="nofollow" target="_blank">Скачать приложение</a>
         <ul class="download-app__list">
-          <li class="download-app__item"><a href="#">Скачать с AppStore</a></li>
-          <li class="download-app__item"><a href="#">Скачать с Play Market</a></li>
-          <li class="download-app__item"><a href="#">Скачать с Microsoft Store</a></li>
+          <li class="download-app__item"><img src="img/150.png" alt="Скачать с AppStore" class="download-app__image">
+          </li>
+          <li class="download-app__item"><img src="img/150.png" alt="Скачать с Play Market" class="download-app__image">
+          </li>
+          <li class="download-app__item"><img src="img/150.png" alt="Скачать с Microsoft Store"
+              class="download-app__image"></li>
         </ul>
         <p class="download-app__description">
           Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
         </p>
-      </section>
+      </div>
     </section>
-    <section class="features">
+    <section class="features features--image">
       <h2 class="visually-hidden">Особенности нашего приложения</h2>
-      <p class="features__offer">
-        <span class="features__offer-text">Устали от серости мегаполиса?</span>
-        <span class="features__offer-text">Нам есть, что вам предложить!</span>
-      </p>
-      <ul class="features__list">
-        <li class="features__item">
+      <div class="features__offer">
+        <p class="features__offer-text">Устали от серости мегаполиса?</p>
+        <p class="features__offer-text">Нам есть, что вам предложить!</p>
+      </div>
+      <div class="features__container">
+        <section class="features__item">
           <h3 class="features__item-title">Поднимает настроение</h3>
           <p class="features__item-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
             несколько кликов!</p>
-        </li>
-        <li class="features__item">
+        </section>
+        <section class="features__item">
           <h3 class="features__item-title">Меняет мир вокруг</h3>
           <p class="features__item-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить
             эффект</p>
-        </li>
-        <li class="features__item features__item--image">
+        </section>
+        <section class="features__item">
           <h3 class="features__item-title">Заводит новых друзей</h3>
           <p class="features__item-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
           </p>
-        </li>
-      </ul>
+        </section>
+      </div>
     </section>
-
+  </main>
 </body>
 
 </html>
