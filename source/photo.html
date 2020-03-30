@@ -177,7 +177,52 @@
         </article>
       </div>
     </section>
-
+    <section class="new-post">
+      <h2 class="visually-hidden">Загрузить свою фотографию</h2>
+      <div class="new-post__header">
+        <p class="new-post__slogan">
+          Затмите их всех!<br>
+          Выкладывайте все, что накопилось в телефоне!
+        </p>
+      </div>
+      <article class="new-post__editing post-edit">
+        <h3 class="visually-hidden">Редактирование вашей фотографии</h3>
+        <form action="https://echo.htmlacademy.ru" class="post-edit__form">
+          <img src="#" alt="Редактируемое фото" class="post-edit__image">
+          <fieldset>
+            <legend class="visually-hidden">Измените размер, цвет или контраст</legend>
+            <ul class="post-edit__list">
+              <li class="post-edit__item post-edit__item--size">
+                <button class="post-edit__button" type="button">Размер</button>
+                <div class="post-edit__range">
+                  <div class="post-edit__range-line"></div>
+                  <div class="post-edit__range-toggle"></div>
+                  <input type="range">
+                </div>
+              </li>
+              <li class="post-edit__item post-edit__item--color">
+                <button class="post-edit__button" type="button">Цвет</button>
+                <div class="post-edit__range">
+                  <div class="post-edit__range-line"></div>
+                  <div class="post-edit__range-toggle"></div>
+                  <input type="range">
+                </div>
+              </li>
+              <li class="post-edit__item post-edit__item--contrast">
+                <button class="post-edit__button" type="button">Контраст</button>
+                <div class="post-edit__range">
+                  <div class="post-edit__range-line"></div>
+                  <div class="post-edit__range-toggle"></div>
+                  <input type="range">
+                </div>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="post-edit__button post-edit__button--submit button" type="submit">Запостить</button>
+          <button class="post-edit__button post-edit__button--reset button" type="reset">Отмена</button>
+        </form>
+      </article>
+    </section>
   </main>
 
   <footer class="page-footer">
