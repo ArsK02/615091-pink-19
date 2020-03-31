@@ -178,43 +178,38 @@
           Выкладывайте все, что накопилось в телефоне!
         </p>
       </div>
-      <article class="new-post__editing post-edit">
-        <h3 class="visually-hidden">Редактирование вашей фотографии</h3>
+      <div class="new-post__editing post-edit">
         <form action="https://echo.htmlacademy.ru" class="post-edit__form">
           <img src="https://via.placeholder.com/280x374" alt="Редактируемое фото" class="post-edit__image">
           <fieldset>
             <legend class="visually-hidden">Измените размер, цвет или контраст</legend>
-            <ul class="post-edit__list">
-              <li class="post-edit__item post-edit__item--size">
-                <button class="post-edit__button" type="button">Размер</button>
-                <div class="post-edit__range">
-                  <div class="post-edit__range-line"></div>
-                  <div class="post-edit__range-toggle"></div>
-                  <input type="range">
-                </div>
-              </li>
-              <li class="post-edit__item post-edit__item--color">
-                <button class="post-edit__button" type="button">Цвет</button>
-                <div class="post-edit__range">
-                  <div class="post-edit__range-line"></div>
-                  <div class="post-edit__range-toggle"></div>
-                  <input type="range">
-                </div>
-              </li>
-              <li class="post-edit__item post-edit__item--contrast">
-                <button class="post-edit__button" type="button">Контраст</button>
-                <div class="post-edit__range">
-                  <div class="post-edit__range-line"></div>
-                  <div class="post-edit__range-toggle"></div>
-                  <input type="range">
-                </div>
-              </li>
-            </ul>
+            <div class="post-edit__buttons">
+              <button class="post-edit__modification-btn post-edit__modification-btn--size post-edit__modification-btn--active" type="button">Размер</button>
+              <button class="post-edit__modification-btn post-edit__modification-btn--color" type="button">Цвет</button>
+              <button class="post-edit__modification-btn post-edit__modification-btn--contrast" type="button">Контраст</button>
+            </div>
+            <div class="post-edit__ranges">
+              <div class="post-edit__range post-edit__range--size">
+                <div class="post-edit__range-line"></div>
+                <div class="post-edit__range-toggle"></div>
+                <input type="range">
+              </div>
+              <div class="post-edit__range post-edit__range--color">
+                <div class="post-edit__range-line"></div>
+                <div class="post-edit__range-toggle"></div>
+                <input type="range">
+              </div>
+              <div class="post-edit__range post-edit__range--contrast">
+                <div class="post-edit__range-line"></div>
+                <div class="post-edit__range-toggle"></div>
+                <input type="range">
+              </div>
+            </div>
           </fieldset>
           <button class="post-edit__button post-edit__button--submit button" type="submit">Запостить</button>
           <button class="post-edit__button post-edit__button--reset button" type="reset">Отмена</button>
         </form>
-      </article>
+      </div>
     </section>
   </main>
 
