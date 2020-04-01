@@ -1,0 +1,62 @@
+.main-nav {
+  position: relative;
+
+  width: 100%;
+  height: auto;
+
+  background-color: $dark-blue;
+}
+
+.main-nav__toggle {
+  @include button-rest;
+
+  display: block;
+  height: 24px;
+  width: 50px;
+
+  margin-top: 22px;
+  margin-right: 20px;
+  margin-left: auto;
+  margin-bottom: 22px;
+
+  outline: none;
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+
+  position: absolute;
+  top: 21px;
+  right: 20px;
+
+  width: 50px;
+  height: 4px;
+
+  background-color: $white;
+  box-shadow: 0 8px 0 0 $white, 0 16px 0 0 $white;
+}
+
+.main-nav--opened .main-nav__toggle {
+  &::before,
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 30px;
+    right: 19px;
+
+    width: 24px;
+    height: 4px;
+
+    background-color: $white;
+  }
+
+  &::before {
+    box-shadow: none;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}

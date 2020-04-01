@@ -1,0 +1,17 @@
+@mixin rest-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+@mixin button-rest {
+  padding: 0;
+
+  border: none;
+  font: inherit;
+  color: inherit;
+
+  background-color: transparent;
+  cursor: pointer;
+}

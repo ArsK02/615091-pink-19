@@ -1,0 +1,18 @@
+.intro {
+  color: $white;
+
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.intro__wrapper {
+  width: 87.5%;
+  margin: 0 auto;
+}
+
+.intro__header {
+  padding-top: 28px;
+
+  text-align: center;
+}

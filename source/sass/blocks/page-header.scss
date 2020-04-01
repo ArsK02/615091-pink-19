@@ -1,0 +1,17 @@
+.page-header {
+  display: flex;
+  position: relative;
+
+  justify-content: space-between;
+  background-color: green;
+}
+
+.page-header__logo {
+  margin-top: 22px;
+  margin-left: 20px;
+  margin-bottom: 22px;
+}
+
+.intro__slogan {
+  font-size: 24px;
+}
