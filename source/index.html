@@ -34,7 +34,7 @@
         <span class="intro__slogan">Взгляните на жизнь иначе!</span>
       </div>
       <div class="intro__downloads download-app">
-        <a href="#" class="download-app__button button" rel="nofollow" target="_blank">Скачать приложение</a>
+        <a href="#" class="download-app__button button button--download-app" rel="nofollow" target="_blank">Скачать приложение</a>
         <ul class="download-app__list">
           <li class="download-app__item"><img src="https://via.placeholder.com/50x50" alt="Скачать с AppStore" class="download-app__image">
           </li>
@@ -74,38 +74,38 @@
       </div>
     </section>
     <section class="reviews">
-      <div class="reviews__wrapper slider">
+      <div class="reviews__wrapper carousel">
         <h2 class="visually-hidden">Отзывы наших пользователей</h2>
-        <div class="reviews__carousel carousel">
-          <blockquote class="reviews__item carousel__item">
-            <cite class="reviews__author-name">Николай Петров</cite>
-            <p class="reviews__text">
+        <div class="carousel__list">
+          <blockquote class="carousel__item">
+            <cite class="carousel__author-name">Николай Петров</cite>
+            <p class="carousel__text">
               «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я
               познакомился со своей будущей женой в комментариях к выложенной фотографии!»
             </p>
           </blockquote>
-          <blockquote class="reviews__item carousel__item">
+          <blockquote class="carousel__item">
 
           </blockquote>
-          <blockquote class="reviews__item carousel__item">
+          <blockquote class="carousel__item">
 
           </blockquote>
         </div>
-        <ul class="reviews__toggles slider__toggles">
-          <li class="slider__toggle-item">
-            <button class="slider__toggle slider__toggle--active" type="button">1</button>
+        <ul class="carousel__toggles">
+          <li class="carousel__toggle-item">
+            <button class="carousel__toggle carousel__toggle--active" type="button">1</button>
           </li>
-          <li class="slider__toggle-item">
-            <button class="slider__toggle" type="button">2</button>
+          <li class="carousel__toggle-item">
+            <button class="carousel__toggle" type="button">2</button>
           </li>
-          <li class="slider__toggle-item">
-            <button class="slider__toggle" type="button">3</button>
+          <li class="carousel__toggle-item">
+            <button class="carousel__toggle" type="button">3</button>
           </li>
         </ul>
       </div>
     </section>
     <section class="price">
-      <div class="price__wrapper slider">
+      <div class="price__wrapper carousel">
         <h2 class="visually-hidden">Тарифы</h2>
         <table class="price__table table">
           <thead class="table__header">
@@ -119,27 +119,36 @@
           <tbody class="table__body">
             <tr class="table__row">
               <td class="table__field">Розовый Фильтер</td>
-              <td class="table__field table__field--ok">Да</td>
+              <td class="table__field">
+                Да
+                <span class="icon icon--true"></span>
+              </td>
             </tr>
             <tr class="table__row">
               <td class="table__field">Смайлики</td>
-              <td class="table__field table__field--ok">Да</td>
+              <td class="table__field">
+                Да
+                <span class="icon icon--true"></span>
+              </td>
             </tr>
             <tr class="table__row">
               <td class="table__field">Комментарии</td>
-              <td class="table__field table__field--cancel">Нет</td>
+              <td class="table__field">
+                Нет
+                <span class="icon icon--false"></span>
+              </td>
             </tr>
           </tbody>
         </table>
-        <ul class="price__toggles slider__toggles">
-          <li class="slider__toggle-item">
-            <button class="slider__toggle" type="button">1</button>
+        <ul class="carousel__toggles">
+          <li class="carousel__toggle-item">
+            <button class="carousel__toggle" type="button">1</button>
           </li>
-          <li class="slider__toggle-item">
-            <button class="slider__toggle slider__toggle--active" type="button">2</button>
+          <li class="carousel__toggle-item">
+            <button class="carousel__toggle carousel__toggle--active" type="button">2</button>
           </li>
-          <li class="slider__toggle-item">
-            <button class="slider__toggle" type="button">3</button>
+          <li class="carousel__toggle-item">
+            <button class="carousel__toggle" type="button">3</button>
           </li>
         </ul>
       </div>

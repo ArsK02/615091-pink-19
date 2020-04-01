@@ -181,33 +181,36 @@
       <div class="new-post__editing post-edit">
         <form action="https://echo.htmlacademy.ru" class="post-edit__form">
           <img src="https://via.placeholder.com/280x374" alt="Редактируемое фото" class="post-edit__image">
-          <fieldset>
+          <fieldset class="post-edit__tabs tabs">
             <legend class="visually-hidden">Измените размер, цвет или контраст</legend>
-            <div class="post-edit__buttons">
-              <button class="post-edit__modification-btn post-edit__modification-btn--size post-edit__modification-btn--active" type="button">Размер</button>
-              <button class="post-edit__modification-btn post-edit__modification-btn--color" type="button">Цвет</button>
-              <button class="post-edit__modification-btn post-edit__modification-btn--contrast" type="button">Контраст</button>
-            </div>
-            <div class="post-edit__ranges">
-              <div class="post-edit__range post-edit__range--size">
-                <div class="post-edit__range-line"></div>
-                <div class="post-edit__range-toggle"></div>
-                <input type="range">
-              </div>
-              <div class="post-edit__range post-edit__range--color">
-                <div class="post-edit__range-line"></div>
-                <div class="post-edit__range-toggle"></div>
-                <input type="range">
-              </div>
-              <div class="post-edit__range post-edit__range--contrast">
-                <div class="post-edit__range-line"></div>
-                <div class="post-edit__range-toggle"></div>
-                <input type="range">
-              </div>
+            <ul class="tabs__controls tabs-controls">
+              <li class="tabs-controls__item">
+                <button class="tabs-controls__control tabs-controls__control--active" type="button">
+                  Размер
+                  <span class="icon icon--size"></span>
+                </button>
+              </li>
+              <li class="tabs-controls__item">
+                <button class="tabs-controls__control" type="button">
+                  Цвет
+                  <span class="icon icon--color"></span>
+                </button>
+              </li>
+              <li class="tabs-controls__item">
+                <button class="tabs-controls__control" type="button">
+                  Контраст
+                  <span class="icon icon--contrast"></span>
+                </button>
+              </li>
+            </ul>
+            <div class="tabs__content">
+              <input type="range" class="tabs__content-range tabs__content-range--active">
+              <input type="range" class="tabs__content-range">
+              <input type="range" class="tabs__content-range">
             </div>
           </fieldset>
-          <button class="post-edit__button post-edit__button--submit button" type="submit">Запостить</button>
-          <button class="post-edit__button post-edit__button--reset button" type="reset">Отмена</button>
+          <button class="post-edit__button button button--upload" type="submit">Запостить</button>
+          <button class="post-edit__button button button--reset" type="reset">Отмена</button>
         </form>
       </div>
     </section>
