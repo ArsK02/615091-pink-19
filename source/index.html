@@ -34,7 +34,7 @@
         <span class="intro__slogan">Взгляните на жизнь иначе!</span>
       </div>
       <div class="intro__downloads download-app">
-        <a href="#" class="download-app__button button" rel="nofollow" target="_blank">Скачать приложение</a>
+        <a href="#" class="download-app__button button button--download-app" rel="nofollow" target="_blank">Скачать приложение</a>
         <ul class="download-app__list">
           <li class="download-app__item"><img src="https://via.placeholder.com/50x50" alt="Скачать с AppStore" class="download-app__image">
           </li>
@@ -73,7 +73,117 @@
         </section>
       </div>
     </section>
+    <section class="reviews">
+      <div class="reviews__wrapper carousel">
+        <h2 class="visually-hidden">Отзывы наших пользователей</h2>
+        <div class="carousel__list">
+          <blockquote class="carousel__item">
+            <cite class="carousel__author-name">Николай Петров</cite>
+            <p class="carousel__text">
+              «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я
+              познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+            </p>
+          </blockquote>
+          <blockquote class="carousel__item">
+
+          </blockquote>
+          <blockquote class="carousel__item">
+
+          </blockquote>
+        </div>
+        <ul class="carousel__toggles toggle">
+          <li class="toggle__item">
+            <button class="toggle__button toggle__button--active" type="button">1</button>
+          </li>
+          <li class="toggle__item">
+            <button class="toggle__button" type="button">2</button>
+          </li>
+          <li class="toggle__item">
+            <button class="toggle__button" type="button">3</button>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="price">
+      <div class="price__wrapper carousel">
+        <h2 class="visually-hidden">Тарифы</h2>
+        <table class="price__table table">
+          <thead class="table__header">
+            <tr class="table__row">
+              <th class="table__header-field"></th>
+              <th class="table__header-field table__header-field--hit">
+                <span class="table__tariff-type">Стандарт</span>
+                <span class="table__tariff-value">3,99 USD</span>
+              </th>
+            </tr>
+          </thead>
+          <tbody class="table__body">
+            <tr class="table__row">
+              <td class="table__field">Розовый Фильтер</td>
+              <td class="table__field">
+                Да
+                <span class="icon icon--true"></span>
+              </td>
+            </tr>
+            <tr class="table__row">
+              <td class="table__field">Смайлики</td>
+              <td class="table__field">
+                Да
+                <span class="icon icon--true"></span>
+              </td>
+            </tr>
+            <tr class="table__row">
+              <td class="table__field">Комментарии</td>
+              <td class="table__field">
+                Нет
+                <span class="icon icon--false"></span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <ul class="carousel__toggles toggle">
+          <li class="toggle__item">
+            <button class="toggle__button" type="button">1</button>
+          </li>
+          <li class="toggle__item">
+            <button class="toggle__button toggle__button--active" type="button">2</button>
+          </li>
+          <li class="toggle__item">
+            <button class="toggle__button" type="button">3</button>
+          </li>
+        </ul>
+      </div>
+    </section>
   </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <section class="page-footer__contacts contacts">
+        <h2 class="visually-hidden">Контакты</h2>
+        <div class="contacts__header">
+          <p class="contacts__slogan">Остались вопросы?<br>
+            Свяжитесь с нами!</p>
+        </div>
+        <p class="contacts__text">
+          Звоните:<br>
+          <a href="tel:+78125556666" class="contacts__date">+7 (812) 555-66-66</a>
+        </p>
+        <p class="contacts__text">
+          Пишите:<br>
+          <a href="mailto:mail@htmlacademy.ru" class="contacts__date">mail@htmlacademy.ru</a>
+        </p>
+        <p class="contacts__text">
+          Приезжайте в гости:<br>
+          <span class="contacts__date">ул. Большая<br>
+            Конюшенная, 19/8
+          </span>
+        </p>
+      </section>
+      <div class="page-footer__map map">
+        <img src="https://via.placeholder.com/320x200" alt="Карта">
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
