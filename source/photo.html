@@ -170,7 +170,50 @@
         </div>
       </div>
     </section>
-
+    <section class="new-post">
+      <h2 class="visually-hidden">Загрузить свою фотографию</h2>
+      <div class="new-post__header">
+        <p class="new-post__slogan">
+          Затмите их всех!<br>
+          Выкладывайте все, что накопилось в телефоне!
+        </p>
+      </div>
+      <div class="new-post__editing post-edit">
+        <form action="https://echo.htmlacademy.ru" class="post-edit__form">
+          <img src="https://via.placeholder.com/280x374" alt="Редактируемое фото" class="post-edit__image">
+          <fieldset class="post-edit__tabs tabs">
+            <legend class="visually-hidden">Измените размер, цвет или контраст</legend>
+            <ul class="tabs__controls tabs-controls">
+              <li class="tabs-controls__item">
+                <button class="tabs-controls__control tabs-controls__control--active" type="button">
+                  Размер
+                  <span class="icon icon--size"></span>
+                </button>
+              </li>
+              <li class="tabs-controls__item">
+                <button class="tabs-controls__control" type="button">
+                  Цвет
+                  <span class="icon icon--color"></span>
+                </button>
+              </li>
+              <li class="tabs-controls__item">
+                <button class="tabs-controls__control" type="button">
+                  Контраст
+                  <span class="icon icon--contrast"></span>
+                </button>
+              </li>
+            </ul>
+            <div class="tabs__content">
+              <input type="range" class="tabs__content-range tabs__content-range--active">
+              <input type="range" class="tabs__content-range">
+              <input type="range" class="tabs__content-range">
+            </div>
+          </fieldset>
+          <button class="post-edit__button button button--upload" type="submit">Запостить</button>
+          <button class="post-edit__button button button--reset" type="reset">Отмена</button>
+        </form>
+      </div>
+    </section>
   </main>
 
   <footer class="page-footer">

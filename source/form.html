@@ -30,7 +30,120 @@
     <div class="intro">
       <h1 class="intro__slogan">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </div>
-
+    <section class="contest">
+      <h2 class="visually-hidden">Заполните форму чтобы принять участие</h2>
+      <div class="contest__header">
+        <p class="contest__slogan">
+          Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+        </p>
+      </div>
+      <form action="https://echo.htmlacademy.ru" class="contest__form form">
+        <div class="form__wrapper">
+          <fieldset class="form__fieldset form-section form-section--personal-info">
+            <div class="form-section__item field">
+              <label class="field__label" for="lastname">Фамилия:</label>
+              <input class="field__input" type="text" id="lastname" name="lastname"
+                placeholder="Укажите фамилию *" required>
+            </div>
+            <div class="form-section__item field">
+              <label class="field__label" for="firstname">Имя:</label>
+              <input class="field__input" type="text" id="firstname" name="firstname"
+                placeholder="Введите ваше имя *" required>
+            </div>
+            <div class="form-section__item field">
+              <label class="field__label" for="middlename">Отчество:</label>
+              <input class="field__input" type="text" id="middlename" name="middlename"
+                placeholder="Ну и отчество тоже">
+            </div>
+          </fieldset>
+          <fieldset class="form__fieldset form-section form-section--grey">
+            <legend class="form-section__legend">Ваши безбашенные достижения в путешествии</legend>
+            <div class="form-section__list">
+              <div class="form-section__item field-option">
+                <label class="field-option__label field-option--checkbox">
+                  <span class="field-option__text">Сделал селфи с акулой</span>
+                  <input class="field-option__input" type="checkbox" name="goal1" value="selfie-shark" checked>
+                </label>
+              </div>
+              <div class="form-section__item field-option">
+                <label class="field-option__label field-option--checkbox">
+                  <span class="field-option__text">Обгорел на пляже</span>
+                  <input class="field-option__input" type="checkbox" name="goal2" value="beach" checked>
+                </label>
+              </div>
+              <div class="form-section__item field-option">
+                <label class="field-option__label field-option--checkbox">
+                  <span class="field-option__text">Видел Чака Норриса</span>
+                  <input class="field-option__input" type="checkbox" name="goal3" value="chuck-norris">
+                </label>
+              </div>
+              <div class="form-section__item field-option">
+                <label class="field-option__label field-option--checkbox">
+                  <span class="field-option__text">Накупил сувениров</span>
+                  <input class="field-option__input" type="checkbox" name="goal4" value="souvenirs">
+                </label>
+              </div>
+              <div class="form-section__item field-option">
+                <label class="field-option__label field-option--checkbox">
+                  <span class="field-option__text">Удержал башню</span>
+                  <input class="field-option__input" type="checkbox" name="goal5" value="tower" checked>
+                </label>
+              </div>
+              <div class="form-section__item field-option">
+                <label class="field-option__label field-option--checkbox">
+                  <span class="field-option__text">Разгромил отель</span>
+                  <input class="field-option__input" type="checkbox" name="goal6" value="hotel">
+                </label>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="form__fieldset form-section form-section--contacts">
+            <legend class="visually-hidden">Контактные данные</legend>
+            <div class="form-section__item field">
+              <label class="field__label" for="phone">Номер телефона:</label>
+              <input class="field__input" type="tel" id="phone" name="phone" placeholder="Номер, пожалуйста">
+            </div>
+            <div class="form-section__item field">
+              <label class="field__label" for="email">Адрес почты:</label>
+              <input class="field__input" type="email" id="email" name="email" placeholder="Введите почту *"
+                required>
+            </div>
+          </fieldset>
+          <fieldset class="form__fieldset form-section form-section--grey">
+            <legend class="form-section__legend">С каким приложением путешествовали?</legend>
+            <div class="form-section__list">
+              <div class="form-section__item field-option">
+                <label class="field-option__label field-option--radio">
+                  <span class="field-option__text">Pink для IOS</span>
+                  <input class="field-option__input" type="radio" name="pink-app" value="ios" checked>
+                </label>
+              </div>
+              <div class="form-section__item field-option">
+                <label class="field-option__label field-option--radio">
+                  <span class="field-option__text">Pink на Android</span>
+                  <input class="field-option__input" type="radio" name="pink-app" value="android">
+                </label>
+              </div>
+              <div class="form-section__item field-option">
+                <label class="field-option__label field-option--radio">
+                  <span class="field-option__text">Windows Phone</span>
+                  <input class="field-option__input" type="radio" name="pink-app" value="windows-phone">
+                </label>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="form__fieldset form-section">
+            <legend class="form-section__legend">Опишите свои эмоции</legend>
+            <textarea class="form-section__field form-section__field--textarea" name="emotions"
+              placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </fieldset>
+          <button class="form__button button button--submit" type="submit">Отправить форму</button>
+          <small class="form__legend form__legend--smaall">
+            <sup>*</sup> — обязательные поля
+          </small>
+        </div>
+      </form>
+    </section>
   </main>
 
   <footer class="page-footer">
