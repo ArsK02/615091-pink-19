@@ -1,11 +1,8 @@
 .site-list {
   @include rest-list;
-
-  display: flex;
-  flex-direction: column;
 }
 
-.site-list__item a {
+.site-list__link {
   display: block;
 
   text-decoration: none;
@@ -15,9 +12,19 @@
   color: $white;
   font-weight: bold;
 
+  background-color: $blue;
   box-shadow: 0 -1px 0 0 #000000, inset 0 1px 0 0 rgba(255, 255, 255, 0.15);
+
+  &:hover,
+  &:focus {
+    color: $pink;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
-.site-list__item:last-child a {
+.site-list__item:last-child .site-list__link {
   box-shadow: 0 -1px 0 0 #000000, 0 1px 0 0 #000000, inset 0 1px 0 0 rgba(255, 255, 255, 0.15);
 }

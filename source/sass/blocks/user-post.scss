@@ -1,0 +1,35 @@
+.user-post:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.user-post__image {
+  width: 100%;
+  margin-bottom: -6px;
+}
+
+.user-post__content {
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+
+  background-color: $light-grey;
+}
+
+.user-post__user-name {
+  font-weight: bold;
+}
+
+.user-post__time-counter {
+  font-weight: 300;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.user-post__text {
+  margin-top: 5px;
+}
+
+.user-post__action {
+  margin-top: 8px;
+}

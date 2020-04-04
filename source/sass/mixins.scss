@@ -15,3 +15,8 @@
   background-color: transparent;
   cursor: pointer;
 }
+
+@mixin no-outline {
+  outline: none;
+  background: transparent;
+}

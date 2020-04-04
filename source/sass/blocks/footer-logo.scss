@@ -1,0 +1,10 @@
+.footer-logo {
+  &:hover path,
+  &:focus path {
+    fill: $pink;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

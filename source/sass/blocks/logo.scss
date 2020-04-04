@@ -2,4 +2,13 @@
   position: absolute;
 
   z-index: 10;
+
+  &:hover path,
+  &:focus path {
+    fill: $pink;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

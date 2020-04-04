@@ -1,9 +1,19 @@
 .page-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+}
+
+.page-header__wrapper {
   display: flex;
   position: relative;
 
   justify-content: space-between;
-  background-color: green;
+
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
 }
 
 .page-header__logo {
@@ -12,6 +22,16 @@
   margin-bottom: 22px;
 }
 
-.intro__slogan {
-  font-size: 24px;
+.page-header--nojs {
+  position: static;
+
+  margin-bottom: -50px;
+}
+
+.page-header--nojs .page-header__wrapper {
+  background-color: $blue;
+}
+
+.page-header--nojs .page-header__wrapper .site-list__link {
+  display: block;
 }
