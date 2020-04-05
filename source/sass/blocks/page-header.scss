@@ -19,19 +19,18 @@
 .page-header__logo {
   margin-top: 22px;
   margin-left: 20px;
-  margin-bottom: 22px;
 }
 
-.page-header--nojs {
+.page-header--static {
   position: static;
 
-  margin-bottom: -50px;
+  margin-bottom: -66px;
 }
 
-.page-header--nojs .page-header__wrapper {
+.page-header--static .page-header__wrapper {
   background-color: $blue;
 }
 
-.page-header--nojs .page-header__wrapper .site-list__link {
+.page-header--static .page-header__wrapper .site-list__link {
   display: block;
 }
