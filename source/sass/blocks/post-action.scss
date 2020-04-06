@@ -1,5 +1,5 @@
 .post-action__like-button {
-  @include button-rest;
+  @include button-reset;
   @include no-outline;
 
   position: relative;

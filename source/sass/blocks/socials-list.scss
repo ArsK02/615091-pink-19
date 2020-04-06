@@ -1,5 +1,5 @@
 .socials-list {
-  @include rest-list;
+  @include reset-list;
 
   margin-top: 35px;
   margin-bottom: 30px;
@@ -26,16 +26,16 @@
   border: 3px solid $light;
   border-radius: 50%;
   box-sizing: border-box;
-}
 
-.socials-list__link--twitter {
-  background-image: url("../img/icon-twitter.svg");
-}
+  &--twitter {
+    background-image: url("../img/icon-twitter.svg");
+  }
 
-.socials-list__link--facebook {
-  background-image: url("../img/icon-facebook.svg");
-}
+  &--facebook {
+    background-image: url("../img/icon-facebook.svg");
+  }
 
-.socials-list__link--youtube {
-  background-image: url("../img/icon-youtube.svg");
+  &--youtube {
+    background-image: url("../img/icon-youtube.svg");
+  }
 }

@@ -3,10 +3,14 @@
 
   width: 100%;
   height: auto;
+
+  &--opened {
+    background-color: $blue;
+  }
 }
 
 .main-nav__toggle {
-  @include button-rest;
+  @include button-reset;
   @include no-outline;
 
   display: block;
@@ -47,10 +51,6 @@
 
 .main-nav--closed .site-list__link {
   display: none;
-}
-
-.main-nav--opened {
-  background-color: $blue;
 }
 
 .main-nav--opened .main-nav__toggle {

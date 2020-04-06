@@ -1,5 +1,5 @@
 .button {
-  @include button-rest;
+  @include button-reset;
   @include no-outline;
 
   display: inline-block;

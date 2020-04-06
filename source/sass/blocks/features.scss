@@ -36,15 +36,14 @@
   margin-bottom: 30px;
 }
 
+.features--image .features__wrapper {
+  padding-bottom: 317px;
+}
+
 .features__wrapper {
   padding-top: 50px;
 
   background-color: $light-grey;
-}
-
-.features__container {
-  width: 87.5%;
-  margin: 0 auto;
 }
 
 .features__item {
@@ -57,7 +56,6 @@
 
 .features__item:last-child {
   margin-bottom: 0;
-  padding-bottom: 317px;
 }
 
 .features__item-title {
@@ -70,10 +68,10 @@
 
 .features__image {
   position: absolute;
-  bottom: 0;
+  bottom: -317px;
   left: calc(50% - 78px);
 
   margin-bottom: -43px;
 
-  clip:rect(auto, auto, 277px, auto);
+  clip: rect(auto, auto, 277px, auto);
 }
