@@ -1,0 +1,36 @@
+.page-header {
+  width: 100%;
+
+  &:not(.page-header--static) {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.page-header__wrapper {
+  display: flex;
+  position: relative;
+
+  justify-content: space-between;
+
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.page-header__logo {
+  margin-top: 22px;
+  margin-left: 20px;
+}
+
+.page-header--static {
+  margin-bottom: -66px;
+}
+
+.page-header--static .page-header__wrapper {
+  background-color: $blue;
+}
+
+.page-header--static .site-list__link {
+  display: block;
+}

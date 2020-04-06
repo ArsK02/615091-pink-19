@@ -1,0 +1,32 @@
+.post-action__like-button {
+  @include button-reset;
+  @include no-outline;
+
+  position: relative;
+  display: block;
+
+  padding-left: 32px;
+
+  font-size: 0;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 6px;
+    left: 0;
+
+    width: 13px;
+    height: 12px;
+
+    background-image: url("../img/icon-heart.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.post-action__likes {
+  font-size: 12px;
+  line-height: 2;
+  color: $pink;
+  text-transform: uppercase;
+}

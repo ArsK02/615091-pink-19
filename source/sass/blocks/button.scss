@@ -1,0 +1,35 @@
+.button {
+  @include button-reset;
+  @include no-outline;
+
+  display: inline-block;
+
+  padding-top: 16px;
+  padding-bottom: 15px;
+
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1;
+  text-align: center;
+
+  border: 3px solid $white;
+  border-radius: 30px;
+  box-sizing: border-box;
+}
+
+.button--download-app {
+  width: 100%;
+
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $pink;
+    background-color: $white;
+  }
+
+  &:active {
+    opacity: 0.3;
+    background-color: $white;
+  }
+}
