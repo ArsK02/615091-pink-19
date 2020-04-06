@@ -1,9 +1,11 @@
 .page-header {
-  position: absolute;
-  top: 0;
-  left: 0;
-
   width: 100%;
+
+  &:not(.page-header--static) {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 }
 
 .page-header__wrapper {
@@ -22,8 +24,6 @@
 }
 
 .page-header--static {
-  position: static;
-
   margin-bottom: -66px;
 }
 
