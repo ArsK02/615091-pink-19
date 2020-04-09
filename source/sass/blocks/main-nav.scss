@@ -49,10 +49,6 @@
   opacity: 0.3;
 }
 
-.main-nav--closed .site-list__link {
-  display: none;
-}
-
 .main-nav--opened .main-nav__toggle {
   &::before,
   &::after {
@@ -87,5 +83,11 @@
   &:active::before,
   &:active::after {
     opacity: 0.3;
+  }
+}
+
+@media (max-width: $less-desktop-width) {
+  .main-nav--closed .site-list__link {
+    display: none;
   }
 }

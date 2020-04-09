@@ -1,3 +1,59 @@
 .contacts {
-  padding: 0;
+  position: relative;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+
+    width: 100%;
+    height: 34px;
+
+    background-image: url("../img/bg-triangle-white-footer.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    z-index: 1;
+  }
+}
+
+.contacts__wrapper {
+  padding-top: 40px;
+  padding-bottom: 32px;
+
+  text-align: center;
+}
+
+.contacts__slogan {
+  margin-bottom: 30px;
+
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.contacts__text {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.contacts__text:not(:last-of-type) {
+  margin-bottom: 14px;
+}
+
+.contacts__date {
+  font-size: 24px;
+  font-weight: 300;
+  text-decoration: none;
+  color: $pink;
+
+  &--mail:hover,
+  &--mail:focus {
+    color: initial;
+    text-decoration: underline;
+  }
+
+  &--mail:active {
+    text-decoration: none;
+    opacity: 0.3;
+  }
 }

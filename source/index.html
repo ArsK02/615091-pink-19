@@ -32,7 +32,7 @@
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active"><a class="site-list__link">Главная</a></li>
+            <li class="site-list__item"><a class="site-list__link site-list__link--active">Главная</a></li>
             <li class="site-list__item"><a href="photo.html" class="site-list__link">Фотографии</a></li>
             <li class="site-list__item"><a href="form.html" class="site-list__link">Конкурс</a></li>
             <li class="site-list__item"><a href="https://htmlacademy.ru/" class="site-list__link" rel="nofollow"
@@ -57,13 +57,14 @@
             приложение</a>
           <ul class="download-app__list">
             <li class="download-app__item"><img src="img/logo-apple.svg" alt="Скачать с AppStore"
-                class="download-app__image">
+                class="download-app__image" width="47" height="56">
             </li>
             <li class="download-app__item"><img src="img/logo-android.svg" alt="Скачать с Play Market"
-                class="download-app__image">
+                class="download-app__image" width="43" height="47">
             </li>
             <li class="download-app__item"><img src="img/logo-microsoft.svg" alt="Скачать с Microsoft Store"
-                class="download-app__image"></li>
+                class="download-app__image" width="44" height="41">
+            </li>
           </ul>
           <p class="download-app__description">
             Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
@@ -96,13 +97,13 @@
               новых
             </p>
             <img src="img/iphone-screen-mobile@1x.png" class="features__image features__image--image3"
-              alt="Фото приложения">
+              alt="Фото приложения" width="157" height="320">
           </section>
         </div>
       </div>
     </section>
     <section class="reviews">
-      <div class="reviews__wrapper carousel">
+      <div class="reviews__wrapper container carousel">
         <h2 class="visually-hidden">Отзывы наших пользователей</h2>
         <div class="carousel__list">
           <blockquote class="carousel__item">
@@ -113,10 +114,8 @@
             </p>
           </blockquote>
           <blockquote class="carousel__item">
-
           </blockquote>
           <blockquote class="carousel__item">
-
           </blockquote>
         </div>
         <ul class="carousel__toggles toggle">
@@ -138,33 +137,65 @@
         <table class="price__table table">
           <thead class="table__header">
             <tr class="table__row">
-              <th class="table__header-field"></th>
+              <th class="table__header-field table__header-field--empty"></th>
+              <th class="table__header-field">
+                <span class="table__tariff-type">База</span><br>
+                <span class="table__tariff-value">1,99 USD</span>
+              </th>
               <th class="table__header-field table__header-field--hit">
-                <span class="table__tariff-type">Стандарт</span>
+                <span class="table__tariff-type">Стандарт</span><br>
                 <span class="table__tariff-value">3,99 USD</span>
+              </th>
+              <th class="table__header-field">
+                <span class="table__tariff-type">Анлим</span><br>
+                <span class="table__tariff-value">9,99 USD</span>
               </th>
             </tr>
           </thead>
           <tbody class="table__body">
             <tr class="table__row">
-              <td class="table__field">Розовый Фильтер</td>
+              <td class="table__field table__field--empty">Розовый Фильтер</td>
               <td class="table__field">
-                Да
+                Розовый Фильтер <span class="visually-hidden">Да</span>
+                <span class="icon icon--true"></span>
+              </td>
+              <td class="table__field">
+                Розовый Фильтер <span class="visually-hidden">Да</span>
+                <span class="icon icon--true"></span>
+              </td>
+              <td class="table__field">
+                Розовый Фильтер <span class="visually-hidden">Да</span>
                 <span class="icon icon--true"></span>
               </td>
             </tr>
             <tr class="table__row">
-              <td class="table__field">Смайлики</td>
+              <td class="table__field table__field--empty">Смайлики</td>
               <td class="table__field">
-                Да
-                <span class="icon icon--true"></span>
-              </td>
-            </tr>
-            <tr class="table__row">
-              <td class="table__field">Комментарии</td>
-              <td class="table__field">
-                Нет
+                Смайлики <span class="visually-hidden">Нет</span>
                 <span class="icon icon--false"></span>
+              </td>
+              <td class="table__field">
+                Смайлики <span class="visually-hidden">Да</span>
+                <span class="icon icon--true"></span>
+              </td>
+              <td class="table__field">
+                Смайлики <span class="visually-hidden">Да</span>
+                <span class="icon icon--true"></span>
+              </td>
+            </tr>
+            <tr class="table__row">
+              <td class="table__field table__field--empty">Комментарии</td>
+              <td class="table__field">
+                Комментарии <span class="visually-hidden">Нет</span>
+                <span class="icon icon--false"></span>
+              </td>
+              <td class="table__field">
+                Комментарии <span class="visually-hidden">Нет</span>
+                <span class="icon icon--false"></span>
+              </td>
+              <td class="table__field">
+                Комментарии <span class="visually-hidden">Да</span>
+                <span class="icon icon--true"></span>
               </td>
             </tr>
           </tbody>
@@ -185,20 +216,18 @@
   </main>
 
   <footer class="page-footer">
-    <div class="page-footer__wrapper">
-      <section class="page-footer__contacts contacts">
+    <section class="page-footer__contacts contacts">
+      <div class="contacts__wrapper container">
         <h2 class="visually-hidden">Контакты</h2>
-        <div class="contacts__header">
-          <p class="contacts__slogan">Остались вопросы?<br>
-            Свяжитесь с нами!</p>
-        </div>
+        <p class="contacts__slogan">Остались вопросы?<br>
+          Свяжитесь с нами!</p>
         <p class="contacts__text">
           Звоните:<br>
           <a href="tel:+78125556666" class="contacts__date">+7 (812) 555-66-66</a>
         </p>
         <p class="contacts__text">
           Пишите:<br>
-          <a href="mailto:mail@htmlacademy.ru" class="contacts__date">mail@htmlacademy.ru</a>
+          <a href="mailto:mail@htmlacademy.ru" class="contacts__date contacts__date--mail">mail@htmlacademy.ru</a>
         </p>
         <p class="contacts__text">
           Приезжайте в гости:<br>
@@ -206,10 +235,15 @@
             Конюшенная, 19/8
           </span>
         </p>
-      </section>
-      <div class="page-footer__map map">
-        <img src="https://via.placeholder.com/320x200" alt="Карта">
       </div>
+    </section>
+    <div class="page-footer__map map">
+      <a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps"
+        class="visually-hidden">Санкт‑Петербург</a><a class="visually-hidden"
+        href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.324002%2C59.938200&utm_medium=mapframe&utm_source=maps&z=17.03">Большая
+        Конюшенная улица, 19/8 —
+        Яндекс.Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CKv5INO8" width="320" height="167"
+        frameborder="1" allowfullscreen="true"></iframe>
     </div>
   </footer>
 

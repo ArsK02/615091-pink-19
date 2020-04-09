@@ -33,7 +33,7 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item"><a href="index.html" class="site-list__link">Главная</a></li>
-            <li class="site-list__item site-list__item--active"><a class="site-list__link">Фотографии</a></li>
+            <li class="site-list__item"><a class="site-list__link site-list__link--active">Фотографии</a></li>
             <li class="site-list__item"><a href="form.html" class="site-list__link">Конкурс</a></li>
             <li class="site-list__item"><a href="https://htmlacademy.ru/" class="site-list__link" rel="nofollow"
                 target="_blank">Html Academy</a>
@@ -61,7 +61,8 @@
       </div>
       <div class="user-gallery__wrapper container">
         <div class="user-gallery__post user-post user-post--panorama">
-          <img src="img/panorama-mobile@1x.jpg" alt="Фото пользоватиля Анна" class="user-post__image">
+          <img src="img/panorama-mobile@1x.jpg" alt="Фото пользоватиля Анна" class="user-post__image" width="320"
+            height="137">
           <div class="user-post__content">
             <p class="user-post__info">
               <span class="user-post__user-name">Анна</span> <span class="user-post__time-counter">(5 минут
@@ -80,7 +81,8 @@
           </div>
         </div>
         <div class="user-gallery__post user-post">
-          <img src="img/photo-car-mobile@1x.jpg" alt="Фото пользоватиля Левон" class="user-post__image">
+          <img src="img/photo-car-mobile@1x.jpg" alt="Фото пользоватиля Левон" class="user-post__image" width="280"
+            height="180">
           <div class="user-post__content">
             <p class="user-post__info">
               <span class="user-post__user-name">Левон</span> <span class="user-post__time-counter">(5 часов
@@ -98,7 +100,8 @@
           </div>
         </div>
         <div class="user-gallery__post user-post">
-          <img src="img/photo-drumset-mobile@1x.jpg" alt="Фото пользоватиля Антон" class="user-post__image">
+          <img src="img/photo-drumset-mobile@1x.jpg" alt="Фото пользоватиля Антон" class="user-post__image" width="280"
+            height="180">
           <div class="user-post__content">
             <p class="user-post__info">
               <span class="user-post__user-name">Антон</span> <span class="user-post__time-counter">(12 часов
@@ -116,7 +119,8 @@
           </div>
         </div>
         <div class="user-gallery__post user-post">
-          <img src="img/photo-window-mobile@1x.jpg" alt="Фото пользоватиля Борис" class="user-post__image">
+          <img src="img/photo-window-mobile@1x.jpg" alt="Фото пользоватиля Борис" class="user-post__image" width="280"
+            height="180">
           <div class="user-post__content">
             <p class="user-post__info">
               <span class="user-post__user-name">Борис</span> <span class="user-post__time-counter">(20 часов
@@ -134,7 +138,8 @@
           </div>
         </div>
         <div class="user-gallery__post user-post">
-          <img src="img/photo-fair-mobile@1x.jpg" alt="Фото пользоватиля Сергей" class="user-post__image">
+          <img src="img/photo-fair-mobile@1x.jpg" alt="Фото пользоватиля Сергей" class="user-post__image" width="280"
+            height="180">
           <div class="user-post__content">
             <p class="user-post__info">
               <span class="user-post__user-name">Сергей</span> <span class="user-post__time-counter">(25 часов
@@ -152,7 +157,8 @@
           </div>
         </div>
         <div class="user-gallery__post user-post">
-          <img src="img/photo-pov-mobile@1x.jpg" alt="Фото пользоватиля Максим" class="user-post__image">
+          <img src="img/photo-pov-mobile@1x.jpg" alt="Фото пользоватиля Максим" class="user-post__image" width="280"
+            height="180">
           <div class="user-post__content">
             <p class="user-post__info">
               <span class="user-post__user-name">Максим</span> <span class="user-post__time-counter">(40 часов
@@ -170,7 +176,8 @@
           </div>
         </div>
         <div class="user-gallery__post user-post">
-          <img src="img/photo-wing-mobile@1x.jpg" alt="Фото пользоватиля Надежда" class="user-post__image">
+          <img src="img/photo-wing-mobile@1x.jpg" alt="Фото пользоватиля Надежда" class="user-post__image" width="280"
+            height="180">
           <div class="user-post__content">
             <p class="user-post__info">
               <span class="user-post__user-name">Надежда</span> <span class="user-post__time-counter">(45 часов
@@ -198,39 +205,64 @@
         </p>
       </div>
       <div class="new-post__editing post-edit">
-        <form action="https://echo.htmlacademy.ru" class="post-edit__form">
-          <img src="https://via.placeholder.com/280x374" alt="Редактируемое фото" class="post-edit__image">
-          <fieldset class="post-edit__tabs tabs">
-            <legend class="visually-hidden">Измените размер, цвет или контраст</legend>
-            <ul class="tabs__controls tabs-controls">
-              <li class="tabs-controls__item">
-                <button class="tabs-controls__control tabs-controls__control--active" type="button">
-                  Размер
-                  <span class="icon icon--size"></span>
-                </button>
-              </li>
-              <li class="tabs-controls__item">
-                <button class="tabs-controls__control" type="button">
-                  Цвет
-                  <span class="icon icon--color"></span>
-                </button>
-              </li>
-              <li class="tabs-controls__item">
-                <button class="tabs-controls__control" type="button">
-                  Контраст
-                  <span class="icon icon--contrast"></span>
-                </button>
-              </li>
-            </ul>
-            <div class="tabs__content">
-              <input type="range" class="tabs__content-range tabs__content-range--active">
-              <input type="range" class="tabs__content-range">
-              <input type="range" class="tabs__content-range">
-            </div>
-          </fieldset>
-          <button class="post-edit__button button button--upload" type="submit">Запостить</button>
-          <button class="post-edit__button button button--reset" type="reset">Отмена</button>
-        </form>
+        <div class="post-edit__wrapper container">
+          <form action="https://echo.htmlacademy.ru" class="post-edit__form">
+            <img src="img/photo-road-mobile@1x.jpg" alt="Редактируемое фото" class="post-edit__image" width="280"
+              height="374">
+            <fieldset class="post-edit__tabs tabs">
+              <legend class="visually-hidden">Измените размер, цвет или контраст</legend>
+              <ul class="tabs__controls tabs-controls">
+                <li class="tabs-controls__item">
+                  <button class="tabs-controls__control tabs-controls__control--active" type="button">
+                    <span class="visually-hidden">Размер</span>
+                    <span class="icon icon--size">
+                      <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                        <path fill="none" d="M0,0h48v48H0V0z"/>
+                        <path d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"/>
+                      </svg>
+                    </span>
+                  </button>
+                </li>
+                <li class="tabs-controls__item">
+                  <button class="tabs-controls__control" type="button">
+                    <span class="visually-hidden">Цвет</span>
+                    <span class="icon icon--color">
+                      <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                        <path fill="none" d="M0,0h48v48H0V0z"/>
+                        <path d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z"/>
+                        <rect y="40" width="48" height="3"/>
+                      </svg>
+                    </span>
+                  </button>
+                </li>
+                <li class="tabs-controls__item">
+                  <button class="tabs-controls__control" type="button">
+                    <span class="visually-hidden">Контраст</span>
+                    <span class="icon icon--contrast">
+                      <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.92px" height="31.92px" viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92" xml:space="preserve">
+                        <path fill="#231F20" d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"/>
+                        <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"/>
+                      </svg>
+                    </span>
+                  </button>
+                </li>
+              </ul>
+              <div class="tabs__content">
+                <div class="tabs__content-range tabs__content-range--active">
+                  <input type="range" class="tabs__content-input">
+                </div>
+                <div class="tabs__content-range">
+                  <input type="range" class="tabs__content-range">
+                </div>
+                <div class="tabs__content-range">
+                  <input type="range" class="tabs__content-range">
+                </div>
+              </div>
+            </fieldset>
+            <button class="post-edit__button button button--upload" type="submit">Запостить</button>
+            <button class="post-edit__button button button--reset" type="reset">Отмена</button>
+          </form>
+        </div>
       </div>
     </section>
   </main>

@@ -1,3 +1,64 @@
 .form-section {
   padding: 0;
+  padding-top: 33px;
+  padding-bottom: 42px;
+  margin: 0;
+  border: none;
+
+  &--grey {
+    background-color: $light-grey;
+  }
+
+  &--contacts .form-section__legend {
+    display: none;
+  }
+
+  &--emotions .form-section__legend {
+    background-color: inherit;
+  }
+}
+
+.form-section__legend {
+  display: block;
+  width: 100%;
+
+  padding-top: 40px;
+  padding-left: 50px;
+  padding-right: 50px;
+
+  line-height: 1.29;
+  text-transform: uppercase;
+  text-align: center;
+  color: $pink;
+
+  background-color: $light-grey;
+}
+
+.form-section__field--textarea,
+.form-section__field--textarea::placeholder {
+  font-size: 18px;
+  line-height: 1.67;
+  color: $blue;
+}
+
+.form-section__field--textarea {
+  width: 100%;
+  min-height: 200px;
+
+  padding-top: 17px;
+  padding-bottom: 17px;
+  padding-left: 19px;
+  padding-right: 19px;
+
+  border: 2px solid $border-light;
+  box-sizing: border-box;
+
+  &:hover,
+  &:focus {
+    border-color: $blue;
+  }
+
+  &:active {
+    border-color: $pink;
+  }
 }

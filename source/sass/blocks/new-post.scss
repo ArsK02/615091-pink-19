@@ -1,3 +1,17 @@
 .new-post {
-  padding: 0;
+  background-color: $light-grey;
+}
+
+.new-post__header {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-right: 12px;
+  padding-left: 12px;
+
+  background-color: $white;
+}
+
+.new-post__slogan {
+  line-height: 2.14;
+  text-align: center;
 }

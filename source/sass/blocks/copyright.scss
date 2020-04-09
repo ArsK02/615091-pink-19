@@ -9,3 +9,14 @@
   font-size: 14px;
   color: $blue;
 }
+
+.copyright__logo {
+  &:hover path,
+  &:focus path {
+    fill: $blue;
+  }
+
+  &:active path {
+    fill: $grey;
+  }
+}
