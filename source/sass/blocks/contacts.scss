@@ -12,7 +12,7 @@
 
     background-image: url("../img/bg-triangle-white-footer.svg");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
     z-index: 1;
   }
 }
@@ -45,15 +45,4 @@
   font-weight: 300;
   text-decoration: none;
   color: $pink;
-
-  &--mail:hover,
-  &--mail:focus {
-    color: initial;
-    text-decoration: underline;
-  }
-
-  &--mail:active {
-    text-decoration: none;
-    opacity: 0.3;
-  }
 }

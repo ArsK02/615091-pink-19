@@ -12,6 +12,7 @@
 }
 
 .table__header-field {
+  position: relative;
   min-width: 278px;
   margin: 0;
   padding: 0;
@@ -24,6 +25,41 @@
 
   &--empty {
     display: none;
+  }
+
+  &--hit::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 73px;
+    height: 73px;
+
+    background-image: url("../img/bg-hit.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  &--hit::after {
+    content: "хит";
+
+    position: absolute;
+    top: 18px;
+    left: 11px;
+
+    width: 26px;
+    height: 14px;
+
+    color: $white;
+    line-height: 1;
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: uppercase;
+    text-align: center;
+
+    transform: rotate(-45deg);
   }
 
   &:last-child {

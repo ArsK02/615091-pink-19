@@ -209,6 +209,7 @@
           <form action="https://echo.htmlacademy.ru" class="post-edit__form">
             <img src="img/photo-road-mobile@1x.jpg" alt="Редактируемое фото" class="post-edit__image" width="280"
               height="374">
+            <input type="file" name="new-photo" class="new-post__input">
             <fieldset class="post-edit__tabs tabs">
               <legend class="visually-hidden">Измените размер, цвет или контраст</legend>
               <ul class="tabs__controls tabs-controls">
@@ -249,13 +250,19 @@
               </ul>
               <div class="tabs__content">
                 <div class="tabs__content-range tabs__content-range--active">
+                  <span class="tabs__line"></span>
+                  <span class="tabs__toggle"></span>
                   <input type="range" class="tabs__content-input">
                 </div>
                 <div class="tabs__content-range">
-                  <input type="range" class="tabs__content-range">
+                  <span class="tabs__line"></span>
+                  <span class="tabs__toggle"></span>
+                  <input type="range" class="tabs__content-input">
                 </div>
                 <div class="tabs__content-range">
-                  <input type="range" class="tabs__content-range">
+                  <span class="tabs__line"></span>
+                  <span class="tabs__toggle"></span>
+                  <input type="range" class="tabs__content-input">
                 </div>
               </div>
             </fieldset>

@@ -21,8 +21,7 @@
   }
 
   &:not(.site-list__link--active):active {
-    color: $white;
-    opacity: 0.3;
+    color: $grey-font;
   }
 }
 

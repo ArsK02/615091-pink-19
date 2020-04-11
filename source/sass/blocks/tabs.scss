@@ -4,16 +4,21 @@
   border: none;
 }
 
+.tabs__content {
+  margin-right: -20px;
+  margin-left: -20px;
+}
+
 .tabs__content-range {
   position: relative;
   display: none;
 
-  width: 280px;
   height: 14px;
 
-  margin: 0 auto;
   margin-top: 30px;
   padding-bottom: 28px;
+  padding-right: 20px;
+  padding-left: 20px;
 
   border-bottom: 1px solid $tabs-range-gray;
 
@@ -21,39 +26,39 @@
     display: block;
   }
 
-  &::before {
-    content: "";
-
-    position: absolute;
-    top: 6px;
-    left: 18px;
-
-    width: 240px;
-    height: 2px;
-
-    background-color: $blue;
-  }
-
-  &::after {
-    content: "";
-
-    position: absolute;
-    top: 0;
-    right: 55px;
-
-    width: 14px;
-    height: 14px;
-
-    background-color: $light-grey;
-    border: 2px solid $pink;
-    border-radius: 50%;
-
-    box-sizing: border-box;
-  }
-
-  &--active::after {
+  &:active .tabs__toggle {
     background-color: $pink;
   }
+}
+
+.tabs__line {
+  content: "";
+
+  position: absolute;
+  top: 6px;
+  left: 11.9%;
+
+  width: 75%;
+  height: 2px;
+
+  background-color: $blue;
+}
+
+.tabs__toggle {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  right: 23.4%;
+
+  width: 14px;
+  height: 14px;
+
+  background-color: $light-grey;
+  border: 2px solid $pink;
+  border-radius: 50%;
+
+  box-sizing: border-box;
 }
 
 .tabs__content-input {
