@@ -6,3 +6,10 @@
 
   box-sizing: border-box;
 }
+
+.container__item {
+  &--negative-offset {
+    margin-right: -20px;
+    margin-left: -20px;
+  }
+}

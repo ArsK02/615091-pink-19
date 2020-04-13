@@ -4,12 +4,7 @@
   border: none;
 }
 
-.tabs__content {
-  margin-right: -20px;
-  margin-left: -20px;
-}
-
-.tabs__content-range {
+.tabs__range {
   position: relative;
   display: none;
 
@@ -26,12 +21,12 @@
     display: block;
   }
 
-  &:active .tabs__toggle {
+  &:active .tabs__thumb {
     background-color: $pink;
   }
 }
 
-.tabs__line {
+.tabs__track {
   content: "";
 
   position: absolute;
@@ -44,7 +39,7 @@
   background-color: $blue;
 }
 
-.tabs__toggle {
+.tabs__thumb {
   content: "";
 
   position: absolute;
