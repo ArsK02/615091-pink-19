@@ -1,3 +1,19 @@
 .post-edit {
-  padding: 0;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.post-edit__image {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+}
+
+.post-edit__tabs {
+  margin-bottom: 38px;
+  padding-top: 38px;
+}
+
+.post-edit__button:not(:last-of-type) {
+  margin-bottom: 12px;
 }

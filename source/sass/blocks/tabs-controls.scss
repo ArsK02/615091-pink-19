@@ -1,0 +1,17 @@
+.tabs-controls {
+  @include reset-list;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.tabs-controls__control {
+  @include button-reset;
+  @include no-outline;
+
+  &--active .icon--size {
+    fill: $pink;
+    opacity: 1;
+  }
+}

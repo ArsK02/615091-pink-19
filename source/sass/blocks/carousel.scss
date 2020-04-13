@@ -1,3 +1,28 @@
-.carousel {
-  padding: 0;
+.carousel__item {
+  width: 100%;
+
+  margin: 0;
+}
+
+.carousel__author-name {
+  display: inline-block;
+
+  margin-top: 45px;
+  margin-bottom: 16px;
+
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 1.67;
+  color: $black;
+}
+
+.carousel__text {
+  margin-bottom: 30px;
+
+  line-height: 2.14;
+}
+
+.carousel__toggles {
+  text-align: center;
 }

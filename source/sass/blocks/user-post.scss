@@ -2,6 +2,21 @@
   margin-bottom: 20px;
 }
 
+.user-post {
+  max-width: 300px;
+}
+
+.user-post--panorama {
+  max-width: 100vw;
+  margin-right: -20px;
+  margin-left: -20px;
+}
+
+.user-post--panorama .user-post__content {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
 .user-post__image {
   width: 100%;
   margin-bottom: -6px;

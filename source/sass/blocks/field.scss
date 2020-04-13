@@ -1,3 +1,42 @@
 .field {
-  padding: 0;
+  display: flex;
+  flex-direction: column;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.field__label {
+  margin-left: 21px;
+  margin-bottom: 6px;
+
+  line-height: 2.14;
+  text-transform: uppercase;
+  color: $pink;
+}
+
+.field__input,
+.field__input::placeholder {
+  font-size: 18px;
+  line-height: 1.67;
+  color: $blue;
+}
+
+.field__input {
+  padding-top: 16px;
+  padding-bottom: 13px;
+  padding-left: 22px;
+  padding-right: 22px;
+
+  border: 2px solid $border-light;
+
+  &:hover,
+  &:focus {
+    border-color: $blue;
+  }
+
+  &:active {
+    border-color: $pink;
+  }
 }

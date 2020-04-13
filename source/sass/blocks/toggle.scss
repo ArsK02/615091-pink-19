@@ -1,3 +1,59 @@
 .toggle {
-  padding: 0;
+  @include reset-list;
+}
+
+.toggle__item {
+  display: inline-block;
+
+  &:not(:last-child) {
+    margin-right: 19px;
+  }
+}
+
+.toggle__button {
+  @include button-reset;
+  @include no-outline;
+
+  position: relative;
+
+  display: block;
+  width: 6px;
+  height: 6px;
+
+  font-size: 0;
+  text-decoration: none;
+
+  background-color: $blue;
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  &:not(.toggle__button--active):hover,
+  &:not(.toggle__button--active):focus {
+    opacity: 0.6;
+  }
+
+  &:not(.toggle__button--active):active {
+    opacity: 0.1;
+  }
+
+  &--active::before {
+    content: "";
+
+    position: absolute;
+    top: -3px;
+    left: -3px;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: $white;
+    border: 3px solid $blue;
+    border-radius: 50%;
+    opacity: 1;
+  }
+}
+
+.toggle__button:not(.toggle__button--active) {
+  opacity: 0.3;
 }
