@@ -1,0 +1,57 @@
+.research {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .research {
+    display: block;
+  }
+
+  .research__wrapper {
+    min-height: 338px;
+    padding-top: 100px;
+    padding-left: 330px;
+
+    background-image: url("../img/icon-timer.svg");
+    background-repeat: no-repeat;
+    background-size: 239px;
+    background-position: 20px 59px;
+
+    box-sizing: border-box;
+  }
+
+  .research__slogan {
+    margin-bottom: 15px;
+    padding-right: 140px;
+
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1.2;
+    color: $black;
+  }
+
+  .research__link {
+    color: $pink;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .research {
+    padding-bottom: 67px;
+
+    background-color: $light-grey;
+  }
+
+  .research__wrapper {
+    padding-left: 365px;
+  }
+
+  .research__slogan {
+    margin-bottom: 20px;
+  }
+
+  .research__text,
+  .research__link {
+    font-size: 18px;
+  }
+}

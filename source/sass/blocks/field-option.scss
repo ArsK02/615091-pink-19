@@ -33,11 +33,11 @@
   &:active::before {
     border-color: $pink;
   }
-}
 
-.field-option__label--radio {
-  &::before {
-    border-radius: 50%;
+  &--radio {
+    &::before {
+      border-radius: 50%;
+    }
   }
 }
 

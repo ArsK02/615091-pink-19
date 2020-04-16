@@ -1,6 +1,8 @@
 .container {
+  max-width: 940px;
   width: 100%;
 
+  margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
 
@@ -11,5 +13,12 @@
   &--negative-offset {
     margin-right: -20px;
     margin-left: -20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    padding-left: 0;
+    padding-right: 0;
   }
 }

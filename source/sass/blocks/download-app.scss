@@ -5,25 +5,58 @@
 .download-app__wrapper {
   padding-top: 28px;
   padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  box-sizing: border-box;
 }
 
 .download-app__list {
   @include reset-list;
 
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 
-  width: 70%;
-  margin: 0 auto;
+  padding-right: 20px;
+  padding-left: 20px;
   margin-top: 32px;
   margin-bottom: 20px;
 }
 
+.download-app__item:not(:last-child) {
+  margin-right: 35px;
+}
+
 .download-app__description {
-  margin-right: 8.4%;
-  margin-left: 8.4%;
+  margin-right: 22px;
+  margin-left: 22px;
 
   text-align: center;
   font-weight: 300;
+}
+
+@media (min-width: $tablet-width) {
+  .download-app {
+    width: 300px;
+
+    background-color: transparent;
+  }
+
+  .download-app__wrapper {
+    padding: 0;
+    padding-top: 25px;
+  }
+
+  .download-app__description {
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .download-app__list {
+    margin-top: 67px;
+  }
 }

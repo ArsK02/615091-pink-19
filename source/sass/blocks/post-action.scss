@@ -30,3 +30,19 @@
   color: $pink;
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-width) {
+  .post-action__like-button {
+    padding-right: 155px;
+    padding-left: 0;
+
+    &::before {
+      right: 0;
+      left: unset;
+    }
+  }
+
+  .user-post--panorama .post-action__like-button {
+    padding-right: 32px;
+  }
+}

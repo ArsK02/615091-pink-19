@@ -5,57 +5,5 @@
 }
 
 .tabs__range {
-  position: relative;
-  display: none;
-
-  height: 14px;
-
   margin-top: 30px;
-  padding-bottom: 28px;
-  padding-right: 20px;
-  padding-left: 20px;
-
-  border-bottom: 1px solid $tabs-range-gray;
-
-  &--active {
-    display: block;
-  }
-
-  &:active .tabs__thumb {
-    background-color: $pink;
-  }
-}
-
-.tabs__track {
-  content: "";
-
-  position: absolute;
-  top: 6px;
-  left: 11.9%;
-
-  width: 75%;
-  height: 2px;
-
-  background-color: $blue;
-}
-
-.tabs__thumb {
-  content: "";
-
-  position: absolute;
-  top: 0;
-  right: 23.4%;
-
-  width: 14px;
-  height: 14px;
-
-  background-color: $light-grey;
-  border: 2px solid $pink;
-  border-radius: 50%;
-
-  box-sizing: border-box;
-}
-
-.tabs__content-input {
-  display: none;
 }

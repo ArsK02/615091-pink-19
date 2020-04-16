@@ -4,3 +4,25 @@
 
   text-align: center;
 }
+
+@media (min-width: $tablet-width) {
+  .footer-info__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    max-width: 940px;
+    width: 100%;
+
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    box-sizing: border-box;
+  }
+
+  .footer-info__logo {
+    align-self: flex-start;
+  }
+}

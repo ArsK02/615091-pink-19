@@ -14,10 +14,25 @@
     fill: $white;
     opacity: 0.3;
   }
+
+  &--footer {
+    position: static;
+    color: $blue;
+    line-height: 0;
+  }
 }
 
 .logo__image {
   fill: currentColor;
   width: 75px;
   height: 22px;
+}
+
+.logo--footer .logo__image {
+  width: 147px;
+  height: 40px;
+
+  &:active {
+    fill: $blue;
+  }
 }

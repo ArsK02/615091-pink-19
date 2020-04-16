@@ -19,7 +19,7 @@
 }
 
 .page-header__logo {
-  margin-top: 22px;
+  margin-top: 27px;
   margin-left: 20px;
 }
 
@@ -33,4 +33,29 @@
 
 .page-header--static .site-list__link {
   display: block;
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    min-height: 110px;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+  }
+
+  .page-header__wrapper {
+    min-height: 110px;
+    width: 940px;
+    align-items: center;
+
+    margin: 0 auto;
+    background-color: unset;
+  }
+
+  .page-header__logo {
+    margin: 0;
+  }
+
+  .page-header__nav {
+    margin-left: auto;
+  }
 }

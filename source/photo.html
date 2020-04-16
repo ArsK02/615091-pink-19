@@ -5,7 +5,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Пинк</title>
-  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -37,7 +36,7 @@
     <h1 class="visually-hidden">Делитесь и просматривайте фотографии</h1>
     <section class="intro">
       <div class="intro__header">
-        <h2 class="intro__slogan">Фотографии пользователей</h2>
+        <h2 class="intro__slogan">Фотографии <br> пользователей</h2>
       </div>
     </section>
     <section class="user-gallery">
@@ -50,8 +49,12 @@
       </div>
       <div class="user-gallery__wrapper container">
         <div class="user-gallery__post user-post user-post--panorama">
-          <img src="img/panorama-mobile@1x.jpg" alt="Фото пользоватиля Анна" class="user-post__image" width="320"
-            height="137">
+          <picture>
+            <source srcset="img/panorama-desktop@1x.jpg" media="(min-width: 1200px)">
+            <source srcset="img/panorama-tablet@1x.jpg" media="(min-width: 660px)">
+            <img src="img/panorama-mobile@1x.jpg" alt="Фото пользоватиля Анна" class="user-post__image" width="320"
+              height="137">
+          </picture>
           <div class="user-post__content">
             <p class="user-post__info">
               <span class="user-post__user-name">Анна</span> <span class="user-post__time-counter">(5 минут
@@ -70,8 +73,12 @@
           </div>
         </div>
         <div class="user-gallery__post user-post">
-          <img src="img/photo-car-mobile@1x.jpg" alt="Фото пользоватиля Левон" class="user-post__image" width="280"
-            height="180">
+          <picture>
+            <source srcset="img/photo-car-desktop@1x.jpg" media="(min-width: 1200px)">
+            <source srcset="img/photo-car-tablet@1x.jpg" media="(min-width: 660px)">
+            <img src="img/photo-car-mobile@1x.jpg" alt="Фото пользоватиля Левон" class="user-post__image" width="280"
+              height="180">
+          </picture>
           <div class="user-post__content">
             <p class="user-post__info">
               <span class="user-post__user-name">Левон</span> <span class="user-post__time-counter">(5 часов
@@ -89,8 +96,12 @@
           </div>
         </div>
         <div class="user-gallery__post user-post">
-          <img src="img/photo-drumset-mobile@1x.jpg" alt="Фото пользоватиля Антон" class="user-post__image" width="280"
-            height="180">
+          <picture>
+            <source srcset="img/photo-drumset-desktop@1x.jpg" media="(min-width: 1200px)">
+            <source srcset="img/photo-drumset-tablet@1x.jpg" media="(min-width: 660px)">
+            <img src="img/photo-drumset-mobile@1x.jpg" alt="Фото пользоватиля Антон" class="user-post__image"
+              width="280" height="180">
+          </picture>
           <div class="user-post__content">
             <p class="user-post__info">
               <span class="user-post__user-name">Антон</span> <span class="user-post__time-counter">(12 часов
@@ -108,8 +119,12 @@
           </div>
         </div>
         <div class="user-gallery__post user-post">
-          <img src="img/photo-window-mobile@1x.jpg" alt="Фото пользоватиля Борис" class="user-post__image" width="280"
-            height="180">
+          <picture>
+            <source srcset="img/photo-window-desktop@1x.jpg" media="(min-width: 1200px)">
+            <source srcset="img/photo-window-tablet@1x.jpg" media="(min-width: 660px)">
+            <img src="img/photo-window-mobile@1x.jpg" alt="Фото пользоватиля Борис" class="user-post__image" width="280"
+              height="180">
+          </picture>
           <div class="user-post__content">
             <p class="user-post__info">
               <span class="user-post__user-name">Борис</span> <span class="user-post__time-counter">(20 часов
@@ -127,8 +142,12 @@
           </div>
         </div>
         <div class="user-gallery__post user-post">
-          <img src="img/photo-fair-mobile@1x.jpg" alt="Фото пользоватиля Сергей" class="user-post__image" width="280"
-            height="180">
+          <picture>
+            <source srcset="img/photo-fair-desktop@1x.jpg" media="(min-width: 1200px)">
+            <source srcset="img/photo-fair-tablet@1x.jpg" media="(min-width: 660px)">
+            <img src="img/photo-fair-mobile@1x.jpg" alt="Фото пользоватиля Сергей" class="user-post__image" width="280"
+              height="180">
+          </picture>
           <div class="user-post__content">
             <p class="user-post__info">
               <span class="user-post__user-name">Сергей</span> <span class="user-post__time-counter">(25 часов
@@ -146,8 +165,12 @@
           </div>
         </div>
         <div class="user-gallery__post user-post">
-          <img src="img/photo-pov-mobile@1x.jpg" alt="Фото пользоватиля Максим" class="user-post__image" width="280"
-            height="180">
+          <picture>
+            <source srcset="img/photo-pov-desktop@1x.jpg" media="(min-width: 1200px)">
+            <source srcset="img/photo-pov-tablet@1x.jpg" media="(min-width: 660px)">
+            <img src="img/photo-pov-mobile@1x.jpg" alt="Фото пользоватиля Максим" class="user-post__image" width="280"
+              height="180">
+          </picture>
           <div class="user-post__content">
             <p class="user-post__info">
               <span class="user-post__user-name">Максим</span> <span class="user-post__time-counter">(40 часов
@@ -165,8 +188,12 @@
           </div>
         </div>
         <div class="user-gallery__post user-post">
-          <img src="img/photo-wing-mobile@1x.jpg" alt="Фото пользоватиля Надежда" class="user-post__image" width="280"
-            height="180">
+          <picture>
+            <source srcset="img/photo-wing-desktop@1x.jpg" media="(min-width: 1200px)">
+            <source srcset="img/photo-wing-tablet@1x.jpg" media="(min-width: 660px)">
+            <img src="img/photo-wing-mobile@1x.jpg" alt="Фото пользоватиля Надежда" class="user-post__image" width="280"
+              height="180">
+          </picture>
           <div class="user-post__content">
             <p class="user-post__info">
               <span class="user-post__user-name">Надежда</span> <span class="user-post__time-counter">(45 часов
@@ -234,20 +261,20 @@
                 </li>
               </ul>
               <div class="tabs__content container__item container__item--negative-offset">
-                <div class="tabs__range tabs__range--active">
-                  <span class="tabs__track"></span>
-                  <span class="tabs__thumb"></span>
-                  <input type="range" class="tabs__content-input">
+                <div class="tabs__range field-range field-range--active">
+                  <span class="field-range__track"></span>
+                  <span class="field-range__thumb"></span>
+                  <input type="range" class="field-range__input">
                 </div>
-                <div class="tabs__range">
-                  <span class="tabs__track"></span>
-                  <span class="tabs__thumb"></span>
-                  <input type="range" class="tabs__content-input">
+                <div class="tabs__range field-range">
+                  <span class="field-range__track"></span>
+                  <span class="field-range__thumb"></span>
+                  <input type="range" class="field-range__input">
                 </div>
-                <div class="tabs__range">
-                  <span class="tabs__track"></span>
-                  <span class="tabs__thumb"></span>
-                  <input type="range" class="tabs__content-input">
+                <div class="tabs__range field-range">
+                  <span class="field-range__track"></span>
+                  <span class="field-range__thumb"></span>
+                  <input type="range" class="field-range__input">
                 </div>
               </div>
             </fieldset>
@@ -261,36 +288,38 @@
 
   <footer class="page-footer">
     <div class="page-footer__main-info footer-info">
-      <a href="#" class="footer-info__logo footer-logo">
-        <svg class="footer-logo__image">
-          <use xlink:href="#logo-footer" width="146.3px" height="40.375px"></use>
-        </svg>
-      </a>
-      <ul class="footer-info__social socials-list">
-        <li class="socials-list__item">
-          <a href="#" class="socials-list__link socials-list__link--twitter" rel="nofollow" target="_blank">
-            <span class="visually-hidden">Twitter</span>
-          </a>
-        </li>
-        <li class="socials-list__item">
-          <a href="#" class="socials-list__link socials-list__link--facebook" rel="nofollow" target="_blank">
-            <span class="visually-hidden">Facebook</span>
-          </a>
-        </li>
-        <li class="socials-list__item">
-          <a href="#" class="socials-list__link socials-list__link--youtube" rel="nofollow" target="_blank">
-            <span class="visually-hidden">Youtube</span>
-          </a>
-        </li>
-      </ul>
-      <div class="footer-info__copyright copyright">
-        <span class="copyright__text">Разработано</span>
-        <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive" rel="nofollow" target="_blank">
-          <span class="visually-hidden">HTML Academy</span>
-          <svg class="copyright__logo-image">
-            <use xlink:href="#logo-copyright" width="26.943px" height="34.09px"></use>
+      <div class="footer-info__wrapper">
+        <a href="#" class="footer-info__logo logo logo--footer">
+          <svg class="logo__image">
+            <use xlink:href="#logo-footer" width="146.3px" height="40.375px"></use>
           </svg>
         </a>
+        <ul class="footer-info__social socials-list">
+          <li class="socials-list__item">
+            <a href="#" class="socials-list__link socials-list__link--twitter" rel="nofollow" target="_blank">
+              <span class="visually-hidden">Twitter</span>
+            </a>
+          </li>
+          <li class="socials-list__item">
+            <a href="#" class="socials-list__link socials-list__link--facebook" rel="nofollow" target="_blank">
+              <span class="visually-hidden">Facebook</span>
+            </a>
+          </li>
+          <li class="socials-list__item">
+            <a href="#" class="socials-list__link socials-list__link--youtube" rel="nofollow" target="_blank">
+              <span class="visually-hidden">Youtube</span>
+            </a>
+          </li>
+        </ul>
+        <div class="footer-info__copyright copyright">
+          <span class="copyright__text">Разработано</span>
+          <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive" rel="nofollow" target="_blank">
+            <span class="visually-hidden">HTML Academy</span>
+            <svg class="copyright__logo-image" width="26.943px" height="34.09px">
+              <use xlink:href="#logo-copyright"></use>
+            </svg>
+          </a>
+        </div>
       </div>
     </div>
   </footer>
