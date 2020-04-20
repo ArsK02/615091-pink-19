@@ -15,83 +15,83 @@
   border: 3px solid $white;
   border-radius: 30px;
   box-sizing: border-box;
-}
 
-.button--download-app {
-  width: 100%;
+  &--download-app {
+    width: 100%;
 
-  text-decoration: none;
+    text-decoration: none;
 
-  &:hover,
-  &:focus {
+    &:hover,
+    &:focus {
+      color: $pink;
+      background-color: $white;
+    }
+
+    &:active {
+      opacity: 0.3;
+      background-color: $white;
+    }
+  }
+
+  &--submit {
+    width: 100%;
+    padding-top: 18px;
+    padding-bottom: 17px;
+
+    line-height: 1.67;
+    text-transform: uppercase;
+    color: $white;
+
+    border: none;
+    border-radius: 0;
+    background-color: $green;
+
+    &:hover,
+    &:focus {
+      background-color: $dark-green;
+    }
+
+    &:active {
+      color: $green-text;
+    }
+
+    &:disabled {
+      background-color: $border-light;
+    }
+  }
+
+  &--upload {
+    width: 100%;
+
     color: $pink;
-    background-color: $white;
+    border-color: $pink;
+
+    &:hover,
+    &:focus {
+      color: $white;
+      background-color: $pink;
+    }
+
+    &:active {
+      color: $button-pink;
+    }
   }
 
-  &:active {
-    opacity: 0.3;
-    background-color: $white;
-  }
-}
+  &--reset {
+    width: 100%;
 
-.button--submit {
-  width: 100%;
-  padding-top: 18px;
-  padding-bottom: 17px;
+    border-color: $blue;
+    opacity: 0.1;
 
-  line-height: 1.67;
-  text-transform: uppercase;
-  color: $white;
+    &:hover,
+    &:focus {
+      opacity: 0.3;
+    }
 
-  border: none;
-  border-radius: 0;
-  background-color: $green;
-
-  &:hover,
-  &:focus {
-    background-color: $dark-green;
-  }
-
-  &:active {
-    color: $green-text;
-  }
-
-  &:disabled {
-    background-color: $border-light;
-  }
-}
-
-.button--upload {
-  width: 100%;
-
-  color: $pink;
-  border-color: $pink;
-
-  &:hover,
-  &:focus {
-    color: $white;
-    background-color: $pink;
-  }
-
-  &:active {
-    color: $button-pink;
-  }
-}
-
-.button--reset {
-  width: 100%;
-
-  border-color: $blue;
-  opacity: 0.1;
-
-  &:hover,
-  &:focus {
-    opacity: 0.3;
-  }
-
-  &:active {
-    color: $white;
-    background-color: $blue;
-    opacity: 0.3;
+    &:active {
+      color: $white;
+      background-color: $blue;
+      opacity: 0.3;
+    }
   }
 }

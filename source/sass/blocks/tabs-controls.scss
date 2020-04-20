@@ -10,8 +10,10 @@
   @include button-reset;
   @include no-outline;
 
-  &--active .icon--size {
-    fill: $pink;
-    opacity: 1;
+  &--active .icon {
+    &--size {
+      fill: $pink;
+      opacity: 1;
+    }
   }
 }

@@ -17,3 +17,21 @@
   margin-right: -20px;
   margin-left: -20px;
 }
+
+.contest__form-section {
+  &--contacts .form-section__legend {
+    display: none;
+  }
+
+  &--emotions .form-section__legend {
+    background-color: inherit;
+  }
+
+  &--grey {
+    background-color: $light-grey;
+  }
+}
+
+.contest__button {
+  margin-bottom: 36px;
+}

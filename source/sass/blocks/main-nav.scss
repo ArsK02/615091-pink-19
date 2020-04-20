@@ -23,30 +23,30 @@
   margin-right: 20px;
   margin-left: auto;
   margin-bottom: 20px;
-}
 
-.main-nav--closed .main-nav__toggle::before {
-  content: "";
+  &::before {
+    content: "";
 
-  position: absolute;
-  top: 21px;
-  right: 20px;
+    position: absolute;
+    top: 21px;
+    right: 20px;
 
-  width: 50px;
-  height: 4px;
+    width: 50px;
+    height: 4px;
 
-  background-color: $white;
-  box-shadow: 0 10px 0 0 $white, 0 20px 0 0 $white;
-}
+    background-color: $white;
+    box-shadow: 0 10px 0 0 $white, 0 20px 0 0 $white;
+  }
 
-.main-nav--closed .main-nav__toggle:hover::before,
-.main-nav--closed .main-nav__toggle:focus::before {
-  background-color: $pink;
-  box-shadow: 0 10px 0 0 $pink, 0 20px 0 0 $pink;
-}
+  &:hover::before,
+  &:focus::before {
+    background-color: $pink;
+    box-shadow: 0 10px 0 0 $pink, 0 20px 0 0 $pink;
+  }
 
-.main-nav--closed .main-nav__toggle:active::before {
-  opacity: 0.3;
+  &:active::before {
+    opacity: 0.3;
+  }
 }
 
 .main-nav--opened .main-nav__toggle {
@@ -88,6 +88,34 @@
 
 @media (max-width: $less-desktop-width) {
   .main-nav--closed .site-list__link {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__toggle {
+    margin-top: 44px;
+    margin-bottom: 42px;
+  }
+
+  .main-nav--closed .main-nav__toggle::before {
+    top: 44px;
+  }
+
+  .main-nav--opened .main-nav__toggle {
+    &::before,
+    &::after {
+      top: 53px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    width: 620px;
+  }
+
+  .main-nav__toggle {
     display: none;
   }
 }

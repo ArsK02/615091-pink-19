@@ -1,15 +1,19 @@
-.user-post:not(:last-child) {
-  margin-bottom: 20px;
-}
-
 .user-post {
   max-width: 300px;
-}
+  width: 100%;
 
-.user-post--panorama {
-  max-width: 100vw;
-  margin-right: -20px;
-  margin-left: -20px;
+  margin-bottom: 20px;
+
+  &--panorama {
+    max-width: fit-content;
+    width: 100vw;
+    margin-right: -20px;
+    margin-left: -20px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .user-post--panorama .user-post__content {
@@ -47,4 +51,89 @@
 
 .user-post__action {
   margin-top: 8px;
+}
+
+@media (min-width: $tablet-width) {
+  .user-post {
+    margin-bottom: 20px;
+
+    &:last-child {
+      margin-bottom: 20px;
+    }
+
+    &--panorama {
+      position: relative;
+      margin-bottom: 50px;
+
+      &::before {
+        content: "Панорама дня";
+
+        position: absolute;
+        top: 57px;
+        right: 20px;
+
+        width: 140px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+
+        color: $white;
+        font-size: 12px;
+        font-weight: bold;
+        line-height: 2;
+        text-align: center;
+        text-transform: uppercase;
+
+        background-color: $pink;
+      }
+    }
+  }
+
+  .user-post__content {
+    display: flex;
+    flex-direction: column;
+    min-height: 155px;
+    box-sizing: border-box;
+  }
+
+  .user-post__action {
+    margin-top: auto;
+  }
+
+  .user-post--panorama .user-post__image {
+    height: 509px;
+  }
+
+  .user-post--panorama .user-post__content {
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 121px;
+  }
+
+  .user-post--panorama .user-post__info {
+    order: -2;
+  }
+
+  .user-post--panorama .user-post__action {
+    order: -1;
+    margin-left: auto;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-post {
+    &--panorama {
+      margin-left: -130px;
+      margin-right: -130px;
+
+      &::before {
+        right: 130px;
+      }
+    }
+  }
+
+  .user-post--panorama .user-post__content {
+    margin-right: 130px;
+    margin-left: 130px;
+  }
 }

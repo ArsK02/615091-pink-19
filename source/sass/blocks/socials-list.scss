@@ -3,6 +3,8 @@
 
   margin-top: 35px;
   margin-bottom: 30px;
+
+  line-height: 0;
 }
 
 .socials-list__item {
@@ -46,5 +48,12 @@
 
   &:active {
     opacity: 0.1;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .socials-list {
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }

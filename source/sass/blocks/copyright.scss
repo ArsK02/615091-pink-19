@@ -1,6 +1,7 @@
 .copyright {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .copyright__text {
@@ -11,6 +12,8 @@
 }
 
 .copyright__logo {
+  line-height: 0;
+
   &:hover path,
   &:focus path {
     fill: $blue;

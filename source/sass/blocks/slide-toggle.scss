@@ -1,8 +1,8 @@
-.toggle {
+.slide-toggle {
   @include reset-list;
 }
 
-.toggle__item {
+.slide-toggle__item {
   display: inline-block;
 
   &:not(:last-child) {
@@ -10,7 +10,7 @@
   }
 }
 
-.toggle__button {
+.slide-toggle__button {
   @include button-reset;
   @include no-outline;
 
@@ -28,12 +28,12 @@
 
   cursor: pointer;
 
-  &:not(.toggle__button--active):hover,
-  &:not(.toggle__button--active):focus {
+  &:not(.slide-toggle__button--active):hover,
+  &:not(.slide-toggle__button--active):focus {
     opacity: 0.6;
   }
 
-  &:not(.toggle__button--active):active {
+  &:not(.slide-toggle__button--active):active {
     opacity: 0.1;
   }
 
@@ -54,6 +54,6 @@
   }
 }
 
-.toggle__button:not(.toggle__button--active) {
+.slide-toggle__button:not(.slide-toggle__button--active) {
   opacity: 0.3;
 }
