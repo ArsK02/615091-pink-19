@@ -26,6 +26,14 @@
   fill: currentColor;
   width: 75px;
   height: 22px;
+
+  &--tablet {
+    display: none;
+  }
+
+  &--desktop {
+    display: none;
+  }
 }
 
 .logo--footer .logo__image {
@@ -34,5 +42,33 @@
 
   &:active {
     fill: $blue;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .logo__image {
+    display: none;
+    width: 146px;
+    height: 40px;
+
+    &--tablet {
+      display: block;
+    }
+  }
+
+  .logo--footer .logo__image {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo__image {
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+    }
   }
 }

@@ -4,6 +4,12 @@
   border: none;
 }
 
-.tabs__range {
+.tabs__tab {
+  display: none;
+
   margin-top: 30px;
+
+  &--active {
+    display: block;
+  }
 }

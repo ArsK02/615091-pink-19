@@ -66,8 +66,7 @@
 
   clip: rect(auto, auto, 277px, auto);
 
-  &--image1,
-  &--image2 {
+  &--hidden-mobile {
     display: none;
   }
 }
@@ -188,8 +187,7 @@
 
     width: 292px;
 
-    &--image1,
-    &--image2 {
+    &--hidden-mobile {
       display: block;
     }
   }
