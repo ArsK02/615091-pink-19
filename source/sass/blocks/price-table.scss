@@ -52,3 +52,40 @@
     display: none;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .price-table__th {
+    &--empty {
+      display: block;
+
+      background-color: transparent;
+    }
+  }
+
+  .price-table__currency {
+    font-size: 18px;
+    line-height: 1.67;
+  }
+
+  .price-table__td {
+    &--empty {
+      display: block;
+
+      font-size: 14px;
+      text-transform: initial;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .price-table__currency {
+    font-size: 24px;
+    line-height: 1.25;
+  }
+
+  .price-table__td {
+    &--empty {
+      font-size: 18px;
+    }
+  }
+}

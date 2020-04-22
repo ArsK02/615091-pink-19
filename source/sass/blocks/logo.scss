@@ -43,6 +43,10 @@
   &:active {
     fill: $blue;
   }
+
+  &--deskop {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -58,6 +62,10 @@
 
   .logo--footer .logo__image {
     display: block;
+
+    &--deskop {
+      display: none;
+    }
   }
 }
 
@@ -68,6 +76,14 @@
     }
 
     &--desktop {
+      display: block;
+    }
+  }
+
+  .logo--footer .logo__image {
+    display: none;
+
+    &--deskop {
       display: block;
     }
   }

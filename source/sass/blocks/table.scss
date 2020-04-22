@@ -54,3 +54,63 @@
 .table__field:not(:nth-child(2)) {
   border-left: none;
 }
+
+@media (min-width: $tablet-width) {
+  .table {
+    width: 100%;
+  }
+
+  .table__header-field {
+    min-width: 154px;
+
+    padding-top: 14px;
+    padding-bottom: 10px;
+  }
+
+  .table__tariff-title {
+    font-size: 16px;
+    line-height: 1.88;
+  }
+
+  .table__field {
+    min-height: 49px;
+    padding: 0;
+    padding-left: 15px;
+    padding-top: 8px;
+
+    font-size: 0;
+
+    box-sizing: border-box;
+
+    &:not(:last-child) {
+      border-right: none;
+    }
+  }
+
+  .table__field:not(:nth-child(2)) {
+    border-left: 2px solid $border-light;
+  }
+
+  .table__row:first-child .table__field:first-child {
+    border-top: 2px solid $border-light;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .table__header-field {
+    padding-top: 18px;
+    padding-bottom: 19px;
+  }
+
+  .table__tariff-title {
+    display: inline-block;
+    margin-bottom: 3px;
+
+    font-size: 18px;
+    line-height: 1.67;
+  }
+
+  .table__field {
+    min-height: 61px;
+  }
+}

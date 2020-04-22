@@ -15,8 +15,6 @@
 }
 
 .field-range__track {
-  content: "";
-
   position: absolute;
   top: 6px;
   left: 11.9%;
@@ -28,8 +26,6 @@
 }
 
 .field-range__thumb {
-  content: "";
-
   position: absolute;
   top: 0;
   right: 23.4%;
@@ -46,4 +42,32 @@
 
 .field-range__input {
   display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .field-range {
+    padding-right: 0;
+    padding-left: 55px;
+  }
+
+  .field-range__track {
+    right: 18px;
+    left: unset;
+  }
+
+  .field-range__thumb {
+    &--color {
+      right: 65%;
+    }
+
+    &--contrast {
+      right: 40%;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .field-range__track {
+    right: 30px;
+  }
 }

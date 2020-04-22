@@ -62,3 +62,32 @@
     border-color: $pink;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .form-section__legend {
+    width: unset;
+    padding-top: 0;
+    padding-right: 30px;
+    padding-left: 30px;
+
+    background-color: unset;
+  }
+
+  .form-section__list {
+    padding-left: 60px;
+  }
+
+  .form-section__item {
+    flex-direction: row;
+    align-items: center;
+
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form-section__field--textarea {
+    min-height: 128px;
+  }
+}

@@ -1,9 +1,5 @@
 .tabs-controls {
   @include reset-list;
-
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
 }
 
 .tabs-controls__control {
@@ -14,6 +10,26 @@
     &--size {
       fill: $pink;
       opacity: 1;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .tabs-controls__item {
+    line-height: 0;
+  }
+
+  .tabs-controls__control {
+    &--active .icon {
+      &--color {
+        fill: $pink;
+        opacity: 1;
+      }
+
+      &--contrast {
+        fill: $pink;
+        opacity: 1;
+      }
     }
   }
 }

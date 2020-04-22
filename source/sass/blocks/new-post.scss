@@ -19,3 +19,16 @@
 .new-post__input {
   display: none;
 }
+
+@media (min-width: $tablet-width) {
+  .new-post__slogan {
+    font-size: 18px;
+    line-height: 1.67;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .new-post {
+    background-color: unset;
+  }
+}
