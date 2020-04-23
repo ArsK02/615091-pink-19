@@ -1,6 +1,11 @@
 .map {
   position: relative;
   overflow: hidden;
+
+  background-image: url("../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 .map iframe {
@@ -14,12 +19,20 @@
 }
 
 @media (min-width: $tablet-width) {
+  .map {
+    background-image: url("../img/bg-map-tablet@1x.jpg");
+  }
+
   .map iframe {
     height: 374px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .map {
+    background-image: url("../img/bg-map-desktop@1x.jpg");
+  }
+
   .map iframe {
     height: 502px;
   }

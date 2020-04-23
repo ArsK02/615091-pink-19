@@ -47,12 +47,14 @@
 @media (min-width: $tablet-width) {
   .field-range {
     padding-right: 0;
-    padding-left: 55px;
+    padding-left: 0;
   }
 
   .field-range__track {
-    right: 18px;
-    left: unset;
+    right: unset;
+    left: 0;
+
+    width: 91.8%;
   }
 
   .field-range__thumb {
@@ -66,7 +68,7 @@
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
   .field-range__track {
     right: 30px;
   }

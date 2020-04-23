@@ -78,8 +78,6 @@
     padding-left: 15px;
     padding-top: 8px;
 
-    font-size: 0;
-
     box-sizing: border-box;
 
     &:not(:last-child) {
@@ -93,6 +91,12 @@
 
   .table__row:first-child .table__field:first-child {
     border-top: 2px solid $border-light;
+  }
+
+  .table__field-text {
+    &--hidden-desktop-n-tablet {
+      display: none;
+    }
   }
 }
 

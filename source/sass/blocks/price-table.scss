@@ -36,7 +36,7 @@
     transform: rotate(-45deg);
   }
 
-  &--empty {
+  &--hidden-mobile {
     display: none;
   }
 }
@@ -48,14 +48,14 @@
 }
 
 .price-table__td {
-  &--empty {
+  &--hidden-mobile {
     display: none;
   }
 }
 
 @media (min-width: $tablet-width) {
   .price-table__th {
-    &--empty {
+    &--hidden-mobile {
       display: block;
 
       background-color: transparent;
@@ -68,7 +68,7 @@
   }
 
   .price-table__td {
-    &--empty {
+    &--hidden-mobile {
       display: block;
 
       font-size: 14px;
@@ -84,7 +84,7 @@
   }
 
   .price-table__td {
-    &--empty {
+    &--hidden-mobile {
       font-size: 18px;
     }
   }

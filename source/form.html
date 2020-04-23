@@ -26,9 +26,9 @@
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item"><a href="index.html" class="site-list__link">Главная</a></li>
-            <li class="site-list__item"><a href="photo.html" class="site-list__link">Фотографии</a></li>
-            <li class="site-list__item"><a class="site-list__link site-list__link--active">Конкурс</a></li>
+            <li class="site-list__item"><a href="index.html" class="site-list__link"><span class="site-list__link-text">Главная</span></a></li>
+            <li class="site-list__item"><a href="photo.html" class="site-list__link"><span class="site-list__link-text">Фотографии</span></a></li>
+            <li class="site-list__item"><a class="site-list__link site-list__link--active"><span class="site-list__link-text">Конкурс</span></a></li>
             <li class="site-list__item"><a href="https://htmlacademy.ru/" class="site-list__link" rel="nofollow"
                 target="_blank">Html Academy</a>
             </li>
@@ -116,11 +116,13 @@
             <legend class="form-section__legend">Контактная информация</legend>
             <div class="form-section__item field">
               <label class="field__label" for="phone">Номер телефона:</label>
-              <input class="field__input field__input--phone" type="tel" id="phone" name="phone" placeholder="Номер, пожалуйста">
+              <input class="field__input field__input--icon" type="tel" id="phone" name="phone" placeholder="Номер, пожалуйста">
+              <span class="field__icon field__icon--phone"></span>
             </div>
             <div class="form-section__item field">
               <label class="field__label" for="email">Адрес почты:</label>
-              <input class="field__input field__input--email" type="email" id="email" name="email" placeholder="Введите почту *" required>
+              <input class="field__input field__input--icon" type="email" id="email" name="email" placeholder="Введите почту *" required>
+              <span class="field__icon field__icon--email"></span>
             </div>
           </fieldset>
           <fieldset class="contest__form-section contest__form-section--grey form__fieldset form-section">
@@ -171,7 +173,7 @@
           <svg class="logo__image">
             <use xlink:href="#logo-footer" width="146.3px" height="40.375px"></use>
           </svg>
-          <svg class="logo__image logo__image--deskop">
+          <svg class="logo__image logo__image--only-desktop">
             <use xlink:href="#logo-footer-desktop" width="146.3px" height="40.375px"></use>
           </svg>
         </a>

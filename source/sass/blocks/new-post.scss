@@ -20,6 +20,15 @@
   display: none;
 }
 
+.new-post__input + .new-post__input-label {
+  display: block;
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
 @media (min-width: $tablet-width) {
   .new-post__slogan {
     font-size: 18px;

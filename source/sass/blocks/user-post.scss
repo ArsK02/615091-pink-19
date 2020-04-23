@@ -122,13 +122,20 @@
 
 @media (min-width: $desktop-width) {
   .user-post {
+    margin-bottom: 54px;
+
     &--panorama {
       margin-left: -130px;
       margin-right: -130px;
+      margin-bottom: 50px;
 
       &::before {
         right: 130px;
       }
+    }
+
+    &:last-child {
+      margin-bottom: 54px;
     }
   }
 

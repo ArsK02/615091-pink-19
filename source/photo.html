@@ -26,9 +26,9 @@
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item"><a href="index.html" class="site-list__link">Главная</a></li>
-            <li class="site-list__item"><a class="site-list__link site-list__link--active">Фотографии</a></li>
-            <li class="site-list__item"><a href="form.html" class="site-list__link">Конкурс</a></li>
+            <li class="site-list__item"><a href="index.html" class="site-list__link"><span class="site-list__link-text">Главная</span></a></li>
+            <li class="site-list__item"><a class="site-list__link site-list__link--active"><span class="site-list__link-text">Фотографии</span></a></li>
+            <li class="site-list__item"><a href="form.html" class="site-list__link"><span class="site-list__link-text">Конкурс</span></a></li>
             <li class="site-list__item"><a href="https://htmlacademy.ru/" class="site-list__link" rel="nofollow"
                 target="_blank">Html Academy</a>
             </li>
@@ -229,9 +229,11 @@
       <div class="new-post__editing post-edit">
         <div class="post-edit__wrapper container">
           <form action="https://echo.htmlacademy.ru" class="post-edit__form">
-            <img src="img/photo-road-mobile@1x.jpg" alt="Редактируемое фото" class="post-edit__image" width="280"
+            <input type="file" name="new-photo" class="new-post__input" id="image-input">
+            <label class="new-post__input-label" for="image-input">
+              <img src="img/photo-road-mobile@1x.jpg" alt="Редактируемое фото" class="post-edit__image" width="280"
               height="374">
-            <input type="file" name="new-photo" class="new-post__input">
+            </label>
             <div class="post-edit__form-container">
               <fieldset class="post-edit__tabs tabs">
                 <legend class="visually-hidden">Измените размер, цвет или контраст</legend>
@@ -268,21 +270,21 @@
                   </li>
                 </ul>
                 <div class="tabs__content container__item container__item--negative-offset">
-                  <div class="tabs__tab tabs__tab--active">
+                  <div class="post-edit__tab tabs__tab tabs__tab--active">
                     <div class="field-range">
                       <span class="field-range__track"></span>
                       <span class="field-range__thumb field-range__thumb--size"></span>
                       <input type="range" class="field-range__input">
                     </div>
                   </div>
-                  <div class="tabs__tab tabs__tab--active">
+                  <div class="post-edit__tab tabs__tab">
                     <div class="field-range">
                       <span class="field-range__track"></span>
                       <span class="field-range__thumb field-range__thumb--color"></span>
                       <input type="range" class="field-range__input">
                     </div>
                   </div>
-                  <div class="tabs__tab tabs__tab--active">
+                  <div class="post-edit__tab tabs__tab">
                     <div class="field-range">
                       <span class="field-range__track"></span>
                       <span class="field-range__thumb field-range__thumb--contrast"></span>
@@ -307,7 +309,7 @@
           <svg class="logo__image">
             <use xlink:href="#logo-footer" width="146.3px" height="40.375px"></use>
           </svg>
-          <svg class="logo__image logo__image--deskop">
+          <svg class="logo__image logo__image--only-desktop">
             <use xlink:href="#logo-footer-desktop" width="146.3px" height="40.375px"></use>
           </svg>
         </a>
@@ -470,7 +472,7 @@
       <rect y="40" width="48" height="3" />
     </symbol>
     <symbol id="icon-contrast" viewBox="-35.422 -7.96 31.92 31.92">
-      <path fill="#none"
+      <path
         d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z" />
       <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519" />
     </symbol>

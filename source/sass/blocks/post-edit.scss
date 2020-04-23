@@ -7,17 +7,17 @@
   background-color: $light-grey;
 }
 
-.post-edit__image {
-  display: block;
-  max-width: 300px;
-  width: 100%;
-  height: auto;
-  margin: 0 auto;
-}
-
 .post-edit__tabs {
   margin-bottom: 38px;
   padding-top: 38px;
+}
+
+.post-edit__tab {
+  display: none;
+
+  &:first-child {
+    display: block;
+  }
 }
 
 .post-edit__button:not(:last-of-type) {
@@ -40,6 +40,7 @@
   }
 
   .post-edit__tabs {
+    display: flex;
     min-width: 275px;
     width: 100%;
     height: min-content;
@@ -48,6 +49,11 @@
     padding-top: 0;
 
     box-sizing: border-box;
+  }
+
+  .post-edit__tab {
+    display: block;
+    width: 220px;
   }
 
   .post-edit__button {
