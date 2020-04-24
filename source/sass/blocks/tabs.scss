@@ -15,15 +15,20 @@
 }
 
 @media (min-width: $tablet-width) {
+  .tabs {
+    background-image: repeating-linear-gradient($light-grey 0, $light-grey 55px, $tabs-range-gray 55px, $tabs-range-gray 56px, $light-grey 56px, $light-grey 128px, $tabs-range-gray 128px, $tabs-range-gray 129px, $light-grey 129px, $light-grey 198px, $tabs-range-gray 198px, $tabs-range-gray 199px);
+  }
+
   .tabs__controls {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    height: 162px;
+    height: 185px;
   }
 
   .tabs__content {
-    margin-left: 0;
+    flex-grow: 1;
+    margin-left: 19px;
     margin-right: 0;
   }
 
@@ -37,5 +42,9 @@
 @media (min-width: $desktop-width) {
   .tabs__controls {
     height: 181px;
+  }
+
+  .tabs__content {
+    margin-left: 48px;
   }
 }

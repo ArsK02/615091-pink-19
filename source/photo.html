@@ -26,9 +26,12 @@
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item"><a href="index.html" class="site-list__link"><span class="site-list__link-text">Главная</span></a></li>
-            <li class="site-list__item"><a class="site-list__link site-list__link--active"><span class="site-list__link-text">Фотографии</span></a></li>
-            <li class="site-list__item"><a href="form.html" class="site-list__link"><span class="site-list__link-text">Конкурс</span></a></li>
+            <li class="site-list__item"><a href="index.html" class="site-list__link"><span
+                  class="site-list__link-text">Главная</span></a></li>
+            <li class="site-list__item"><a class="site-list__link site-list__link--active"><span
+                  class="site-list__link-text">Фотографии</span></a></li>
+            <li class="site-list__item"><a href="form.html" class="site-list__link"><span
+                  class="site-list__link-text">Конкурс</span></a></li>
             <li class="site-list__item"><a href="https://htmlacademy.ru/" class="site-list__link" rel="nofollow"
                 target="_blank">Html Academy</a>
             </li>
@@ -232,11 +235,10 @@
             <input type="file" name="new-photo" class="new-post__input" id="image-input">
             <label class="new-post__input-label" for="image-input">
               <img src="img/photo-road-mobile@1x.jpg" alt="Редактируемое фото" class="post-edit__image" width="280"
-              height="374">
+                height="374">
             </label>
             <div class="post-edit__form-container">
-              <fieldset class="post-edit__tabs tabs">
-                <legend class="visually-hidden">Измените размер, цвет или контраст</legend>
+              <div class="post-edit__tabs tabs">
                 <ul class="tabs__controls tabs-controls">
                   <li class="tabs-controls__item">
                     <button class="tabs-controls__control tabs-controls__control--active" type="button">
@@ -292,7 +294,7 @@
                     </div>
                   </div>
                 </div>
-              </fieldset>
+              </div>
               <button class="post-edit__button button button--upload" type="submit">Запостить</button>
               <button class="post-edit__button button button--reset" type="reset">Отмена</button>
             </div>
