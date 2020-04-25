@@ -40,6 +40,16 @@
     min-height: 110px;
     background-color: rgba(0, 0, 0, 0.3);
     z-index: 1;
+
+    &--static {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  .page-header--static .page-header__wrapper {
+    background-color: transparent;
   }
 
   .page-header__wrapper {
