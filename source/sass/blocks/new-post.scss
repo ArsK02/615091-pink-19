@@ -19,3 +19,37 @@
 .new-post__input {
   display: none;
 }
+
+.new-post__input + .new-post__input-label {
+  display: block;
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .new-post__slogan {
+    font-size: 18px;
+    line-height: 1.67;
+  }
+
+  .new-post__tabs {
+    background-image: repeating-linear-gradient($light-grey 0, $light-grey 55px, $tabs-range-gray 55px, $tabs-range-gray 56px, $light-grey 56px, $light-grey 128px, $tabs-range-gray 128px, $tabs-range-gray 129px, $light-grey 129px, $light-grey 198px, $tabs-range-gray 198px, $tabs-range-gray 199px);
+  }
+
+  .new-post__controls {
+    height: 185px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .new-post {
+    background-color: unset;
+  }
+
+  .new-post__controls {
+    height: 181px;
+  }
+}

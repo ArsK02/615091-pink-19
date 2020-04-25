@@ -1,9 +1,5 @@
 .tabs-controls {
   @include reset-list;
-
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
 }
 
 .tabs-controls__control {
@@ -15,5 +11,35 @@
       fill: $pink;
       opacity: 1;
     }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .tabs-controls__item {
+    line-height: 0;
+  }
+
+  .tabs-controls__control {
+    width: 36px;
+    height: 44px;
+
+    &--active .icon {
+      &--color {
+        fill: $pink;
+        opacity: 1;
+      }
+
+      &--contrast {
+        fill: $pink;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .tabs-controls__control {
+    width: auto;
+    height: auto;
   }
 }

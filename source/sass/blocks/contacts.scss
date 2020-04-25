@@ -35,3 +35,40 @@
   width: 100%;
   z-index: 1;
 }
+
+@media (min-width: $tablet-width) {
+  .contacts__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .contacts__slogan {
+    width: 100%;
+    font-size: 40px;
+  }
+
+  .contacts__text:not(:last-child) {
+    width: 50%;
+    box-sizing: border-box;
+  }
+
+  .contacts__text:last-child {
+    flex-grow: 1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__slogan {
+    font-size: 50px;
+    line-height: normal;
+  }
+
+  .contacts__text:not(:last-child) {
+    width: auto;
+    flex-grow: 1;
+  }
+
+  .contacts__text:nth-child(4) {
+    order: 5;
+  }
+}

@@ -90,6 +90,10 @@
   .main-nav--closed .site-list__link {
     display: none;
   }
+
+  .main-nav--no-js .site-list__link {
+    display: block;
+  }
 }
 
 @media (min-width: $tablet-width) {

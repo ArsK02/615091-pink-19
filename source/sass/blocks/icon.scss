@@ -48,3 +48,61 @@
   width: 32px;
   height: 32px;
 }
+
+@media (min-width: $tablet-width) {
+  .icon {
+    &--true {
+      top: 13px;
+      right: 50%;
+      margin-right: -15px;
+    }
+
+    &--false {
+      top: 9px;
+      right: 50%;
+      margin-right: -14px;
+    }
+  }
+
+  .icon--size svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  .icon--color svg {
+    width: 24px;
+    height: 22px;
+  }
+
+  .icon--contrast svg {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .icon {
+    &--true {
+      top: 22px;
+    }
+
+    &--false {
+      top: 16px;
+    }
+  }
+
+  .icon--size svg {
+    width: 44px;
+    height: 44px;
+  }
+
+  .icon--color svg {
+    width: 48px;
+    height: 43px;
+  }
+
+  .icon--contrast svg {
+    width: 32px;
+    height: 32px;
+  }
+}

@@ -1,4 +1,5 @@
 .field {
+  position: relative;
   display: flex;
   flex-direction: column;
 
@@ -30,6 +31,7 @@
   padding-right: 22px;
 
   border: 2px solid $border-light;
+  border-radius: 3px;
 
   &:hover,
   &:focus {
@@ -38,5 +40,66 @@
 
   &:active {
     border-color: $pink;
+  }
+}
+
+.field__icon {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .field__label {
+    margin-left: 0;
+    margin-right: 20px;
+  }
+
+  .field__input {
+    flex-grow: 1;
+
+    &--icon {
+      padding-right: 62px;
+    }
+  }
+
+  .field__icon {
+    display: block;
+
+    position: absolute;
+    top: 0;
+    right: 58px;
+
+    width: 62px;
+    height: 63px;
+
+    background-color: $border-light;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    &--phone {
+      background-image: url("../img/icon-phone.svg");
+    }
+
+    &--email {
+      background-image: url("../img/icon-mail.svg");
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .field {
+    &:not(:last-child) {
+      margin-bottom: 54px;
+    }
+  }
+
+  .field__input--phone,
+  .field__input--email {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .field__icon {
+    top: 29px;
+    right: 68px;
   }
 }

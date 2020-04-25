@@ -1,0 +1,19 @@
+.slide-arrow {
+  @include button-reset;
+  @include no-outline;
+
+  width: 22px;
+  height: 41px;
+
+  font-size: 0;
+  color: $grey;
+}
+
+.slide-arrow__image {
+  width: 22px;
+  height: 41px;
+
+  &--right {
+    transform: rotate(180deg);
+  }
+}

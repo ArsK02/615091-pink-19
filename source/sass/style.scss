@@ -15,8 +15,9 @@
 @import "blocks/features.scss";
 @import "blocks/research.scss";
 @import "blocks/reviews.scss";
-@import "blocks/carousel.scss";
 @import "blocks/slide-toggle.scss";
+@import "blocks/slide-arrow.scss";
+@import "blocks/carousel.scss";
 @import "blocks/price.scss";
 @import "blocks/table.scss";
 @import "blocks/price-table.scss";
@@ -24,10 +25,10 @@
 @import "blocks/user-post.scss";
 @import "blocks/post-action.scss";
 @import "blocks/new-post.scss";
+@import "blocks/tabs-controls.scss";
 @import "blocks/tabs.scss";
 @import "blocks/field-range.scss";
 @import "blocks/post-edit.scss";
-@import "blocks/tabs-controls.scss";
 @import "blocks/page-footer.scss";
 @import "blocks/contacts.scss";
 @import "blocks/contact-link.scss";
@@ -35,8 +36,8 @@
 @import "blocks/footer-info.scss";
 @import "blocks/socials-list.scss";
 @import "blocks/copyright.scss";
-@import "blocks/contest.scss";
-@import "blocks/form.scss";
-@import "blocks/form-section.scss";
 @import "blocks/field.scss";
+@import "blocks/form-section.scss";
 @import "blocks/field-option.scss";
+@import "blocks/form.scss";
+@import "blocks/contest.scss";

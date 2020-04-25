@@ -21,6 +21,7 @@
 
     background-color: $white;
     border: 2px solid $border-light;
+    border-radius: 3px;
 
     box-sizing: border-box;
   }
@@ -79,4 +80,12 @@
 
   border-radius: 50%;
   background-color: $pink;
+}
+
+@media (min-width: $desktop-width) {
+  .field-option__text {
+    &--checkbox {
+      padding-left: 55px;
+    }
+  }
 }

@@ -36,7 +36,7 @@
     transform: rotate(-45deg);
   }
 
-  &--empty {
+  &--hidden-mobile {
     display: none;
   }
 }
@@ -48,7 +48,44 @@
 }
 
 .price-table__td {
-  &--empty {
+  &--hidden-mobile {
     display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .price-table__th {
+    &--hidden-mobile {
+      display: block;
+
+      background-color: transparent;
+    }
+  }
+
+  .price-table__currency {
+    font-size: 18px;
+    line-height: 1.67;
+  }
+
+  .price-table__td {
+    &--hidden-mobile {
+      display: block;
+
+      font-size: 14px;
+      text-transform: initial;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .price-table__currency {
+    font-size: 24px;
+    line-height: 1.25;
+  }
+
+  .price-table__td {
+    &--hidden-mobile {
+      font-size: 18px;
+    }
   }
 }

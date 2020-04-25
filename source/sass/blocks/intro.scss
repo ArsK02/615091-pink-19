@@ -4,7 +4,7 @@
 }
 
 .intro__header {
-  height: 237px;
+  min-height: 237px;
 
   padding-top: 92px;
   padding-left: 47px;
@@ -22,17 +22,18 @@
 
   &--image {
     position: relative;
-    height: 461px;
+    min-height: 461px;
 
     &::before {
       content: "";
 
       position: absolute;
       bottom: 0;
-      left: 0;
+      left: 50%;
 
       width: 255px;
       height: 286px;
+      margin-left: -127px;
 
       background-image: url("../img/iphone-hand-mobile@1x.png");
       background-repeat: no-repeat;
@@ -63,14 +64,14 @@
   }
 
   .intro__header {
-    height: 440px;
+    min-height: 440px;
     padding: 0;
     padding-top: 175px;
 
     background-image: none;
 
     &--image {
-      height: 729px;
+      min-height: 729px;
       padding-top: 200px;
 
       font-size: 40px;
@@ -118,10 +119,10 @@
   }
 
   .intro__header {
-    height: 394px;
+    min-height: 394px;
 
     &--image {
-      height: 853px;
+      min-height: 853px;
       padding-top: 210px;
 
       &::before {

@@ -4,12 +4,38 @@
   border: none;
 }
 
+.tabs__controls {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .tabs__tab {
-  display: none;
-
   margin-top: 30px;
+}
 
-  &--active {
-    display: block;
+@media (min-width: $tablet-width) {
+  .tabs__controls {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .tabs__content {
+    flex-grow: 1;
+    margin-left: 19px;
+    margin-right: 0;
+  }
+
+  .tabs__tab {
+    &:first-child {
+      margin-top: 13px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .tabs__content {
+    margin-left: 48px;
   }
 }
