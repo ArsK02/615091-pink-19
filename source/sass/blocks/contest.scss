@@ -11,6 +11,10 @@
 .contest__slogan {
   line-height: 2.14;
   text-align: center;
+
+  &:last-of-type {
+    display: none;
+  }
 }
 
 .contest__form {
@@ -37,9 +41,25 @@
 }
 
 @media (min-width: $tablet-width) {
+  .contest {
+    padding-top: 92px;
+  }
+
   .contest__slogan {
+    margin-bottom: 38px;
+    padding-left: 55px;
+    padding-right: 55px;
+
     font-size: 18px;
     line-height: 1.67;
+
+    &:first-of-type {
+      margin-bottom: 0;
+    }
+
+    &:last-of-type {
+      display: block;
+    }
   }
 
   .contest__form {

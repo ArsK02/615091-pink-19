@@ -1,6 +1,6 @@
 .user-gallery__header {
-  padding-top: 47px;
-  padding-bottom: 48px;
+  padding-top: 48px;
+  padding-bottom: 50px;
   padding-right: 38px;
   padding-left: 38px;
 }
@@ -19,7 +19,7 @@
 
 @media (min-width: $tablet-width) {
   .user-gallery__header {
-    padding-top: 95px;
+    padding-top: 92px;
     padding-bottom: 74px;
     padding-right: 100px;
     padding-left: 100px;
@@ -48,6 +48,7 @@
   .user-gallery__header {
     padding-right: 310px;
     padding-left: 310px;
+    padding-bottom: 85px;
   }
 
   .user-gallery__wrapper {

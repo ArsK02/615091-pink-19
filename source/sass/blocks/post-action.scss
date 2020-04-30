@@ -33,11 +33,15 @@
 
 @media (min-width: $tablet-width) {
   .post-action__like-button {
-    padding-right: 155px;
+    width: 100%;
     padding-left: 0;
 
+    text-align: left;
+
+    box-sizing: border-box;
+
     &::before {
-      right: 0;
+      right: 5px;
       left: unset;
     }
   }
