@@ -22,7 +22,7 @@
   margin-top: 22px;
   margin-right: 20px;
   margin-left: auto;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 
   &::before {
     content: "";
@@ -56,12 +56,13 @@
 
     position: absolute;
     top: 30px;
-    right: 19px;
+    right: 18px;
 
-    width: 24px;
-    height: 4px;
+    width: 29px;
+    height: 5px;
 
     background-color: $white;
+    border-radius: 1px;
   }
 
   &::before {
@@ -116,7 +117,7 @@
 
 @media (min-width: $desktop-width) {
   .main-nav {
-    width: 620px;
+    width: 670px;
   }
 
   .main-nav__toggle {

@@ -21,7 +21,7 @@
   padding-right: 20px;
   padding-left: 20px;
   margin-top: 32px;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .download-app__item:not(:last-child) {
@@ -45,18 +45,36 @@
 
   .download-app__wrapper {
     padding: 0;
-    padding-top: 25px;
+    padding-top: 20px;
+  }
+
+  .download-app__list {
+    margin-top: 45px;
+    margin-bottom: 30px;
   }
 
   .download-app__description {
     margin-right: 0;
     margin-left: 0;
     margin-bottom: 0;
+
+    font-size: 18px;
+    line-height: 1.33;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .download-app__wrapper {
+    padding-top: 25px;
+  }
+
   .download-app__list {
     margin-top: 67px;
+    margin-bottom: 50px;
+  }
+
+  .download-app__button {
+    font-size: 21px;
+    line-height: 0.86;
   }
 }

@@ -5,10 +5,33 @@
   margin-bottom: 20px;
 
   &--panorama {
+    position: relative;
+
     max-width: fit-content;
     width: 100vw;
     margin-right: -20px;
     margin-left: -20px;
+
+    &::before {
+      content: "Панорама дня";
+
+      position: absolute;
+      top: 0;
+      right: 20px;
+
+      width: 140px;
+      padding-top: 6px;
+      padding-bottom: 6px;
+
+      color: $white;
+      font-size: 12px;
+      font-weight: bold;
+      line-height: 2;
+      text-align: center;
+      text-transform: uppercase;
+
+      background-color: $pink;
+    }
   }
 
   &:last-child {
@@ -27,12 +50,16 @@
 }
 
 .user-post__content {
-  padding-top: 20px;
+  padding-top: 18px;
   padding-right: 20px;
   padding-left: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 18px;
 
   background-color: $light-grey;
+}
+
+.user-post__info {
+  margin-bottom: 2px;
 }
 
 .user-post__user-name {
@@ -45,12 +72,8 @@
   text-transform: uppercase;
 }
 
-.user-post__text {
-  margin-top: 5px;
-}
-
 .user-post__action {
-  margin-top: 8px;
+  margin-top: 13px;
 }
 
 @media (min-width: $tablet-width) {
@@ -62,28 +85,13 @@
     }
 
     &--panorama {
-      position: relative;
       margin-bottom: 50px;
 
       &::before {
-        content: "Панорама дня";
-
-        position: absolute;
         top: 57px;
         right: 20px;
 
         width: 140px;
-        padding-top: 6px;
-        padding-bottom: 6px;
-
-        color: $white;
-        font-size: 12px;
-        font-weight: bold;
-        line-height: 2;
-        text-align: center;
-        text-transform: uppercase;
-
-        background-color: $pink;
       }
     }
   }
@@ -92,6 +100,11 @@
     display: flex;
     flex-direction: column;
     min-height: 155px;
+    padding-top: 22px;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-bottom: 22px;
+
     box-sizing: border-box;
   }
 
@@ -107,6 +120,10 @@
     flex-direction: row;
     flex-wrap: wrap;
     min-height: 121px;
+  }
+
+  .user-post__info {
+    margin-bottom: 0;
   }
 
   .user-post--panorama .user-post__info {
@@ -140,7 +157,13 @@
   }
 
   .user-post--panorama .user-post__content {
+    min-height: 96px;
+
     margin-right: 130px;
     margin-left: 130px;
+  }
+
+  .user-post__content {
+    padding-top: 25px;
   }
 }

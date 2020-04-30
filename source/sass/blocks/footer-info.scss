@@ -5,6 +5,11 @@
   text-align: center;
 }
 
+.footer-info__social {
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
 @media (min-width: $tablet-width) {
   .footer-info__wrapper {
     display: flex;
@@ -24,5 +29,10 @@
 
   .footer-info__logo {
     align-self: flex-start;
+  }
+
+  .footer-info__social {
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }

@@ -10,10 +10,10 @@
   .research__wrapper {
     position: relative;
     display: flex;
-    align-items: center;
+    align-items: baseline;
 
     min-height: 338px;
-    padding-top: 100px;
+    padding-top: 97px;
     padding-left: 330px;
 
     background-image: url("../img/icon-timer.svg");
@@ -55,6 +55,11 @@
     color: $black;
   }
 
+  .research__text {
+    margin-bottom: 10px;
+    padding-right: 10px;
+  }
+
   .research__link {
     color: $pink;
   }
@@ -62,21 +67,45 @@
 
 @media (min-width: $desktop-width) {
   .research {
-    padding-bottom: 67px;
-
     background-color: $light-grey;
   }
 
   .research__wrapper {
+    align-items: center;
+    padding-top: 160px;
     padding-left: 365px;
+    padding-bottom: 112px;
+
+    background-size: 298px;
+    background-position: 0 70px;
+
+    &::before {
+      top: 138px;
+      left: 23px;
+
+      height: 253px;
+      width: 253px;
+
+      font-size: 120px;
+
+      border: 17px solid $pink;
+    }
   }
 
   .research__slogan {
     margin-bottom: 20px;
   }
 
+  .research__slogan br {
+    display: none;
+  }
+
   .research__text,
   .research__link {
     font-size: 18px;
+  }
+
+  .research__text {
+    margin-bottom: 33px;
   }
 }

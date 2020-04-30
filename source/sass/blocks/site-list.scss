@@ -7,8 +7,9 @@
 
   text-decoration: none;
   text-align: center;
+  text-transform: uppercase;
   font-size: 18px;
-  line-height: 63px;
+  line-height: 64px;
   color: $white;
   font-weight: bold;
 
@@ -43,12 +44,15 @@
   .site-list__link {
     min-width: 130px;
     font-weight: normal;
+    text-transform: none;
 
     background-color: unset;
     box-shadow: none;
   }
 
   .site-list__item:last-child .site-list__link {
+    text-align: right;
+
     box-shadow: none;
   }
 
