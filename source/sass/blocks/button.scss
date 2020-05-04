@@ -33,10 +33,11 @@
     }
   }
 
-  &--submit {
+  &--submit,
+  &--pop-up {
     width: 100%;
-    padding-top: 18px;
-    padding-bottom: 17px;
+    padding-top: 16px;
+    padding-bottom: 16px;
 
     line-height: 1.67;
     text-transform: uppercase;

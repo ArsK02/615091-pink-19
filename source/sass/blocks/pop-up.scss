@@ -1,0 +1,132 @@
+.pop-up {
+  display: none;
+  position: absolute;
+
+  width: 100%;
+  padding-top: 40px;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  text-align: center;
+
+  background-color: $white;
+  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+  box-sizing: border-box;
+
+  z-index: 10;
+
+  &--error {
+    top: 1425px;
+    right: 0;
+  }
+
+  &--success {
+    top: 1899px;
+    right: 0;
+  }
+
+  &--show {
+    display: block;
+  }
+}
+
+.pop-up--success .pop-up__btn-wrapper {
+  padding-top: 48px;
+  background-color: $light-grey;
+}
+
+.pop-up__title {
+  margin-bottom: 25px;
+
+  font-size: 18px;
+  font-weight: bold;
+  color: $black;
+}
+
+.pop-up__btn-wrapper {
+  padding-bottom: 50px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-top: 34px;
+  margin-right: -20px;
+  margin-left: -20px;
+}
+
+@media (min-width: $tablet-width) {
+  .pop-up {
+    right: 50%;
+
+    width: 460px;
+    margin-right: -230px;
+    padding-right: 80px;
+    padding-left: 80px;
+
+    &--error {
+      top: 1164px;
+    }
+
+    &--success {
+      top: 1637px;
+    }
+  }
+
+  .pop-up__title {
+    margin-bottom: 30px;
+
+    font-size: 30px;
+    line-height: 1.33;
+  }
+
+  .pop-up__text {
+    font-size: 18px;
+    line-height: 1.33;
+  }
+
+  .pop-up__btn-wrapper {
+    padding-right: 80px;
+    padding-left: 80px;
+    margin-right: -80px;
+    margin-left: -80px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .pop-up {
+    flex-direction: column;
+
+    min-height: 377px;
+    width: 780px;
+    margin-right: -390px;
+    padding-top: 45px;
+    padding-right: 190px;
+    padding-left: 190px;
+
+    &--error {
+      top: 817px;
+    }
+
+    &--success {
+      top: 1274px;
+    }
+
+    &--show {
+      display: flex;
+    }
+  }
+
+  .pop-up--error .pop-up__btn-wrapper {
+    padding-right: 240px;
+    padding-left: 240px;
+  }
+
+  .pop-up__btn-wrapper {
+    padding-top: 48px;
+    padding-right: 160px;
+    padding-left: 160px;
+    margin-top: auto;
+    margin-right: -190px;
+    margin-left: -190px;
+
+    background-color: $light-grey;
+  }
+}
