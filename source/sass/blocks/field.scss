@@ -4,7 +4,7 @@
   flex-direction: column;
 
   &:not(:last-child) {
-    margin-bottom: 20px;
+    margin-bottom: 17px;
   }
 }
 
@@ -48,6 +48,12 @@
 }
 
 @media (min-width: $tablet-width) {
+  .field {
+    &:not(:last-child) {
+      margin-bottom: 51px;
+    }
+  }
+
   .field__label {
     margin-left: 0;
     margin-right: 20px;
@@ -92,14 +98,22 @@
     }
   }
 
-  .field__input--phone,
-  .field__input--email {
-    width: 100%;
-    box-sizing: border-box;
+  .field__label {
+    margin-bottom: 0;
+  }
+
+  .field__input {
+    &--phone,
+    &--email {
+      width: 100%;
+      margin-bottom: 10px;
+
+      box-sizing: border-box;
+    }
   }
 
   .field__icon {
-    top: 29px;
-    right: 68px;
+    top: 0;
+    right: 0;
   }
 }

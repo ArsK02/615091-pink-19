@@ -4,9 +4,9 @@
 }
 
 .intro__header {
-  min-height: 235px;
+  min-height: 236px;
 
-  padding-top: 90px;
+  padding-top: 92px;
   padding-left: 46px;
   padding-right: 46px;
 
@@ -44,7 +44,7 @@
 .intro__slogan {
   font-size: 24px;
   font-weight: 300;
-  line-height: normal;
+  line-height: 1.25;
 }
 
 @media (min-width: $tablet-width) {
@@ -77,13 +77,12 @@
       font-size: 40px;
 
       &::before {
-        right: 0;
+        right: 20px;
         left: unset;
 
         max-width: 100%;
         width: 660px;
         height: 545px;
-        margin-right: -20px;
 
         background-image: url("../img/iphone-hand-tablet@1x.png");
       }
@@ -129,6 +128,8 @@
       padding-top: 215px;
 
       &::before {
+        right: -10px;
+
         width: 1050px;
         height: 645px;
 

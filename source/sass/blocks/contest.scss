@@ -3,7 +3,7 @@
 
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 47px;
+  padding-top: 45px;
 
   box-sizing: border-box;
 }
@@ -11,10 +11,10 @@
 .contest__slogan {
   line-height: 2.14;
   text-align: center;
+}
 
-  &:last-of-type {
-    display: none;
-  }
+.contest__text {
+  display: none;
 }
 
 .contest__form {
@@ -23,17 +23,36 @@
 }
 
 .contest__form-section {
-  &--contacts .form-section__legend {
-    display: none;
-  }
-
-  &--emotions .form-section__legend {
-    background-color: inherit;
-  }
-
   &--grey {
     background-color: $light-grey;
   }
+}
+
+.contest__form-section--goals .form-section__list {
+  margin-top: 5px;
+}
+
+.contest__form-section--goals .field-option {
+  &:not(:last-child) {
+    margin-bottom: 46px;
+  }
+}
+
+.contest__form-section--contacts .form-section__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.contest__form-section--contacts .form-section__legend {
+  display: none;
+}
+
+.contest__form-section--contacts .field__label {
+  order: -1;
+}
+
+.contest__form-section--emotions .form-section__legend {
+  background-color: inherit;
 }
 
 .contest__button {
@@ -52,14 +71,10 @@
 
     font-size: 18px;
     line-height: 1.67;
+  }
 
-    &:first-of-type {
-      margin-bottom: 0;
-    }
-
-    &:last-of-type {
-      display: block;
-    }
+  .contest__text {
+    display: block;
   }
 
   .contest__form {
@@ -79,19 +94,17 @@
 
     &--personal-info {
       order: -1;
+      padding-bottom: 0;
       border: none;
     }
 
     &--contacts {
       order: 2;
+      padding-bottom: 0;
     }
 
     &--emotions {
       order: 4;
-    }
-
-    &--contacts .form-section__legend {
-      display: block;
     }
 
     &--goals {
@@ -103,11 +116,15 @@
     }
   }
 
+  .contest__form-section--contacts .form-section__legend {
+    display: block;
+  }
+
   .contest__form-section--contacts .form-section__item {
-    flex-direction: column;
     align-items: stretch;
     padding-right: 58px;
     padding-left: 58px;
+    margin-bottom: 25px;
   }
 
   .contest__form-section--contacts .field__label {
@@ -138,9 +155,13 @@
   }
 
   .contest__header {
-    padding-left: 90px;
-    padding-right: 90px;
-    padding-bottom: 60px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-bottom: 35px;
+  }
+
+  .contest__text {
+    display: inline-block;
   }
 
   .contest__form {
@@ -152,7 +173,7 @@
   .contest__form-section {
     &--personal-info {
       width: 435px;
-      padding-top: 0;
+      padding-top: 10px;
       padding-bottom: 0;
     }
 
@@ -160,9 +181,19 @@
       width: 435px;
     }
 
+    &--goals {
+      padding-bottom: 15px;
+    }
+
     &--contacts {
       padding-right: 58px;
       padding-left: 58px;
+    }
+
+    &--emotions {
+      padding-top: 48px;
+      padding-bottom: 38px;
+      margin-bottom: 65px;
     }
   }
 
@@ -170,6 +201,7 @@
     display: inline-block;
     width: 375px;
     padding: 0;
+    margin-bottom: 12px;
 
     &:first-of-type {
       margin-right: 65px;
@@ -183,11 +215,12 @@
     flex-direction: row;
     justify-content: space-between;
 
-    padding-right: 60px;
+    padding-right: 0;
+    padding-left: 58px;
   }
 
   .contest__form-section--goals .form-section__item {
-    width: 272px;
+    width: 267px;
 
     &:first-child {
       order: -6;

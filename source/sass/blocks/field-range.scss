@@ -60,12 +60,16 @@
   }
 
   .field-range__thumb {
+    &--size {
+      right: 26.5%;
+    }
+
     &--color {
-      right: 65%;
+      right: 82%;
     }
 
     &--contrast {
-      right: 40%;
+      right: 50%;
     }
   }
 }
@@ -73,5 +77,19 @@
 @media (min-width: $desktop-width) {
   .field-range__track {
     right: 30px;
+  }
+
+  .field-range__thumb {
+    &--size {
+      right: 75%;
+    }
+
+    &--color {
+      right: 18%;
+    }
+
+    &--contrast {
+      right: 45%;
+    }
   }
 }

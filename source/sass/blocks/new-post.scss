@@ -30,6 +30,11 @@
 }
 
 @media (min-width: $tablet-width) {
+  .new-post__header {
+    padding-top: 45px;
+    padding-bottom: 68px;
+  }
+
   .new-post__slogan {
     font-size: 18px;
     line-height: 1.67;
@@ -47,6 +52,11 @@
 @media (min-width: $desktop-width) {
   .new-post {
     background-color: unset;
+  }
+
+  .new-post__header {
+    padding-top: 5px;
+    padding-bottom: 10px;
   }
 
   .new-post__controls {

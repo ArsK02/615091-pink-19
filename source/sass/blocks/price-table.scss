@@ -1,39 +1,41 @@
 .price-table__th {
   position: relative;
 
-  &--hit::before {
-    content: "";
+  &--hit {
+    &::before {
+      content: "";
 
-    position: absolute;
-    top: 0;
-    left: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
 
-    width: 73px;
-    height: 73px;
+      width: 73px;
+      height: 73px;
 
-    background-image: url("../img/bg-hit.svg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-  }
+      background-image: url("../img/bg-hit.svg");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
 
-  &--hit::after {
-    content: "хит";
+    &::after {
+      content: "хит";
 
-    position: absolute;
-    top: 18px;
-    left: 11px;
+      position: absolute;
+      top: 18px;
+      left: 11px;
 
-    width: 26px;
-    height: 14px;
+      width: 26px;
+      height: 14px;
 
-    color: $white;
-    line-height: 1;
-    font-size: 14px;
-    font-weight: normal;
-    text-transform: uppercase;
-    text-align: center;
+      color: $white;
+      line-height: 1;
+      font-size: 14px;
+      font-weight: normal;
+      text-transform: uppercase;
+      text-align: center;
 
-    transform: rotate(-45deg);
+      transform: rotate(-45deg);
+    }
   }
 
   &--hidden-mobile {
@@ -60,6 +62,18 @@
 
       background-color: transparent;
     }
+
+    &--hit {
+      &::before {
+        width: 61px;
+        height: 61px;
+      }
+
+      &::after {
+        top: 13px;
+        left: 9px;
+      }
+    }
   }
 
   .price-table__currency {
@@ -81,6 +95,20 @@
   .price-table__currency {
     font-size: 24px;
     line-height: 1.25;
+  }
+
+  .price-table__th {
+    &--hit {
+      &::before {
+        width: 72px;
+        height: 72px;
+      }
+
+      &::after {
+        top: 18px;
+        left: 9px;
+      }
+    }
   }
 
   .price-table__td {
