@@ -7,8 +7,8 @@
 .carousel__author-name {
   display: inline-block;
 
-  margin-top: 45px;
-  margin-bottom: 16px;
+  margin-top: 44px;
+  margin-bottom: 12px;
 
   font-size: 18px;
   font-weight: bold;
@@ -18,7 +18,7 @@
 }
 
 .carousel__text {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 
   line-height: 2.14;
 }
@@ -59,12 +59,14 @@
   .carousel__text {
     order: -1;
 
+    margin-bottom: 28px;
+
     font-size: 18px;
     line-height: 1.67;
   }
 
   .carousel__toggles {
-    margin-top: 25px;
+    margin-top: 22px;
   }
 }
 

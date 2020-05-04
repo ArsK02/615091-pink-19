@@ -1,6 +1,6 @@
 .field-option {
   &:not(:last-child) {
-    margin-bottom: 40px;
+    margin-bottom: 38px;
   }
 }
 
@@ -82,10 +82,8 @@
   background-color: $pink;
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $tablet-width) {
   .field-option__text {
-    &--checkbox {
-      padding-left: 55px;
-    }
+    padding-left: 60px;
   }
 }

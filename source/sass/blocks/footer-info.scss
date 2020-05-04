@@ -1,5 +1,5 @@
 .footer-info {
-  padding-top: 40px;
+  padding-top: 35px;
   padding-bottom: 40px;
 
   text-align: center;
@@ -34,5 +34,21 @@
   .footer-info__social {
     margin-top: 0;
     margin-bottom: 0;
+    margin-left: -15px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer-info {
+    padding-top: 50px;
+  }
+
+  .footer-info__wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .footer-info__social {
+    margin-left: 10px;
   }
 }
