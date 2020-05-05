@@ -6,7 +6,17 @@
   height: 41px;
 
   font-size: 0;
-  color: $grey;
+  color: $blue;
+  opacity: 0.3;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
 }
 
 .slide-arrow__image {

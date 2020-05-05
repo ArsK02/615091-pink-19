@@ -28,8 +28,7 @@
     }
 
     &:active {
-      opacity: 0.3;
-      background-color: $white;
+      color: rgba(210, 40, 86, 0.3);
     }
   }
 
@@ -92,7 +91,7 @@
     }
 
     &:active {
-      color: $white;
+      color: rgba(255, 255, 255, 0.3);
       background-color: $blue;
       opacity: 0.3;
     }
