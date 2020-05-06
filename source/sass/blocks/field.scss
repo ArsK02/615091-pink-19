@@ -80,6 +80,9 @@
     background-color: $border-light;
     background-repeat: no-repeat;
     background-position: center center;
+    border: 2px solid $border-light;
+    border-left: none;
+    box-sizing: border-box;
 
     &--phone {
       background-image: url("../img/icon-phone.svg");
@@ -88,6 +91,15 @@
     &--email {
       background-image: url("../img/icon-mail.svg");
     }
+  }
+
+  .field__input:hover + .field__icon,
+  .field__input:focus + .field__icon {
+    border-color: $blue;
+  }
+
+  .field__input:active + .field__icon {
+    border-color: $pink;
   }
 }
 
