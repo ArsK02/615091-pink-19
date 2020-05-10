@@ -13,17 +13,18 @@
   font-size: 18px;
   font-weight: bold;
   font-style: normal;
-  line-height: 1.67;
+  line-height: 30px;
   color: $black;
 }
 
 .carousel__text {
   margin-bottom: 25px;
 
-  line-height: 2.14;
+  line-height: 30px;
 }
 
 .carousel__toggles {
+  margin-top: 30px;
   text-align: center;
 }
 
@@ -46,27 +47,27 @@
     margin-bottom: 0;
 
     font-size: 20px;
-    line-height: 2.14;
+    line-height: 30px;
   }
 
   .carousel__author-info {
     display: block;
 
     text-align: center;
-    line-height: 2.14;
+    line-height: 30px;
   }
 
   .carousel__text {
     order: -1;
 
-    margin-bottom: 28px;
+    margin-bottom: 35px;
 
     font-size: 18px;
-    line-height: 1.67;
+    line-height: 30px;
   }
 
   .carousel__toggles {
-    margin-top: 22px;
+    margin-top: 32px;
   }
 }
 
@@ -84,7 +85,7 @@
 
   .carousel__author-name {
     font-size: 24px;
-    line-height: 1.67;
+    line-height: 30px;
   }
 
   .carousel__author-info {

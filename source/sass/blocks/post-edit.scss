@@ -1,5 +1,5 @@
 .post-edit {
-  padding-top: 25px;
+  padding-top: 20px;
   padding-bottom: 40px;
 }
 
@@ -8,7 +8,7 @@
 }
 
 .post-edit__tabs {
-  margin-bottom: 38px;
+  margin-bottom: 35px;
   padding-top: 35px;
 }
 
@@ -72,6 +72,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .post-edit {
+    padding-top: 55px;
+  }
+
   .post-edit__wrapper {
     padding-top: 57px;
     padding-left: 80px;

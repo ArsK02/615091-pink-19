@@ -28,7 +28,7 @@
       height: 14px;
 
       color: $white;
-      line-height: 1;
+      line-height: 14px;
       font-size: 14px;
       font-weight: normal;
       text-transform: uppercase;
@@ -46,7 +46,7 @@
 .price-table__currency {
   font-size: 24px;
   font-weight: 300;
-  line-height: 1.25;
+  line-height: 30px;
 }
 
 .price-table__td {
@@ -78,7 +78,6 @@
 
   .price-table__currency {
     font-size: 18px;
-    line-height: 1.67;
   }
 
   .price-table__td {
@@ -94,7 +93,6 @@
 @media (min-width: $desktop-width) {
   .price-table__currency {
     font-size: 24px;
-    line-height: 1.25;
   }
 
   .price-table__th {

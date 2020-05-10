@@ -35,7 +35,7 @@
 
       font-size: 96px;
       font-weight: bold;
-      line-height: 1.66;
+      line-height: 160px;
       text-align: center;
       color: $pink;
 
@@ -46,12 +46,12 @@
   }
 
   .research__slogan {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     padding-right: 140px;
 
     font-size: 30px;
     font-weight: bold;
-    line-height: 1.2;
+    line-height: 36px;
     color: $black;
   }
 
@@ -87,13 +87,16 @@
       width: 253px;
 
       font-size: 120px;
+      line-height: 197px;
 
       border: 17px solid $pink;
     }
   }
 
   .research__slogan {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+
+    line-height: 30px;
   }
 
   .research__slogan br {
@@ -103,9 +106,11 @@
   .research__text,
   .research__link {
     font-size: 18px;
+    line-height: 30px;
   }
 
   .research__text {
-    margin-bottom: 33px;
+    margin-bottom: 30px;
+    padding-right: 48px;
   }
 }

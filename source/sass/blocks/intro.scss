@@ -6,7 +6,7 @@
 .intro__header {
   min-height: 236px;
 
-  padding-top: 92px;
+  padding-top: 95px;
   padding-left: 46px;
   padding-right: 46px;
 
@@ -23,6 +23,7 @@
   &--image {
     position: relative;
     min-height: 461px;
+    padding-top: 88px;
 
     &::before {
       content: "";
@@ -33,7 +34,7 @@
 
       width: 255px;
       height: 286px;
-      margin-left: -155px;
+      margin-left: -160px;
 
       background-image: url("../img/iphone-hand-mobile@1x.png");
       background-repeat: no-repeat;
@@ -44,7 +45,7 @@
 .intro__slogan {
   font-size: 24px;
   font-weight: 300;
-  line-height: 1.25;
+  line-height: 30px;
 }
 
 @media (min-width: $tablet-width) {
@@ -94,7 +95,7 @@
     padding-left: 50px;
 
     font-size: 50px;
-    line-height: 1.24;
+    line-height: 62px;
   }
 
   .intro__header--image .intro__slogan {
@@ -104,6 +105,7 @@
     margin-left: 20px;
 
     font-size: 40px;
+    line-height: 50px;
 
     box-sizing: border-box;
   }
@@ -140,6 +142,7 @@
 
   .intro__slogan {
     font-size: 50px;
+
     padding-right: 225px;
     padding-left: 225px;
   }
@@ -150,6 +153,7 @@
     padding-left: 30px;
 
     font-size: 50px;
+    line-height: 62px;
   }
 
   .intro__downloads {

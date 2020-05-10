@@ -6,6 +6,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <script src="js/picturefill.min.js" async></script>
+  <!-- Pixel Glass -->
+  <style>
+    HTML {
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      /* Mobile layout by default */
+      background-image: url("preview/pink-photo-mobile-menu.png");
+    }
+
+    /* Tablet */
+    @media (min-width: 660px) {
+      HTML {
+        /* Tablet layout */
+        background-image: url("preview/pink-photo-tablet-menu.png");
+      }
+    }
+
+    /* Desktop */
+    @media (min-width: 960px) {
+      HTML {
+        /* Desktop layout */
+        background-image: url("preview/pink-photo-desktop.png");
+      }
+    }
+  </style>
+  <link href="pixel-glass/styles.css" rel="stylesheet">
+  <script src="pixel-glass/script.js"></script>
+  <!-- // Pixel Glass -->
 </head>
 
 <body>
@@ -13,13 +42,13 @@
     <div class="page-header__wrapper">
       <a href="index.html" class="page-header__logo logo">
         <svg class="logo__image">
-          <use xlink:href="#logo" width="74.426px" height="22.859px"></use>
+          <use xlink:href="#logo" width="75px" height="23px"></use>
         </svg>
         <svg class="logo__image logo__image--tablet">
-          <use xlink:href="#logo-tablet" width="146.3px" height="40.375px"></use>
+          <use xlink:href="#logo-tablet" width="146px" height="40px"></use>
         </svg>
         <svg class="logo__image logo__image--desktop">
-          <use xlink:href="#logo-desktop" width="146.3px" height="40.375px"></use>
+          <use xlink:href="#logo-desktop" width="146px" height="40px"></use>
         </svg>
       </a>
       <nav class="page-header__nav main-nav main-nav--closed main-nav--no-js">
@@ -60,12 +89,12 @@
         <div class="user-gallery__post user-post user-post--panorama">
           <picture>
             <source type="image/webp" srcset="img/panorama-desktop@1x.webp 1x, img/panorama-desktop@2x.webp 2x"
-              media="(min-width: 1200px)">
+              media="(min-width: 960px)">
             <source type="image/webp" srcset="img/panorama-tablet@1x.webp 1x, img/panorama-tablet@2x.webp 2x"
               media="(min-width: 660px)">
             <source type="image/webp" srcset="img/panorama-mobile@1x.webp 1x, img/panorama-mobile@2x.webp 2x">
 
-            <source srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+            <source srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x" media="(min-width: 960px)">
             <source srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x" media="(min-width: 660px)">
             <img class="user-post__image" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x"
               alt="Фото пользоватиля Анна" width="320" height="137">
@@ -82,7 +111,7 @@
             <div class="user-post__action post-action">
               <button class="post-action__like-button" type="button">
                 Лайк
-                <span class="post-action__likes">Нравиться: 215</span>
+                <span class="post-action__likes">Нравится: 215</span>
               </button>
             </div>
           </div>
@@ -90,13 +119,13 @@
         <div class="user-gallery__post user-post">
           <picture>
             <source type="image/webp" srcset="img/photo-car-desktop@1x.webp 1x, img/photo-car-desktop@2x.webp 2x"
-              media="(min-width: 1200px)">
+              media="(min-width: 960px)">
             <source type="image/webp" srcset="img/photo-car-tablet@1x.webp 1x, img/photo-car-tablet@2x.webp 2x"
               media="(min-width: 660px)">
             <source type="image/webp" srcset="img/photo-car-mobile@1x.webp 1x, img/photo-car-mobile@2x.webp 2x">
 
             <source srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x"
-              media="(min-width: 1200px)">
+              media="(min-width: 960px)">
             <source srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x" media="(min-width: 660px)">
             <img class="user-post__image" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x"
               alt="Фото пользователя Левон" width="280" height="180">
@@ -112,7 +141,7 @@
             <div class="user-post__action post-action">
               <button class="post-action__like-button" type="button">
                 Лайк
-                <span class="post-action__likes">Нравиться: 356</span>
+                <span class="post-action__likes">Нравится: 356</span>
               </button>
             </div>
           </div>
@@ -121,13 +150,13 @@
           <picture>
             <source type="image/webp"
               srcset="img/photo-drumset-desktop@1x.webp 1x, img/photo-drumset-desktop@2x.webp 2x"
-              media="(min-width: 1200px)">
+              media="(min-width: 960px)">
             <source type="image/webp" srcset="img/photo-drumset-tablet@1x.webp 1x, img/photo-drumset-tablet@2x.webp 2x"
               media="(min-width: 660px)">
             <source type="image/webp" srcset="img/photo-drumset-mobile@1x.webp 1x, img/photo-drumset-mobile@2x.webp 2x">
 
             <source srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x"
-              media="(min-width: 1200px)">
+              media="(min-width: 960px)">
             <source srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x"
               media="(min-width: 660px)">
             <img class="user-post__image" src="img/photo-drumset-mobile@1x.jpg"
@@ -144,7 +173,7 @@
             <div class="user-post__action post-action">
               <button class="post-action__like-button" type="button">
                 Лайк
-                <span class="post-action__likes">Нравиться: 666</span>
+                <span class="post-action__likes">Нравится: 666</span>
               </button>
             </div>
           </div>
@@ -152,13 +181,13 @@
         <div class="user-gallery__post user-post">
           <picture>
             <source type="image/webp" srcset="img/photo-window-desktop@1x.webp 1x, img/photo-window-desktop@2x.webp 2x"
-              media="(min-width: 1200px)">
+              media="(min-width: 960px)">
             <source type="image/webp" srcset="img/photo-window-tablet@1x.webp 1x, img/photo-window-tablet@2x.webp 2x"
               media="(min-width: 660px)">
             <source type="image/webp" srcset="img/photo-window-mobile@1x.webp 1x, img/photo-window-mobile@2x.webp 2x">
 
             <source srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x"
-              media="(min-width: 1200px)">
+              media="(min-width: 960px)">
             <source srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x"
               media="(min-width: 660px)">
             <img class="user-post__image" src="img/photo-window-mobile@1x.jpg"
@@ -175,7 +204,7 @@
             <div class="user-post__action post-action">
               <button class="post-action__like-button" type="button">
                 Лайк
-                <span class="post-action__likes">Нравиться: 215</span>
+                <span class="post-action__likes">Нравится: 215</span>
               </button>
             </div>
           </div>
@@ -183,13 +212,13 @@
         <div class="user-gallery__post user-post">
           <picture>
             <source type="image/webp" srcset="img/photo-fair-desktop@1x.webp 1x, img/photo-fair-desktop@2x.webp 2x"
-              media="(min-width: 1200px)">
+              media="(min-width: 960px)">
             <source type="image/webp" srcset="img/photo-fair-tablet@1x.webp 1x, img/photo-fair-tablet@2x.webp 2x"
               media="(min-width: 660px)">
             <source type="image/webp" srcset="img/photo-fair-mobile@1x.webp 1x, img/photo-fair-mobile@2x.webp 2x">
 
             <source srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x"
-              media="(min-width: 1200px)">
+              media="(min-width: 960px)">
             <source srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x"
               media="(min-width: 660px)">
             <img class="user-post__image" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x"
@@ -206,7 +235,7 @@
             <div class="user-post__action post-action">
               <button class="post-action__like-button" type="button">
                 Лайк
-                <span class="post-action__likes">Нравиться: 4</span>
+                <span class="post-action__likes">Нравится: 4</span>
               </button>
             </div>
           </div>
@@ -214,13 +243,13 @@
         <div class="user-gallery__post user-post">
           <picture>
             <source type="image/webp" srcset="img/photo-pov-desktop@1x.webp 1x, img/photo-pov-desktop@2x.webp 2x"
-              media="(min-width: 1200px)">
+              media="(min-width: 960px)">
             <source type="image/webp" srcset="img/photo-pov-tablet@1x.webp 1x, img/photo-pov-tablet@2x.webp 2x"
               media="(min-width: 660px)">
             <source type="image/webp" srcset="img/photo-pov-mobile@1x.webp 1x, img/photo-pov-mobile@2x.webp 2x">
 
             <source srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x"
-              media="(min-width: 1200px)">
+              media="(min-width: 960px)">
             <source srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x" media="(min-width: 660px)">
             <img class="user-post__image" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x"
               alt="Фото пользователя Максим" width="280" height="180">
@@ -236,7 +265,7 @@
             <div class="user-post__action post-action">
               <button class="post-action__like-button" type="button">
                 Лайк
-                <span class="post-action__likes">Нравиться: 150</span>
+                <span class="post-action__likes">Нравится: 150</span>
               </button>
             </div>
           </div>
@@ -244,13 +273,13 @@
         <div class="user-gallery__post user-post">
           <picture>
             <source type="image/webp" srcset="img/photo-wing-desktop@1x.webp 1x, img/photo-wing-desktop@2x.webp 2x"
-              media="(min-width: 1200px)">
+              media="(min-width: 960px)">
             <source type="image/webp" srcset="img/photo-wing-tablet@1x.webp 1x, img/photo-wing-tablet@2x.webp 2x"
               media="(min-width: 660px)">
             <source type="image/webp" srcset="img/photo-wing-mobile@1x.webp 1x, img/photo-wing-mobile@2x.webp 2x">
 
             <source srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x"
-              media="(min-width: 1200px)">
+              media="(min-width: 960px)">
             <source srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x"
               media="(min-width: 660px)">
             <img class="user-post__image" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x"
@@ -267,7 +296,7 @@
             <div class="user-post__action post-action">
               <button class="post-action__like-button" type="button">
                 Лайк
-                <span class="post-action__likes">Нравиться: 2560</span>
+                <span class="post-action__likes">Нравится: 2560</span>
               </button>
             </div>
           </div>
@@ -289,13 +318,13 @@
             <label class="new-post__input-label" for="image-input">
               <picture>
                 <source type="image/webp" srcset="img/photo-road-desktop@1x.webp 1x, img/photo-road-desktop@2x.webp 2x"
-                  media="(min-width: 1200px)">
+                  media="(min-width: 960px)">
                 <source type="image/webp" srcset="img/photo-road-tablet@1x.webp 1x, img/photo-road-tablet@2x.webp 2x"
                   media="(min-width: 660px)">
                 <source type="image/webp" srcset="img/photo-road-mobile@1x.webp 1x, img/photo-road-mobile@2x.webp 2x">
 
                 <source srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x"
-                  media="(min-width: 1200px)">
+                  media="(min-width: 960px)">
                 <source srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x"
                   media="(min-width: 660px)">
                 <img class="post-edit__image" src="img/photo-road-mobile@1x.jpg"
@@ -329,7 +358,7 @@
                     <button class="tabs-controls__control tabs-controls__control--active" type="button">
                       <span class="visually-hidden">Контраст</span>
                       <span class="icon icon--contrast">
-                        <svg width="31.92px" height="31.92px">
+                        <svg width="32px" height="32px">
                           <use xlink:href="#icon-contrast"></use>
                         </svg>
                       </span>
@@ -374,10 +403,10 @@
       <div class="footer-info__wrapper">
         <a href="#" class="footer-info__logo logo logo--footer">
           <svg class="logo__image">
-            <use xlink:href="#logo-footer" width="146.3px" height="40.375px"></use>
+            <use xlink:href="#logo-footer" width="146px" height="40px"></use>
           </svg>
           <svg class="logo__image logo__image--only-desktop">
-            <use xlink:href="#logo-footer-desktop" width="146.3px" height="40.375px"></use>
+            <use xlink:href="#logo-footer-desktop" width="146px" height="40px"></use>
           </svg>
         </a>
         <ul class="footer-info__social socials-list">
@@ -401,7 +430,7 @@
           <span class="copyright__text">Разработано</span>
           <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive" rel="nofollow" target="_blank">
             <span class="visually-hidden">HTML Academy</span>
-            <svg class="copyright__logo-image" width="26.943px" height="34.09px">
+            <svg class="copyright__logo-image" width="27px" height="34px">
               <use xlink:href="#logo-copyright"></use>
             </svg>
           </a>
