@@ -41,6 +41,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .tabs__controls {
+    align-items: center;
+  }
+
   .tabs__content {
     margin-left: 48px;
   }

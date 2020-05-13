@@ -14,14 +14,15 @@
 
 .copyright__logo {
   line-height: 0;
+  color: $pink;
 
-  &:hover path,
-  &:focus path {
-    fill: $blue;
+  &:hover,
+  &:focus {
+    color: $blue;
   }
 
-  &:active path {
-    fill: $grey;
+  &:active {
+    color: $grey;
   }
 }
 

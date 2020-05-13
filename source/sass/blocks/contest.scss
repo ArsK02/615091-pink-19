@@ -9,6 +9,7 @@
 }
 
 .contest__slogan {
+  margin: 0;
   line-height: 30px;
   text-align: center;
 }
@@ -26,33 +27,6 @@
   &--grey {
     background-color: $light-grey;
   }
-}
-
-.contest__form-section--goals .form-section__list {
-  margin-top: 5px;
-}
-
-.contest__form-section--goals .field-option {
-  &:not(:last-child) {
-    margin-bottom: 46px;
-  }
-}
-
-.contest__form-section--contacts .form-section__item {
-  display: flex;
-  flex-direction: column;
-}
-
-.contest__form-section--contacts .form-section__legend {
-  display: none;
-}
-
-.contest__form-section--contacts .field__label {
-  order: -1;
-}
-
-.contest__form-section--emotions .form-section__legend {
-  background-color: inherit;
 }
 
 .contest__button {
@@ -84,57 +58,13 @@
   }
 
   .contest__form-section {
-    border: 2px solid $border-light;
-    border-radius: 3px;
-
     &--grey {
       background-color: unset;
-    }
-
-    &--personal-info {
-      order: -1;
-      padding-bottom: 0;
-      border: none;
-    }
-
-    &--contacts {
-      order: 2;
-      padding-bottom: 0;
-    }
-
-    &--emotions {
-      order: 4;
-    }
-
-    &--goals {
-      order: 3;
     }
 
     &:nth-child(3) {
       order: 1;
     }
-  }
-
-  .contest__form-section--contacts .form-section__legend {
-    display: block;
-  }
-
-  .contest__form-section--contacts .form-section__item {
-    align-items: stretch;
-    padding-right: 58px;
-    padding-left: 58px;
-    margin-bottom: 25px;
-  }
-
-  .contest__form-section--contacts .field__label {
-    order: 2;
-    margin-left: 20px;
-    margin-top: 10px;
-  }
-
-  .contest__form-section--emotions .form-section__item {
-    padding-right: 58px;
-    padding-left: 58px;
   }
 
   .contest__button {
@@ -150,13 +80,13 @@
     margin: 0 auto;
     padding-right: 0;
     padding-left: 0;
-    padding-top: 90px;
+    padding-top: 92px;
   }
 
   .contest__header {
     padding-left: 35px;
     padding-right: 35px;
-    padding-bottom: 35px;
+    padding-bottom: 28px;
   }
 
   .contest__text {
@@ -170,79 +100,8 @@
   }
 
   .contest__form-section {
-    &--personal-info {
-      width: 435px;
-      padding-top: 10px;
-      padding-bottom: 0;
-    }
-
     &:nth-child(4) {
       width: 435px;
-    }
-
-    &--goals {
-      padding-bottom: 15px;
-    }
-
-    &--contacts {
-      padding-right: 58px;
-      padding-left: 58px;
-    }
-
-    &--emotions {
-      padding-top: 48px;
-      padding-bottom: 38px;
-      margin-bottom: 65px;
-    }
-  }
-
-  .contest__form-section--contacts .form-section__item {
-    display: inline-block;
-    width: 375px;
-    padding: 0;
-    margin-bottom: 12px;
-
-    &:first-of-type {
-      margin-right: 65px;
-      margin-bottom: 0;
-    }
-  }
-
-  .contest__form-section--goals .form-section__list {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-
-    padding-right: 0;
-    padding-left: 58px;
-  }
-
-  .contest__form-section--goals .form-section__item {
-    width: 267px;
-
-    &:first-child {
-      order: -6;
-    }
-
-    &:nth-child(2) {
-      order: -3;
-    }
-
-    &:nth-child(3) {
-      order: -5;
-    }
-
-    &:nth-child(4) {
-      order: -2;
-    }
-
-    &:nth-child(5) {
-      order: -4;
-    }
-
-    &:nth-child(6) {
-      order: -1;
     }
   }
 }

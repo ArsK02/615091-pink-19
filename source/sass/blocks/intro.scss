@@ -42,7 +42,25 @@
   }
 }
 
+@media
+  (min-resolution: $min-dpi),
+  (min-resolution: $min-dppx) {
+    .intro__header {
+      background-image: url("../img/bg-back-mobile@2x.jpg");
+      background-size: 320px auto;
+
+      &--image {
+        &::before {
+          background-image: url("../img/iphone-hand-mobile@2x.png");
+          background-size: 258px auto;
+        }
+      }
+    }
+  }
+
 .intro__slogan {
+  margin: 0;
+
   font-size: 24px;
   font-weight: 300;
   line-height: 30px;
@@ -90,6 +108,24 @@
     }
   }
 
+  @media
+  (min-resolution: $min-dpi),
+  (min-resolution: $min-dppx) {
+    .intro {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-size: 1200px auto;
+    }
+
+    .intro__header {
+      &--image {
+        &::before {
+          background-image: url("../img/iphone-hand-tablet@2x.png");
+          background-size: 700px auto;
+        }
+      }
+    }
+  }
+
   .intro__slogan {
     padding-right: 50px;
     padding-left: 50px;
@@ -103,6 +139,7 @@
     width: 300px;
     margin-right: auto;
     margin-left: 20px;
+    padding-bottom: 375px;
 
     font-size: 40px;
     line-height: 50px;
@@ -112,7 +149,7 @@
 
   .intro__downloads {
     position: absolute;
-    top: 357px;
+    bottom: 110px;
     left: 20px;
   }
 }
@@ -140,24 +177,48 @@
     }
   }
 
+  @media
+  (min-resolution: $min-dpi),
+  (min-resolution: $min-dppx) {
+    .intro {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-size: 2560px auto;
+    }
+
+    .intro__header {
+      &--image {
+        &::before {
+          background-image: url("../img/iphone-hand-desktop@2x.png");
+          background-size: 1050px auto;
+        }
+      }
+    }
+  }
+
   .intro__slogan {
+    max-width: 940px;
+    width: 100%;
+    margin: 0 auto;
+    padding-right: 95px;
+    padding-left: 95px;
+
     font-size: 50px;
 
-    padding-right: 225px;
-    padding-left: 225px;
+    box-sizing: border-box;
   }
 
   .intro__header--image .intro__slogan {
     margin-left: 0;
     padding-right: 30px;
     padding-left: 30px;
+    padding-bottom: 450px;
 
     font-size: 50px;
     line-height: 62px;
   }
 
   .intro__downloads {
-    top: 425px;
+    bottom: 125px;
     left: 0;
   }
 }

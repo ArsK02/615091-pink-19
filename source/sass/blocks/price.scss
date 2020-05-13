@@ -44,10 +44,19 @@
 }
 
 @media (min-width: $desktop-width) {
+  .price {
+    overflow: hidden;
+  }
+
+  .price__triangle {
+    min-width: 1200px;
+    margin: 0 auto;
+  }
+
   .price__wrapper {
     max-width: 940px;
     margin: 0 auto;
-    padding-top: 55px;
+    padding-top: 52px;
     padding-bottom: 60px;
     padding-left: 0;
     padding-right: 0;

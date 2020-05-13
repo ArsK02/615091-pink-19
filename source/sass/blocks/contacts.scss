@@ -1,12 +1,16 @@
+.contacts {
+  position: relative;
+}
+
 .contacts__wrapper {
   padding-top: 42px;
   padding-bottom: 40px;
-  margin-bottom: -40px;
 
   text-align: center;
 }
 
 .contacts__slogan {
+  margin: 0;
   margin-bottom: 32px;
 
   font-size: 24px;
@@ -15,6 +19,7 @@
 }
 
 .contacts__text {
+  margin: 0;
   font-size: 18px;
   font-weight: bold;
 
@@ -37,9 +42,9 @@
 }
 
 .contacts__triangle {
-  position: relative;
+  position: absolute;
 
-  bottom: -39px;
+  bottom: -32px;
   width: 100%;
   height: 32px;
   z-index: 1;
@@ -51,8 +56,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-    padding-bottom: 0;
-    margin-bottom: -50px;
+    padding-bottom: 27px;
   }
 
   .contacts__slogan {
@@ -81,16 +85,15 @@
   }
 
   .contacts__triangle {
-    bottom: -76px;
+    bottom: -68px;
     height: 69px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .contacts__wrapper {
-    margin-bottom: -105px;
     padding-top: 65px;
-    padding-bottom: 0;
+    padding-bottom: 8px;
   }
 
   .contacts__slogan {
@@ -110,7 +113,7 @@
   }
 
   .contacts__triangle {
-    bottom: -110px;
+    bottom: -102px;
     height: 103px;
   }
 }

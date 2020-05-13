@@ -1,11 +1,13 @@
 .user-gallery__header {
   padding-top: 45px;
-  padding-bottom: 48px;
+  padding-bottom: 50px;
   padding-right: 38px;
   padding-left: 38px;
 }
 
 .user-gallery__slogan {
+  margin: 0;
+
   text-align: center;
   line-height: 30px;
 }
@@ -20,7 +22,7 @@
 @media (min-width: $tablet-width) {
   .user-gallery__header {
     padding-top: 90px;
-    padding-bottom: 77px;
+    padding-bottom: 75px;
     padding-right: 100px;
     padding-left: 100px;
   }
@@ -38,7 +40,7 @@
     padding: 0;
     margin: 0 auto;
     flex-direction: row;
-    align-content: flex-start;
+    align-items: flex-start;
     justify-content: space-between;
   }
 }
@@ -50,7 +52,7 @@
 
     padding-right: 182px;
     padding-left: 182px;
-    padding-bottom: 85px;
+    padding-bottom: 88px;
 
     box-sizing: border-box;
   }
