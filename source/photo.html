@@ -8,34 +8,6 @@
   <link rel="stylesheet" href="css/style.min.css">
   <script src="js/picturefill.min.js" async></script>
   <link rel="preload" href="/fonts/opensans.woff2" as="font">
-  <!-- Pixel Glass -->
-  <style>
-    HTML {
-      background-repeat: no-repeat;
-      background-position: 50% 0;
-      /* Mobile layout by default */
-      background-image: url("preview/pink-photo-mobile-menu.png");
-    }
-
-    /* Tablet */
-    @media (min-width: 660px) {
-      HTML {
-        /* Tablet layout */
-        background-image: url("preview/pink-photo-tablet-menu.png");
-      }
-    }
-
-    /* Desktop */
-    @media (min-width: 960px) {
-      HTML {
-        /* Desktop layout */
-        background-image: url("preview/pink-photo-desktop.png");
-      }
-    }
-  </style>
-  <link href="pixel-glass/styles.css" rel="stylesheet">
-  <script src="pixel-glass/script.js"></script>
-  <!-- // Pixel Glass -->
 </head>
 
 <body class="body">
@@ -88,7 +60,7 @@
         </p>
       </div>
       <div class="user-gallery__post user-post user-post--panorama">
-        <a href="#" class="user-post__image-link">
+        <a href="img/panorama-desktop@1x.jpg" class="user-post__image-link">
           <picture>
             <source type="image/webp" srcset="img/panorama-desktop@1x.webp 1x, img/panorama-desktop@2x.webp 2x"
               media="(min-width: 960px)">
@@ -121,7 +93,7 @@
       </div>
       <div class="user-gallery__wrapper container">
         <div class="user-gallery__post user-post">
-          <a href="#" class="user-post__image-link">
+          <a href="img/photo-car-desktop@1x.jpg" class="user-post__image-link">
             <picture>
               <source type="image/webp" srcset="img/photo-car-desktop@1x.webp 1x, img/photo-car-desktop@2x.webp 2x"
                 media="(min-width: 960px)">
@@ -154,7 +126,7 @@
           </div>
         </div>
         <div class="user-gallery__post user-post">
-          <a href="#" class="user-post__image-link">
+          <a href="img/photo-drumset-desktop@1x.jpg" class="user-post__image-link">
             <picture>
               <source type="image/webp"
                 srcset="img/photo-drumset-desktop@1x.webp 1x, img/photo-drumset-desktop@2x.webp 2x"
@@ -190,7 +162,7 @@
           </div>
         </div>
         <div class="user-gallery__post user-post">
-          <a href="#" class="user-post__image-link">
+          <a href="img/photo-window-desktop@1x.jpg" class="user-post__image-link">
             <picture>
               <source type="image/webp"
                 srcset="img/photo-window-desktop@1x.webp 1x, img/photo-window-desktop@2x.webp 2x"
@@ -224,7 +196,7 @@
           </div>
         </div>
         <div class="user-gallery__post user-post">
-          <a href="#" class="user-post__image-link">
+          <a href="img/photo-fair-desktop@1x.jpg" class="user-post__image-link">
             <picture>
               <source type="image/webp" srcset="img/photo-fair-desktop@1x.webp 1x, img/photo-fair-desktop@2x.webp 2x"
                 media="(min-width: 960px)">
@@ -257,7 +229,7 @@
           </div>
         </div>
         <div class="user-gallery__post user-post">
-          <a href="#" class="user-post__image-link">
+          <a href="img/photo-pov-desktop@1x.jpg" class="user-post__image-link">
             <picture>
               <source type="image/webp" srcset="img/photo-pov-desktop@1x.webp 1x, img/photo-pov-desktop@2x.webp 2x"
                 media="(min-width: 960px)">
@@ -290,7 +262,7 @@
           </div>
         </div>
         <div class="user-gallery__post user-post">
-          <a href="#" class="user-post__image-link">
+          <a href="img/photo-wing-desktop@1x.jpg" class="user-post__image-link">
             <picture>
               <source type="image/webp" srcset="img/photo-wing-desktop@1x.webp 1x, img/photo-wing-desktop@2x.webp 2x"
                 media="(min-width: 960px)">
@@ -423,10 +395,10 @@
     <div class="page-footer__main-info footer-info">
       <div class="footer-info__wrapper">
         <a href="#" class="footer-info__logo logo logo--footer">
-          <svg class="logo__image">
+          <svg class="logo__image" width="146px" height="40px">
             <use xlink:href="#logo-footer" width="146px" height="40px"></use>
           </svg>
-          <svg class="logo__image logo__image--only-desktop">
+          <svg class="logo__image logo__image--only-desktop-footer" width="146px" height="40px">
             <use xlink:href="#logo-footer-desktop" width="146px" height="40px"></use>
           </svg>
           <span class="visually-hidden">Логотип Pink</span>
@@ -453,7 +425,7 @@
           <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive" rel="nofollow" target="_blank">
             <span class="visually-hidden">HTML Academy</span>
             <svg class="copyright__logo-image" width="27px" height="34px">
-              <use xlink:href="#logo-copyright"></use>
+              <use xlink:href="#logo-copyright" width="27px" height="34px"></use>
             </svg>
           </a>
         </div>

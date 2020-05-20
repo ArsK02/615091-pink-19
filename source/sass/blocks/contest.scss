@@ -30,7 +30,8 @@
 }
 
 .contest__button {
-  margin-bottom: 32px;
+  margin-top: 5px;
+  margin-bottom: 20px;
 }
 
 @media (min-width: $tablet-width) {
@@ -39,7 +40,7 @@
   }
 
   .contest__slogan {
-    margin-bottom: 38px;
+    margin-bottom: 40px;
     padding-left: 55px;
     padding-right: 55px;
 
@@ -53,13 +54,37 @@
   .contest__form {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     margin-right: 0;
     margin-left: 0;
   }
 
   .contest__form-section {
+    border: 2px solid $border-light;
+    border-radius: 3px;
+
+    &--personal-info {
+      order: -1;
+      padding-bottom: 0;
+      border: none;
+    }
+
+    &--contacts {
+      order: 2;
+      padding-bottom: 0;
+    }
+
+    &--emotions {
+      order: 4;
+      padding-bottom: 40px;
+    }
+
+    &--goals {
+      order: 3;
+    }
+
     &--grey {
-      background-color: unset;
+      background-color: transparent;
     }
 
     &:nth-child(3) {
@@ -100,6 +125,26 @@
   }
 
   .contest__form-section {
+    &--personal-info {
+      width: 435px;
+      padding-top: 18px;
+      padding-bottom: 0;
+    }
+
+    &--goals {
+      padding-bottom: 15px;
+    }
+
+    &--contacts {
+      padding-right: 58px;
+      padding-left: 58px;
+    }
+
+    &--emotions {
+      padding-top: 30px;
+      padding-bottom: 38px;
+    }
+
     &:nth-child(4) {
       width: 435px;
     }

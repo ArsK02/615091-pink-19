@@ -51,7 +51,6 @@
     justify-content: space-between;
     min-width: 275px;
     width: 100%;
-    height: min-content;
 
     margin-left: 42px;
     margin-bottom: 58px;
@@ -86,12 +85,13 @@
   }
 
   .post-edit__tabs {
+    min-width: auto;
     margin-left: 90px;
   }
 
   .post-edit__button {
     min-width: 183px;
-    width: unset;
+    width: auto;
     margin: 0;
     margin-top: auto;
     margin-bottom: 6px;

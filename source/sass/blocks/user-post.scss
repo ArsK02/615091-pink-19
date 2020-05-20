@@ -7,7 +7,7 @@
   &--panorama {
     position: relative;
 
-    max-width: fit-content;
+    max-width: 100%;
     width: 100vw;
 
     &::before {
@@ -89,6 +89,7 @@
     }
 
     &--panorama {
+      max-width: unset;
       margin-bottom: 50px;
 
       &::before {
@@ -121,6 +122,8 @@
   }
 
   .user-post--panorama .user-post__content {
+    width: 620px;
+    margin: 0 auto;
     flex-direction: row;
     flex-wrap: wrap;
     min-height: 121px;
@@ -150,6 +153,7 @@
     margin-bottom: 52px;
 
     &--panorama {
+      max-width: 1200px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -166,6 +170,7 @@
       overflow: hidden;
 
       &::before {
+        top: 55px;
         right: 10.83%;
       }
     }

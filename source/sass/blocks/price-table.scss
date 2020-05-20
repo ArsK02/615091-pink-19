@@ -40,7 +40,14 @@
 
   &--hidden-mobile {
     display: none;
+    border: none;
   }
+}
+
+.price-table__tariff {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
 }
 
 .price-table__currency {
@@ -76,6 +83,10 @@
     }
   }
 
+  .price-table__tariff {
+    font-size: 16px;
+  }
+
   .price-table__currency {
     font-size: 18px;
   }
@@ -85,16 +96,12 @@
       display: block;
 
       font-size: 14px;
-      text-transform: initial;
+      text-transform: none;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
-  .price-table__currency {
-    font-size: 24px;
-  }
-
   .price-table__th {
     &--hit {
       &::before {
@@ -107,6 +114,17 @@
         left: 9px;
       }
     }
+  }
+
+  .price-table__tariff {
+    display: inline-block;
+    margin-bottom: 3px;
+
+    font-size: 18px;
+  }
+
+  .price-table__currency {
+    font-size: 24px;
   }
 
   .price-table__td {

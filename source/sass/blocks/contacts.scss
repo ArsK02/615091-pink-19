@@ -61,7 +61,7 @@
 
   .contacts__slogan {
     width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 42px;
 
     font-size: 40px;
     line-height: 50px;
@@ -80,6 +80,7 @@
     }
 
     &:not(:last-of-type) {
+      max-width: 50%;
       margin-bottom: 45px;
     }
   }
@@ -103,8 +104,14 @@
   }
 
   .contacts__text {
+    max-width: 33.3%;
+
     &:nth-child(4) {
       order: 5;
+    }
+
+    &:not(:last-of-type) {
+      max-width: 33.3%;
     }
   }
 

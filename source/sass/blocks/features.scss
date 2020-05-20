@@ -23,6 +23,8 @@
 
 .features__triangle {
   width: 100%;
+  height: auto;
+  max-height: 31px;
   background-color: $light-grey;
 }
 
@@ -85,7 +87,7 @@
     padding-top: 45px;
     padding-right: 20px;
     padding-left: 20px;
-    padding-bottom: 48px;
+    padding-bottom: 52px;
   }
 
   .features__offer-text {
@@ -102,6 +104,10 @@
     }
   }
 
+  .features__triangle {
+    max-height: 50px;
+  }
+
   .features--image .features__container {
     padding-bottom: 0;
   }
@@ -111,7 +117,7 @@
     flex-direction: column;
     align-items: flex-end;
 
-    padding-top: 24px;
+    padding-top: 26px;
   }
 
   .features__item {
@@ -131,7 +137,7 @@
     width: 268px;
     margin-bottom: 0;
 
-    clip: unset;
+    clip: auto;
   }
 }
 
@@ -153,6 +159,7 @@
 
   .features__triangle {
     min-width: 1200px;
+    max-height: 94px;
     margin: 0 auto;
   }
 

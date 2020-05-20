@@ -8,47 +8,19 @@
   <link rel="stylesheet" href="css/style.min.css">
   <script src="js/picturefill.min.js" async></script>
   <link rel="preload" href="/fonts/opensans.woff2" as="font">
-  <!-- Pixel Glass -->
-  <style>
-    HTML {
-      background-repeat: no-repeat;
-      background-position: 50% 0;
-      /* Mobile layout by default */
-      background-image: url("preview/pink-index-mobile-menu.png");
-    }
-
-    /* Tablet */
-    @media (min-width: 660px) {
-      HTML {
-        /* Tablet layout */
-        background-image: url("preview/pink-index-tablet-menu.png");
-      }
-    }
-
-    /* Desktop */
-    @media (min-width: 960px) {
-      HTML {
-        /* Desktop layout */
-        background-image: url("preview/pink-index-desktop.png");
-      }
-    }
-  </style>
-  <link href="pixel-glass/styles.css" rel="stylesheet">
-  <script src="pixel-glass/script.js"></script>
-  <!-- // Pixel Glass -->
 </head>
 
 <body class="body">
   <header class="page-header page-header--static">
     <div class="page-header__wrapper">
       <a href="index.html" class="page-header__logo logo">
-        <svg class="logo__image">
+        <svg class="logo__image" width="75px" height="23px">
           <use xlink:href="#logo" width="75px" height="23px"></use>
         </svg>
-        <svg class="logo__image logo__image--tablet">
+        <svg class="logo__image logo__image--tablet" width="146px" height="40px">
           <use xlink:href="#logo-tablet" width="146px" height="40px"></use>
         </svg>
-        <svg class="logo__image logo__image--desktop">
+        <svg class="logo__image logo__image--desktop" width="146px" height="40px">
           <use xlink:href="#logo-desktop" width="146px" height="40px"></use>
         </svg>
         <span class="visually-hidden">Логотип Pink</span>
@@ -74,10 +46,10 @@
 
   <main class="page-main">
     <h1 class="visually-hidden">Pink — фотоприложение для раскрашивания серых будней</h1>
-    <section class="intro">
+    <section class="intro intro--image">
       <div class="intro__wrapper">
         <h2 class="visually-hidden">Скачайте приложение Pink для вашего устройства</h2>
-        <div class="intro__header intro__header--image">
+        <div class="intro__header">
           <span class="intro__slogan">Взгляните на жизнь иначе!</span>
         </div>
         <div class="intro__downloads download-app">
@@ -92,9 +64,8 @@
                     height="56"></a>
               </li>
               <li class="download-app__item">
-                <a href="https://play.google.com/store" class="download-app__link"><img
-                    src="img/logo-android.svg" alt="Скачать с Play Market" class="download-app__image" width="43"
-                    height="47"></a>
+                <a href="https://play.google.com/store" class="download-app__link"><img src="img/logo-android.svg"
+                    alt="Скачать с Play Market" class="download-app__image" width="43" height="47"></a>
               </li>
               <li class="download-app__item">
                 <a href="https://www.microsoft.com/ru-ru/store/apps/windows" class="download-app__link"><img
@@ -115,8 +86,7 @@
         <p class="features__offer-text">Устали от серости мегаполиса?</p>
         <p class="features__offer-text">Нам есть, что вам предложить!</p>
       </div>
-      <svg class="features__triangle" enable-background="new 0 0 1200 94.074" xml:space="preserve"
-        viewBox="0 0 1200 94.074">
+      <svg class="features__triangle" viewBox="0 0 1200 94.074" enable-background="new 0 0 1200 94.074" xml:space="preserve" width="1200px" height="94px" preserveAspectRatio="none">
         <use xlink:href="#triangle" width="1200px" height="94px"></use>
       </svg>
       <div class="features__wrapper">
@@ -214,101 +184,101 @@
         </ul>
         <button class="carousel__arrow carousel__arrow--left slide-arrow" type="button">
           Назад
-          <svg class="slide-arrow__image slide-arrow__image--left">
+          <svg class="slide-arrow__image slide-arrow__image--left" width="22px" height="42px">
             <use xlink:href="#slide-arrow" width="22px" height="42px"></use>
           </svg>
         </button>
         <button class="carousel__arrow carousel__arrow--right slide-arrow" type="button">
           Вперед
-          <svg class="slide-arrow__image slide-arrow__image--right">
+          <svg class="slide-arrow__image slide-arrow__image--right" width="1200px" height="94px">
             <use xlink:href="#slide-arrow" width="22px" height="42px"></use>
           </svg>
         </button>
       </div>
     </section>
-    <section class="price">
-      <svg class="price__triangle" enable-background="new 0 0 1200 94.074" xml:space="preserve"
-        viewBox="0 0 1200 94.074">
-        <use xlink:href="#triangle" width="1200px" height="94px"></use>
+    <section class="price-section">
+      <svg class="price-section__triangle" viewBox="0 0 1200 94.074" enable-background="new 0 0 1200 94.074" xml:space="preserve" width="1200px"
+        height="94px" preserveAspectRatio="none">
+        <use xlink:href="#triangle"></use>
       </svg>
-      <div class="price__wrapper">
+      <div class="price-section__wrapper">
         <h2 class="visually-hidden">Тарифы</h2>
-        <table class="price__table table price-table">
+        <table class="price-section__table table price-table">
           <thead class="table__header">
             <tr class="table__row">
               <th class="table__header-field  price-table__th  price-table__th--hidden-mobile"></th>
               <th class="table__header-field price-table__th">
-                <span class="table__tariff-title">База</span><br>
+                <span class="table__tariff-title price-table__tariff">База</span><br>
                 <span class="table__tariff-value price-table__currency">1,99 USD</span>
               </th>
               <th class="table__header-field price-table__th price-table__th--hit">
-                <span class="table__tariff-title">Стандарт</span><br>
+                <span class="table__tariff-title price-table__tariff">Стандарт</span><br>
                 <span class="table__tariff-value price-table__currency">3,99 USD</span>
               </th>
               <th class="table__header-field price-table__th">
-                <span class="table__tariff-title">Анлим</span><br>
+                <span class="table__tariff-title price-table__tariff">Анлим</span><br>
                 <span class="table__tariff-value price-table__currency">9,99 USD</span>
               </th>
             </tr>
           </thead>
           <tbody class="table__body">
             <tr class="table__row">
-              <td class="table__field price-table__td  price-table__td--hidden-mobile">Розовый Фильтр</td>
-              <td class="table__field">
-                <span class="table__field-text table__field-text--hidden-desktop-n-tablet">Розовый Фильтр</span> <span
+              <td class="table__td price-table__td  price-table__td--hidden-mobile">Розовый Фильтр</td>
+              <td class="table__td">
+                <span class="table__td-text table__td-text--hidden-desktop-n-tablet">Розовый Фильтр</span> <span
                   class="visually-hidden">Да</span>
                 <span class="icon icon--true"></span>
               </td>
-              <td class="table__field">
-                <span class="table__field-text table__field-text--hidden-desktop-n-tablet">Розовый Фильтр</span> <span
+              <td class="table__td">
+                <span class="table__td-text table__td-text--hidden-desktop-n-tablet">Розовый Фильтр</span> <span
                   class="visually-hidden">Да</span>
                 <span class="icon icon--true"></span>
               </td>
-              <td class="table__field">
-                <span class="table__field-text table__field-text--hidden-desktop-n-tablet">Розовый Фильтр</span> <span
-                  class="visually-hidden">Да</span>
-                <span class="icon icon--true"></span>
-              </td>
-            </tr>
-            <tr class="table__row">
-              <td class="table__field price-table__td price-table__td--hidden-mobile">Смайлики</td>
-              <td class="table__field">
-                <span class="table__field-text table__field-text--hidden-desktop-n-tablet">Смайлики</span> <span
-                  class="visually-hidden">отсутствуют</span>
-                <span class="icon icon--false"></span>
-              </td>
-              <td class="table__field">
-                <span class="table__field-text table__field-text--hidden-desktop-n-tablet">Смайлики</span> <span
-                  class="visually-hidden">Да</span>
-                <span class="icon icon--true"></span>
-              </td>
-              <td class="table__field">
-                <span class="table__field-text table__field-text--hidden-desktop-n-tablet">Смайлики</span> <span
+              <td class="table__td">
+                <span class="table__td-text table__td-text--hidden-desktop-n-tablet">Розовый Фильтр</span> <span
                   class="visually-hidden">Да</span>
                 <span class="icon icon--true"></span>
               </td>
             </tr>
             <tr class="table__row">
-              <td class="table__field price-table__td price-table__td--hidden-mobile">Комментарии</td>
-              <td class="table__field">
-                <span class="table__field-text table__field-text--hidden-desktop-n-tablet">Комментарии</span> <span
+              <td class="table__td price-table__td price-table__td--hidden-mobile">Смайлики</td>
+              <td class="table__td">
+                <span class="table__td-text table__td-text--hidden-desktop-n-tablet">Смайлики</span> <span
                   class="visually-hidden">отсутствуют</span>
                 <span class="icon icon--false"></span>
               </td>
-              <td class="table__field">
-                <span class="table__field-text table__field-text--hidden-desktop-n-tablet">Комментарии</span> <span
+              <td class="table__td">
+                <span class="table__td-text table__td-text--hidden-desktop-n-tablet">Смайлики</span> <span
+                  class="visually-hidden">Да</span>
+                <span class="icon icon--true"></span>
+              </td>
+              <td class="table__td">
+                <span class="table__td-text table__td-text--hidden-desktop-n-tablet">Смайлики</span> <span
+                  class="visually-hidden">Да</span>
+                <span class="icon icon--true"></span>
+              </td>
+            </tr>
+            <tr class="table__row">
+              <td class="table__td price-table__td price-table__td--hidden-mobile">Комментарии</td>
+              <td class="table__td">
+                <span class="table__td-text table__td-text--hidden-desktop-n-tablet">Комментарии</span> <span
                   class="visually-hidden">отсутствуют</span>
                 <span class="icon icon--false"></span>
               </td>
-              <td class="table__field">
-                <span class="table__field-text table__field-text--hidden-desktop-n-tablet">Комментарии</span> <span
+              <td class="table__td">
+                <span class="table__td-text table__td-text--hidden-desktop-n-tablet">Комментарии</span> <span
+                  class="visually-hidden">отсутствуют</span>
+                <span class="icon icon--false"></span>
+              </td>
+              <td class="table__td">
+                <span class="table__td-text table__td-text--hidden-desktop-n-tablet">Комментарии</span> <span
                   class="visually-hidden">Да</span>
                 <span class="icon icon--true"></span>
               </td>
             </tr>
           </tbody>
         </table>
-        <ul class="price__toggles slide-toggle">
+        <ul class="price-section__toggles slide-toggle">
           <li class="slide-toggle__item">
             <button class="slide-toggle__button" type="button">1</button>
           </li>
@@ -350,8 +320,7 @@
       </svg>
     </section>
     <div class="page-footer__map map">
-      <a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps"
-        class="visually-hidden">Санкт‑Петербург</a><a class="visually-hidden"
+      <a class="visually-hidden"
         href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.324002%2C59.938200&utm_medium=mapframe&utm_source=maps&z=17.03">Большая
         Конюшенная улица, 19/8 —
         Яндекс.Карты</a><iframe class="map__iframe" src="https://yandex.ru/map-widget/v1/-/CKv5INO8" width="320"
@@ -360,10 +329,10 @@
     <div class="page-footer__main-info page-footer__main-info--mobile-hidden footer-info">
       <div class="footer-info__wrapper">
         <a href="#" class="footer-info__logo logo logo--footer">
-          <svg class="logo__image">
+          <svg class="logo__image" width="146px" height="40px">
             <use xlink:href="#logo-footer" width="146px" height="40px"></use>
           </svg>
-          <svg class="logo__image logo__image--only-desktop">
+          <svg class="logo__image logo__image--only-desktop-footer" width="146px" height="40px">
             <use xlink:href="#logo-footer-desktop" width="146px" height="40px"></use>
           </svg>
           <span class="visually-hidden">Логотип Pink</span>
@@ -389,7 +358,7 @@
           <span class="copyright__text">Разработано</span>
           <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive" rel="nofollow" target="_blank">
             <span class="visually-hidden">HTML Academy</span>
-            <svg class="copyright__logo-image">
+            <svg class="copyright__logo-image" width="27px" height="34px">
               <use xlink:href="#logo-copyright" width="27px" height="34px"></use>
             </svg>
           </a>

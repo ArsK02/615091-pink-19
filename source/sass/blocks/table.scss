@@ -27,13 +27,7 @@
   }
 }
 
-.table__tariff-title {
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 30px;
-}
-
-.table__field {
+.table__td {
   position: relative;
 
   padding: 0;
@@ -51,7 +45,7 @@
   background-color: $white;
 }
 
-.table__field:not(:nth-child(2)) {
+.table__td:not(:nth-child(2)) {
   border-left: none;
 }
 
@@ -61,17 +55,15 @@
   }
 
   .table__header-field {
-    min-width: 154px;
+    min-width: auto;
+    width: 25%;
+    box-sizing: border-box;
 
     padding-top: 11px;
     padding-bottom: 8px;
   }
 
-  .table__tariff-title {
-    font-size: 16px;
-  }
-
-  .table__field {
+  .table__td {
     min-height: 47px;
     padding: 0;
     padding-left: 15px;
@@ -84,15 +76,15 @@
     }
   }
 
-  .table__field:not(:nth-child(2)) {
+  .table__td:not(:nth-child(2)) {
     border-left: 2px solid $border-light;
   }
 
-  .table__row:first-child .table__field:first-child {
+  .table__row:first-child .table__td:first-child {
     border-top: 2px solid $border-light;
   }
 
-  .table__field-text {
+  .table__td-text {
     &--hidden-desktop-n-tablet {
       display: none;
     }
@@ -101,20 +93,11 @@
 
 @media (min-width: $desktop-width) {
   .table__header-field {
-    min-width: 230px;
-
     padding-top: 18px;
     padding-bottom: 19px;
   }
 
-  .table__tariff-title {
-    display: inline-block;
-    margin-bottom: 3px;
-
-    font-size: 18px;
-  }
-
-  .table__field {
+  .table__td {
     min-height: 61px;
     padding-left: 20px;
     padding-top: 15px;
