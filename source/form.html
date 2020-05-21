@@ -6,8 +6,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" href="css/style.min.css">
-  <script src="js/picturefill.min.js" async></script>
+  <script src="js/picturefill.js" async></script>
   <link rel="preload" href="/fonts/opensans.woff2" as="font">
+  <!-- Pixel Glass -->
+  <style>
+    html {
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      /* Mobile layout by default */
+      background-image: url("pixel-glass/preview/pink-form-mobile-menu.png");
+    }
+
+    /* Tablet */
+    @media (min-width: 660px) {
+      html {
+        /* Tablet layout */
+        background-image: url("pixel-glass/preview/pink-form-tablet-menu.png");
+      }
+    }
+
+    /* Desktop */
+    @media (min-width: 960px) {
+      html {
+        /* Desktop layout */
+        background-image: url("pixel-glass/preview/pink-form-desktop.png");
+      }
+    }
+  </style>
+  <link href="pixel-glass/styles.css" rel="stylesheet">
+  <script src="pixel-glass/script.js"></script>
+  <!-- // Pixel Glass -->
 </head>
 
 <body class="body">
@@ -79,6 +107,44 @@
                 placeholder="Ну и отчество тоже">
             </div>
           </fieldset>
+          <fieldset class="contest__form-section contest__form-section--apps contest__form-section--grey form__fieldset form-section">
+            <legend class="form-section__legend">С каким приложением путешествовали?</legend>
+            <div class="form-section__list form-section__list--radio">
+              <div class="form-section__item">
+                <label class="form-section__radio field field--radio field--custom-radio">
+                  <input class="field__input visually-hidden" type="radio" name="pink-app" value="ios" checked>
+                  <span class="field__text field__text--radio">Pink для IOS</span>
+                </label>
+              </div>
+              <div class="form-section__item">
+                <label class="form-section__radio field field--radio field--custom-radio">
+                  <input class="field__input visually-hidden" type="radio" name="pink-app" value="android">
+                  <span class="field__text field__text--radio">Pink на Android</span>
+                </label>
+              </div>
+              <div class="form-section__item">
+                <label class="form-section__radio field field--radio field--custom-radio">
+                  <input class="field__input visually-hidden" type="radio" name="pink-app" value="windows-phone">
+                  <span class="field__text field__text--radio">Windows Phone</span>
+                </label>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="contest__form-section contest__form-section--contacts form__fieldset form-section">
+            <legend class="form-section__legend form-section__legend--mobile-hidden">Контактная информация</legend>
+            <div class="form-section__item form-section__item--custom field">
+              <input class="field__input field__input--icon field__input--phone" type="tel" id="phone" name="phone"
+                placeholder="Номер, пожалуйста">
+              <span class="field__icon field__icon--phone"></span>
+              <label class="field__label field__label--change-order" for="phone">Номер телефона<span class="field__label-points">:</span></label>
+            </div>
+            <div class="form-section__item form-section__item--custom field">
+              <input class="field__input field__input--icon field__input--email" type="email" id="email" name="email"
+                placeholder="Введите почту *" required>
+              <span class="field__icon field__icon--email"></span>
+              <label class="field__label field__label--change-order" for="email">Адрес почты<span class="field__label-points">:</span></label>
+            </div>
+          </fieldset>
           <fieldset
             class="contest__form-section contest__form-section--goals contest__form-section--grey form__fieldset form-section">
             <legend class="form-section__legend">Ваши безбашенные достижения в путешествии</legend>
@@ -118,44 +184,6 @@
                 <label class="form-section__checkbox field field--checkbox field--custom-checkbox">
                   <input class="field__input visually-hidden" type="checkbox" name="goal6" value="hotel">
                   <span class="field__text field__text--checkbox">Разгромил отель</span>
-                </label>
-              </div>
-            </div>
-          </fieldset>
-          <fieldset class="contest__form-section contest__form-section--contacts form__fieldset form-section">
-            <legend class="form-section__legend form-section__legend--mobile-hidden">Контактная информация</legend>
-            <div class="form-section__item form-section__item--custom field">
-              <input class="field__input field__input--icon field__input--phone" type="tel" id="phone" name="phone"
-                placeholder="Номер, пожалуйста">
-              <span class="field__icon field__icon--phone"></span>
-              <label class="field__label field__label--change-order" for="phone">Номер телефона<span class="field__label-points">:</span></label>
-            </div>
-            <div class="form-section__item form-section__item--custom field">
-              <input class="field__input field__input--icon field__input--email" type="email" id="email" name="email"
-                placeholder="Введите почту *" required>
-              <span class="field__icon field__icon--email"></span>
-              <label class="field__label field__label--change-order" for="email">Адрес почты<span class="field__label-points">:</span></label>
-            </div>
-          </fieldset>
-          <fieldset class="contest__form-section contest__form-section--grey form__fieldset form-section">
-            <legend class="form-section__legend">С каким приложением путешествовали?</legend>
-            <div class="form-section__list form-section__list--radio">
-              <div class="form-section__item">
-                <label class="form-section__radio field field--radio field--custom-radio">
-                  <input class="field__input visually-hidden" type="radio" name="pink-app" value="ios" checked>
-                  <span class="field__text field__text--radio">Pink для IOS</span>
-                </label>
-              </div>
-              <div class="form-section__item">
-                <label class="form-section__radio field field--radio field--custom-radio">
-                  <input class="field__input visually-hidden" type="radio" name="pink-app" value="android">
-                  <span class="field__text field__text--radio">Pink на Android</span>
-                </label>
-              </div>
-              <div class="form-section__item">
-                <label class="form-section__radio field field--radio field--custom-radio">
-                  <input class="field__input visually-hidden" type="radio" name="pink-app" value="windows-phone">
-                  <span class="field__text field__text--radio">Windows Phone</span>
                 </label>
               </div>
             </div>

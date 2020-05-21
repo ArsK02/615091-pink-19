@@ -1,9 +1,13 @@
 .form__bottom {
   order: 5;
+
+  width: 100%;
   padding-right: 20px;
   padding-left: 20px;
 
   text-align: center;
+
+  box-sizing: border-box;
 }
 
 .form__text {
@@ -31,7 +35,6 @@
   }
 
   .form__bottom {
-    width: 100%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -62,7 +65,7 @@
   }
 
   .form__bottom {
-    margin-top: 7px;
+    margin-top: 12px;
   }
 
   .form__button {

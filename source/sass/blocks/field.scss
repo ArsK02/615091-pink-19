@@ -183,6 +183,8 @@
     }
 
     &--textarea {
+      min-height: 194px;
+      margin-top: 0;
       margin-bottom: 5px;
     }
   }
@@ -248,11 +250,6 @@
 
   .field__text {
     padding-left: 56px;
-  }
-
-  .field--textarea {
-    min-height: 194px;
-    margin-top: 0;
   }
 }
 
