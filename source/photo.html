@@ -8,47 +8,19 @@
   <link rel="stylesheet" href="css/style.min.css">
   <script src="js/picturefill.js" async></script>
   <link rel="preload" href="/fonts/opensans.woff2" as="font">
-  <!-- Pixel Glass -->
-  <style>
-    html {
-      background-repeat: no-repeat;
-      background-position: 50% 0;
-      /* Mobile layout by default */
-      background-image: url("pixel-glass/preview/pink-photo-mobile-menu.png");
-    }
-
-    /* Tablet */
-    @media (min-width: 660px) {
-      html {
-        /* Tablet layout */
-        background-image: url("pixel-glass/preview/pink-photo-tablet-menu.png");
-      }
-    }
-
-    /* Desktop */
-    @media (min-width: 960px) {
-      html {
-        /* Desktop layout */
-        background-image: url("pixel-glass/preview/pink-photo-desktop.png");
-      }
-    }
-  </style>
-  <link href="pixel-glass/styles.css" rel="stylesheet">
-  <script src="pixel-glass/script.js"></script>
-  <!-- // Pixel Glass -->
 </head>
 
 <body class="body">
   <header class="page-header page-header--static">
     <div class="page-header__wrapper">
       <a href="index.html" class="page-header__logo logo">
-        <svg class="logo__image">
+        <svg class="logo__image" width="75" height="23">
           <use xlink:href="#logo" width="75px" height="23px"></use>
         </svg>
-        <svg class="logo__image logo__image--tablet">
+        <svg class="logo__image logo__image--tablet" width="146" height="40">
           <use xlink:href="#logo-tablet" width="146px" height="40px"></use>
         </svg>
-        <svg class="logo__image logo__image--desktop">
+        <svg class="logo__image logo__image--desktop" width="146" height="40">
           <use xlink:href="#logo-desktop" width="146px" height="40px"></use>
         </svg>
         <span class="visually-hidden">Логотип Pink</span>
@@ -88,7 +60,7 @@
         </p>
       </div>
       <div class="user-gallery__post user-post user-post--panorama">
-        <a href="img/panorama-desktop@1x.jpg" class="user-post__image-link">
+        <a href="img/panorama-desktop@1x.jpg" class="user-post__image-link" target="_blank">
           <picture>
             <source type="image/webp" srcset="img/panorama-desktop@1x.webp 1x, img/panorama-desktop@2x.webp 2x"
               media="(min-width: 960px)">
@@ -121,7 +93,7 @@
       </div>
       <div class="user-gallery__wrapper container">
         <div class="user-gallery__post user-post">
-          <a href="img/photo-car-desktop@1x.jpg" class="user-post__image-link">
+          <a href="img/photo-car-desktop@1x.jpg" class="user-post__image-link" target="_blank">
             <picture>
               <source type="image/webp" srcset="img/photo-car-desktop@1x.webp 1x, img/photo-car-desktop@2x.webp 2x"
                 media="(min-width: 960px)">
@@ -154,7 +126,7 @@
           </div>
         </div>
         <div class="user-gallery__post user-post">
-          <a href="img/photo-drumset-desktop@1x.jpg" class="user-post__image-link">
+          <a href="img/photo-drumset-desktop@1x.jpg" class="user-post__image-link" target="_blank">
             <picture>
               <source type="image/webp"
                 srcset="img/photo-drumset-desktop@1x.webp 1x, img/photo-drumset-desktop@2x.webp 2x"
@@ -190,7 +162,7 @@
           </div>
         </div>
         <div class="user-gallery__post user-post">
-          <a href="img/photo-window-desktop@1x.jpg" class="user-post__image-link">
+          <a href="img/photo-window-desktop@1x.jpg" class="user-post__image-link" target="_blank">
             <picture>
               <source type="image/webp"
                 srcset="img/photo-window-desktop@1x.webp 1x, img/photo-window-desktop@2x.webp 2x"
@@ -224,7 +196,7 @@
           </div>
         </div>
         <div class="user-gallery__post user-post">
-          <a href="img/photo-fair-desktop@1x.jpg" class="user-post__image-link">
+          <a href="img/photo-fair-desktop@1x.jpg" class="user-post__image-link" target="_blank">
             <picture>
               <source type="image/webp" srcset="img/photo-fair-desktop@1x.webp 1x, img/photo-fair-desktop@2x.webp 2x"
                 media="(min-width: 960px)">
@@ -257,7 +229,7 @@
           </div>
         </div>
         <div class="user-gallery__post user-post">
-          <a href="img/photo-pov-desktop@1x.jpg" class="user-post__image-link">
+          <a href="img/photo-pov-desktop@1x.jpg" class="user-post__image-link" target="_blank">
             <picture>
               <source type="image/webp" srcset="img/photo-pov-desktop@1x.webp 1x, img/photo-pov-desktop@2x.webp 2x"
                 media="(min-width: 960px)">
@@ -290,7 +262,7 @@
           </div>
         </div>
         <div class="user-gallery__post user-post">
-          <a href="img/photo-wing-desktop@1x.jpg" class="user-post__image-link">
+          <a href="img/photo-wing-desktop@1x.jpg" class="user-post__image-link" target="_blank">
             <picture>
               <source type="image/webp" srcset="img/photo-wing-desktop@1x.webp 1x, img/photo-wing-desktop@2x.webp 2x"
                 media="(min-width: 960px)">
@@ -359,7 +331,7 @@
                     <button class="tabs-controls__control tabs-controls__control--active" type="button">
                       <span class="visually-hidden">Размер</span>
                       <span class="icon icon--size">
-                        <svg width="48px" height="48px">
+                        <svg width="48" height="48">
                           <use xlink:href="#icon-size"></use>
                         </svg>
                       </span>
@@ -369,7 +341,7 @@
                     <button class="tabs-controls__control tabs-controls__control--active" type="button">
                       <span class="visually-hidden">Цвет</span>
                       <span class="icon icon--color">
-                        <svg width="48px" height="48px">
+                        <svg width="48" height="48">
                           <use xlink:href="#icon-color"></use>
                         </svg>
                       </span>
@@ -379,7 +351,7 @@
                     <button class="tabs-controls__control tabs-controls__control--active" type="button">
                       <span class="visually-hidden">Контраст</span>
                       <span class="icon icon--contrast">
-                        <svg width="32px" height="32px">
+                        <svg width="32" height="32">
                           <use xlink:href="#icon-contrast"></use>
                         </svg>
                       </span>
@@ -423,10 +395,10 @@
     <div class="page-footer__main-info footer-info">
       <div class="footer-info__wrapper">
         <a href="#" class="footer-info__logo logo logo--footer">
-          <svg class="logo__image" width="146px" height="40px">
+          <svg class="logo__image" width="146" height="40">
             <use xlink:href="#logo-footer" width="146px" height="40px"></use>
           </svg>
-          <svg class="logo__image logo__image--only-desktop-footer" width="146px" height="40px">
+          <svg class="logo__image logo__image--only-desktop-footer" width="146" height="40">
             <use xlink:href="#logo-footer-desktop" width="146px" height="40px"></use>
           </svg>
           <span class="visually-hidden">Логотип Pink</span>
@@ -452,7 +424,7 @@
           <span class="copyright__text">Разработано</span>
           <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive" rel="nofollow" target="_blank">
             <span class="visually-hidden">HTML Academy</span>
-            <svg class="copyright__logo-image" width="27px" height="34px">
+            <svg class="copyright__logo-image" width="27" height="34">
               <use xlink:href="#logo-copyright" width="27px" height="34px"></use>
             </svg>
           </a>

@@ -41,6 +41,10 @@
     font-size: 18px;
   }
 
+  .new-post__input + .new-post__input-label {
+    min-width: 300px;
+  }
+
   .new-post__tabs {
     background-image: repeating-linear-gradient($light-grey 0, $light-grey 55px, $tabs-range-gray 55px, $tabs-range-gray 56px, $light-grey 56px, $light-grey 128px, $tabs-range-gray 128px, $tabs-range-gray 129px, $light-grey 129px, $light-grey 198px, $tabs-range-gray 198px, $tabs-range-gray 199px);
   }

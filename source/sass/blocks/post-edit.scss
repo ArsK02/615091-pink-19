@@ -49,7 +49,6 @@
   .post-edit__tabs {
     display: flex;
     justify-content: space-between;
-    min-width: 275px;
     width: 100%;
 
     margin-left: 42px;
@@ -90,8 +89,7 @@
   }
 
   .post-edit__button {
-    min-width: 183px;
-    width: auto;
+    width: 183px;
     margin: 0;
     margin-top: auto;
     margin-bottom: 6px;

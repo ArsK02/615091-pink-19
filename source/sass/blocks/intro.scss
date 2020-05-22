@@ -46,12 +46,12 @@
 @media (min-resolution: $min-dpi), (min-resolution: $min-dppx) {
   .intro__header {
     background-image: url("../img/bg-back-mobile@2x.jpg");
+  }
 
-    .intro--image .intro__header {
-      &::before {
-        background-image: url("../img/iphone-hand-mobile@2x.png");
-        background-size: 258px auto;
-      }
+  .intro--image .intro__header {
+    &::before {
+      background-image: url("../img/iphone-hand-mobile@2x.png");
+      background-size: 258px auto;
     }
   }
 }
@@ -184,12 +184,11 @@
     .intro {
       background-image: url("../img/bg-back-desktop@2x.jpg");
       background-size: 2560px auto;
+    }
 
-      &--image {
-        background-image: url("../img/iphone-hand-desktop@2x.png"), url("../img/bg-back-desktop@2x.jpg");
-        background-size: 1050px auto, 2560px auto;
-        background-position: center 185px, center 0;
-      }
+    .intro--image .intro__wrapper {
+      background-image: url("../img/iphone-hand-desktop@2x.png");
+      background-size: 1050px auto;
     }
   }
 
