@@ -1,40 +1,52 @@
+.contacts {
+  position: relative;
+}
+
 .contacts__wrapper {
   padding-top: 42px;
-  margin-bottom: -45px;
+  padding-bottom: 40px;
 
   text-align: center;
 }
 
 .contacts__slogan {
-  margin-bottom: 35px;
+  margin: 0;
+  margin-bottom: 32px;
 
   font-size: 24px;
   font-weight: 300;
-  line-height: 1.25;
+  line-height: 30px;
 }
 
 .contacts__text {
+  margin: 0;
   font-size: 18px;
   font-weight: bold;
-  line-height: 1.33;
 
   &:not(:last-of-type) {
-    margin-bottom: 22px;
+    margin-bottom: 21px;
   }
+}
+
+.contacts__method {
+  display: inline-block;
+  margin-bottom: 2px;
 }
 
 .contacts__data {
   font-size: 24px;
+  line-height: 30px;
   font-weight: 300;
   text-decoration: none;
   color: $pink;
 }
 
 .contacts__triangle {
-  position: relative;
+  position: absolute;
 
-  bottom: -67px;
+  bottom: -32px;
   width: 100%;
+  height: 32px;
   z-index: 1;
 }
 
@@ -42,59 +54,73 @@
   .contacts__wrapper {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 
-    padding-top: 45px;
-    padding-bottom: 12px;
+    padding-bottom: 27px;
   }
 
   .contacts__slogan {
     width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 42px;
 
     font-size: 40px;
+    line-height: 50px;
+  }
+
+  .contacts__method {
+    margin-bottom: 5px;
   }
 
   .contacts__text {
-    &:not(:last-child) {
-      width: 50%;
-      box-sizing: border-box;
-    }
+    min-width: 300px;
+    box-sizing: border-box;
 
     &:last-child {
       flex-grow: 1;
     }
 
     &:not(:last-of-type) {
-      margin-bottom: 50px;
+      max-width: 50%;
+      margin-bottom: 45px;
     }
+  }
+
+  .contacts__triangle {
+    bottom: -68px;
+    height: 69px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .contacts__wrapper {
-    padding-top: 58px;
-    padding-bottom: 0;
+    padding-top: 65px;
+    padding-bottom: 8px;
   }
 
   .contacts__slogan {
+    margin-bottom: 55px;
     font-size: 50px;
-    line-height: normal;
+    line-height: 60px;
   }
 
   .contacts__text {
-    &:not(:last-child) {
-      width: auto;
-      flex-grow: 1;
-    }
+    max-width: 33.3%;
 
     &:nth-child(4) {
       order: 5;
     }
+
+    &:not(:last-of-type) {
+      max-width: 33.3%;
+    }
   }
 
   .contacts__method {
-    display: inline-block;
+    margin-bottom: 22px;
+  }
 
-    margin-bottom: 30px;
+  .contacts__triangle {
+    bottom: -102px;
+    height: 103px;
   }
 }

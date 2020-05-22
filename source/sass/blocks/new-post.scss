@@ -3,8 +3,8 @@
 }
 
 .new-post__header {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 42px;
+  padding-bottom: 42px;
   padding-right: 12px;
   padding-left: 12px;
 
@@ -12,7 +12,9 @@
 }
 
 .new-post__slogan {
-  line-height: 2.14;
+  margin: 0;
+
+  line-height: 30px;
   text-align: center;
 }
 
@@ -31,13 +33,16 @@
 
 @media (min-width: $tablet-width) {
   .new-post__header {
-    padding-top: 45px;
+    padding-top: 42px;
     padding-bottom: 68px;
   }
 
   .new-post__slogan {
     font-size: 18px;
-    line-height: 1.67;
+  }
+
+  .new-post__input + .new-post__input-label {
+    min-width: 300px;
   }
 
   .new-post__tabs {
@@ -51,7 +56,7 @@
 
 @media (min-width: $desktop-width) {
   .new-post {
-    background-color: unset;
+    background-color: transparent;
   }
 
   .new-post__header {

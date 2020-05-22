@@ -1,13 +1,15 @@
 .user-gallery__header {
-  padding-top: 48px;
+  padding-top: 45px;
   padding-bottom: 50px;
   padding-right: 38px;
   padding-left: 38px;
 }
 
 .user-gallery__slogan {
+  margin: 0;
+
   text-align: center;
-  line-height: 2.14;
+  line-height: 30px;
 }
 
 .user-gallery__wrapper {
@@ -27,7 +29,6 @@
 
   .user-gallery__slogan {
     font-size: 18px;
-    line-height: 1.67;
   }
 
   .user-gallery__slogan br {
@@ -39,16 +40,21 @@
     padding: 0;
     margin: 0 auto;
     flex-direction: row;
-    align-content: flex-start;
+    align-items: flex-start;
     justify-content: space-between;
   }
 }
 
 @media (min-width: $desktop-width) {
   .user-gallery__header {
-    padding-right: 310px;
-    padding-left: 310px;
-    padding-bottom: 85px;
+    width: 940px;
+    margin: 0 auto;
+
+    padding-right: 182px;
+    padding-left: 182px;
+    padding-bottom: 88px;
+
+    box-sizing: border-box;
   }
 
   .user-gallery__wrapper {

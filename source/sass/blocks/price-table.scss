@@ -28,7 +28,7 @@
       height: 14px;
 
       color: $white;
-      line-height: 1;
+      line-height: 14px;
       font-size: 14px;
       font-weight: normal;
       text-transform: uppercase;
@@ -40,13 +40,20 @@
 
   &--hidden-mobile {
     display: none;
+    border: none;
   }
+}
+
+.price-table__tariff {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
 }
 
 .price-table__currency {
   font-size: 24px;
   font-weight: 300;
-  line-height: 1.25;
+  line-height: 30px;
 }
 
 .price-table__td {
@@ -76,9 +83,12 @@
     }
   }
 
+  .price-table__tariff {
+    font-size: 16px;
+  }
+
   .price-table__currency {
     font-size: 18px;
-    line-height: 1.67;
   }
 
   .price-table__td {
@@ -86,17 +96,12 @@
       display: block;
 
       font-size: 14px;
-      text-transform: initial;
+      text-transform: none;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
-  .price-table__currency {
-    font-size: 24px;
-    line-height: 1.25;
-  }
-
   .price-table__th {
     &--hit {
       &::before {
@@ -109,6 +114,17 @@
         left: 9px;
       }
     }
+  }
+
+  .price-table__tariff {
+    display: inline-block;
+    margin-bottom: 3px;
+
+    font-size: 18px;
+  }
+
+  .price-table__currency {
+    font-size: 24px;
   }
 
   .price-table__td {

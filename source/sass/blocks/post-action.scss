@@ -1,3 +1,7 @@
+.post-action {
+  padding-top: 3px;
+}
+
 .post-action__like-button {
   @include button-reset;
   @include no-outline;
@@ -5,9 +9,11 @@
   position: relative;
   display: block;
 
+  height: fit-content;
   padding-left: 32px;
 
   font-size: 0;
+  line-height: 24px;
 
   &::before {
     content: "";
@@ -16,7 +22,7 @@
     top: 6px;
     left: 0;
 
-    width: 13px;
+    width: 15px;
     height: 12px;
 
     background-image: url("../img/icon-heart.svg");
@@ -26,7 +32,7 @@
 
 .post-action__likes {
   font-size: 12px;
-  line-height: 2;
+  line-height: 24px;
   color: $pink;
   text-transform: uppercase;
 }
@@ -35,6 +41,7 @@
   .post-action__like-button {
     width: 100%;
     padding-left: 0;
+    padding-right: 35px;
 
     text-align: left;
 
@@ -42,11 +49,13 @@
 
     &::before {
       right: 5px;
-      left: unset;
+      left: auto;
     }
   }
+}
 
-  .user-post--panorama .post-action__like-button {
-    padding-right: 32px;
+@media (min-width: $desktop-width) {
+  .post-action {
+    padding-top: 5px;
   }
 }

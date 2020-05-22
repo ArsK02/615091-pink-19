@@ -6,25 +6,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <script src="js/picturefill.js" async></script>
+  <link rel="preload" href="/fonts/opensans.woff2" as="font">
 </head>
 
-<body>
+<body class="body">
   <header class="page-header page-header--static">
     <div class="page-header__wrapper">
       <a href="index.html" class="page-header__logo logo">
-        <svg class="logo__image">
-          <use xlink:href="#logo" width="74.426px" height="22.859px"></use>
+        <svg class="logo__image" width="75" height="23">
+          <use xlink:href="#logo" width="75px" height="23px"></use>
         </svg>
-        <svg class="logo__image logo__image--tablet">
-          <use xlink:href="#logo-tablet" width="146.3px" height="40.375px"></use>
+        <svg class="logo__image logo__image--tablet" width="146" height="40">
+          <use xlink:href="#logo-tablet" width="146px" height="40px"></use>
         </svg>
-        <svg class="logo__image logo__image--desktop">
-          <use xlink:href="#logo-desktop" width="146.3px" height="40.375px"></use>
+        <svg class="logo__image logo__image--desktop" width="146" height="40">
+          <use xlink:href="#logo-desktop" width="146px" height="40px"></use>
         </svg>
+        <span class="visually-hidden">Логотип Pink</span>
       </a>
       <nav class="page-header__nav main-nav main-nav--closed main-nav--no-js">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
+        <div class="page-header__nav-options main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item"><a href="index.html" class="site-list__link"><span
                   class="site-list__link-text">Главная</span></a></li>
@@ -56,51 +59,56 @@
           Видите, как не хватает ваших?
         </p>
       </div>
-      <div class="user-gallery__wrapper container">
-        <div class="user-gallery__post user-post user-post--panorama">
+      <div class="user-gallery__post user-post user-post--panorama">
+        <a href="img/panorama-desktop@1x.jpg" class="user-post__image-link" target="_blank">
           <picture>
             <source type="image/webp" srcset="img/panorama-desktop@1x.webp 1x, img/panorama-desktop@2x.webp 2x"
-              media="(min-width: 1200px)">
+              media="(min-width: 960px)">
             <source type="image/webp" srcset="img/panorama-tablet@1x.webp 1x, img/panorama-tablet@2x.webp 2x"
               media="(min-width: 660px)">
             <source type="image/webp" srcset="img/panorama-mobile@1x.webp 1x, img/panorama-mobile@2x.webp 2x">
 
-            <source srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+            <source srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x" media="(min-width: 960px)">
             <source srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x" media="(min-width: 660px)">
             <img class="user-post__image" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x"
-              alt="Фото пользоватиля Анна" width="320" height="137">
+              alt="Фото пользователя Анна" width="320" height="137">
           </picture>
-          <div class="user-post__content">
-            <p class="user-post__info">
-              <span class="user-post__user-name">Анна</span> <span class="user-post__time-counter">(5 минут
-                назад)</span>
-            </p>
-            <p class="user-post__text">
-              Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте
-              свои вопросы
-            </p>
-            <div class="user-post__action post-action">
-              <button class="post-action__like-button" type="button">
-                Лайк
-                <span class="post-action__likes">Нравиться: 215</span>
-              </button>
-            </div>
+        </a>
+        <div class="user-post__content">
+          <p class="user-post__info">
+            <span class="user-post__user-name">Анна</span> <span class="user-post__time-counter">(5 минут
+              назад)</span>
+          </p>
+          <p class="user-post__text">
+            Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте
+            свои вопросы
+          </p>
+          <div class="user-post__action post-action">
+            <button class="post-action__like-button" type="button">
+              Лайк
+              <span class="post-action__likes">Нравится: 215</span>
+            </button>
           </div>
         </div>
+      </div>
+      <div class="user-gallery__wrapper container">
         <div class="user-gallery__post user-post">
-          <picture>
-            <source type="image/webp" srcset="img/photo-car-desktop@1x.webp 1x, img/photo-car-desktop@2x.webp 2x"
-              media="(min-width: 1200px)">
-            <source type="image/webp" srcset="img/photo-car-tablet@1x.webp 1x, img/photo-car-tablet@2x.webp 2x"
-              media="(min-width: 660px)">
-            <source type="image/webp" srcset="img/photo-car-mobile@1x.webp 1x, img/photo-car-mobile@2x.webp 2x">
+          <a href="img/photo-car-desktop@1x.jpg" class="user-post__image-link" target="_blank">
+            <picture>
+              <source type="image/webp" srcset="img/photo-car-desktop@1x.webp 1x, img/photo-car-desktop@2x.webp 2x"
+                media="(min-width: 960px)">
+              <source type="image/webp" srcset="img/photo-car-tablet@1x.webp 1x, img/photo-car-tablet@2x.webp 2x"
+                media="(min-width: 660px)">
+              <source type="image/webp" srcset="img/photo-car-mobile@1x.webp 1x, img/photo-car-mobile@2x.webp 2x">
 
-            <source srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x"
-              media="(min-width: 1200px)">
-            <source srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x" media="(min-width: 660px)">
-            <img class="user-post__image" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x"
-              alt="Фото пользователя Левон" width="280" height="180">
-          </picture>
+              <source srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x"
+                media="(min-width: 960px)">
+              <source srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x"
+                media="(min-width: 660px)">
+              <img class="user-post__image" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x"
+                alt="Фото пользователя Левон" width="280" height="180">
+            </picture>
+          </a>
           <div class="user-post__content">
             <p class="user-post__info">
               <span class="user-post__user-name">Левон</span> <span class="user-post__time-counter">(5 часов
@@ -112,27 +120,31 @@
             <div class="user-post__action post-action">
               <button class="post-action__like-button" type="button">
                 Лайк
-                <span class="post-action__likes">Нравиться: 356</span>
+                <span class="post-action__likes">Нравится: 356</span>
               </button>
             </div>
           </div>
         </div>
         <div class="user-gallery__post user-post">
-          <picture>
-            <source type="image/webp"
-              srcset="img/photo-drumset-desktop@1x.webp 1x, img/photo-drumset-desktop@2x.webp 2x"
-              media="(min-width: 1200px)">
-            <source type="image/webp" srcset="img/photo-drumset-tablet@1x.webp 1x, img/photo-drumset-tablet@2x.webp 2x"
-              media="(min-width: 660px)">
-            <source type="image/webp" srcset="img/photo-drumset-mobile@1x.webp 1x, img/photo-drumset-mobile@2x.webp 2x">
+          <a href="img/photo-drumset-desktop@1x.jpg" class="user-post__image-link" target="_blank">
+            <picture>
+              <source type="image/webp"
+                srcset="img/photo-drumset-desktop@1x.webp 1x, img/photo-drumset-desktop@2x.webp 2x"
+                media="(min-width: 960px)">
+              <source type="image/webp"
+                srcset="img/photo-drumset-tablet@1x.webp 1x, img/photo-drumset-tablet@2x.webp 2x"
+                media="(min-width: 660px)">
+              <source type="image/webp"
+                srcset="img/photo-drumset-mobile@1x.webp 1x, img/photo-drumset-mobile@2x.webp 2x">
 
-            <source srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x"
-              media="(min-width: 1200px)">
-            <source srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x"
-              media="(min-width: 660px)">
-            <img class="user-post__image" src="img/photo-drumset-mobile@1x.jpg"
-              srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Фото пользователя Антон" width="280" height="180">
-          </picture>
+              <source srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x"
+                media="(min-width: 960px)">
+              <source srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x"
+                media="(min-width: 660px)">
+              <img class="user-post__image" src="img/photo-drumset-mobile@1x.jpg"
+                srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Фото пользователя Антон" width="280" height="180">
+            </picture>
+          </a>
           <div class="user-post__content">
             <p class="user-post__info">
               <span class="user-post__user-name">Антон</span> <span class="user-post__time-counter">(12 часов
@@ -144,26 +156,29 @@
             <div class="user-post__action post-action">
               <button class="post-action__like-button" type="button">
                 Лайк
-                <span class="post-action__likes">Нравиться: 666</span>
+                <span class="post-action__likes">Нравится: 666</span>
               </button>
             </div>
           </div>
         </div>
         <div class="user-gallery__post user-post">
-          <picture>
-            <source type="image/webp" srcset="img/photo-window-desktop@1x.webp 1x, img/photo-window-desktop@2x.webp 2x"
-              media="(min-width: 1200px)">
-            <source type="image/webp" srcset="img/photo-window-tablet@1x.webp 1x, img/photo-window-tablet@2x.webp 2x"
-              media="(min-width: 660px)">
-            <source type="image/webp" srcset="img/photo-window-mobile@1x.webp 1x, img/photo-window-mobile@2x.webp 2x">
+          <a href="img/photo-window-desktop@1x.jpg" class="user-post__image-link" target="_blank">
+            <picture>
+              <source type="image/webp"
+                srcset="img/photo-window-desktop@1x.webp 1x, img/photo-window-desktop@2x.webp 2x"
+                media="(min-width: 960px)">
+              <source type="image/webp" srcset="img/photo-window-tablet@1x.webp 1x, img/photo-window-tablet@2x.webp 2x"
+                media="(min-width: 660px)">
+              <source type="image/webp" srcset="img/photo-window-mobile@1x.webp 1x, img/photo-window-mobile@2x.webp 2x">
 
-            <source srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x"
-              media="(min-width: 1200px)">
-            <source srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x"
-              media="(min-width: 660px)">
-            <img class="user-post__image" src="img/photo-window-mobile@1x.jpg"
-              srcset="img/photo-window-mobile@2x.jpg 2x" alt="Фото пользователя Борис" width="280" height="180">
-          </picture>
+              <source srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x"
+                media="(min-width: 960px)">
+              <source srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x"
+                media="(min-width: 660px)">
+              <img class="user-post__image" src="img/photo-window-mobile@1x.jpg"
+                srcset="img/photo-window-mobile@2x.jpg 2x" alt="Фото пользователя Борис" width="280" height="180">
+            </picture>
+          </a>
           <div class="user-post__content">
             <p class="user-post__info">
               <span class="user-post__user-name">Борис</span> <span class="user-post__time-counter">(20 часов
@@ -175,26 +190,28 @@
             <div class="user-post__action post-action">
               <button class="post-action__like-button" type="button">
                 Лайк
-                <span class="post-action__likes">Нравиться: 215</span>
+                <span class="post-action__likes">Нравится: 215</span>
               </button>
             </div>
           </div>
         </div>
         <div class="user-gallery__post user-post">
-          <picture>
-            <source type="image/webp" srcset="img/photo-fair-desktop@1x.webp 1x, img/photo-fair-desktop@2x.webp 2x"
-              media="(min-width: 1200px)">
-            <source type="image/webp" srcset="img/photo-fair-tablet@1x.webp 1x, img/photo-fair-tablet@2x.webp 2x"
-              media="(min-width: 660px)">
-            <source type="image/webp" srcset="img/photo-fair-mobile@1x.webp 1x, img/photo-fair-mobile@2x.webp 2x">
+          <a href="img/photo-fair-desktop@1x.jpg" class="user-post__image-link" target="_blank">
+            <picture>
+              <source type="image/webp" srcset="img/photo-fair-desktop@1x.webp 1x, img/photo-fair-desktop@2x.webp 2x"
+                media="(min-width: 960px)">
+              <source type="image/webp" srcset="img/photo-fair-tablet@1x.webp 1x, img/photo-fair-tablet@2x.webp 2x"
+                media="(min-width: 660px)">
+              <source type="image/webp" srcset="img/photo-fair-mobile@1x.webp 1x, img/photo-fair-mobile@2x.webp 2x">
 
-            <source srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x"
-              media="(min-width: 1200px)">
-            <source srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x"
-              media="(min-width: 660px)">
-            <img class="user-post__image" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x"
-              alt="Фото пользователя Сергей" width="280" height="180">
-          </picture>
+              <source srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x"
+                media="(min-width: 960px)">
+              <source srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x"
+                media="(min-width: 660px)">
+              <img class="user-post__image" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x"
+                alt="Фото пользователя Сергей" width="280" height="180">
+            </picture>
+          </a>
           <div class="user-post__content">
             <p class="user-post__info">
               <span class="user-post__user-name">Сергей</span> <span class="user-post__time-counter">(25 часов
@@ -206,25 +223,28 @@
             <div class="user-post__action post-action">
               <button class="post-action__like-button" type="button">
                 Лайк
-                <span class="post-action__likes">Нравиться: 4</span>
+                <span class="post-action__likes">Нравится: 4</span>
               </button>
             </div>
           </div>
         </div>
         <div class="user-gallery__post user-post">
-          <picture>
-            <source type="image/webp" srcset="img/photo-pov-desktop@1x.webp 1x, img/photo-pov-desktop@2x.webp 2x"
-              media="(min-width: 1200px)">
-            <source type="image/webp" srcset="img/photo-pov-tablet@1x.webp 1x, img/photo-pov-tablet@2x.webp 2x"
-              media="(min-width: 660px)">
-            <source type="image/webp" srcset="img/photo-pov-mobile@1x.webp 1x, img/photo-pov-mobile@2x.webp 2x">
+          <a href="img/photo-pov-desktop@1x.jpg" class="user-post__image-link" target="_blank">
+            <picture>
+              <source type="image/webp" srcset="img/photo-pov-desktop@1x.webp 1x, img/photo-pov-desktop@2x.webp 2x"
+                media="(min-width: 960px)">
+              <source type="image/webp" srcset="img/photo-pov-tablet@1x.webp 1x, img/photo-pov-tablet@2x.webp 2x"
+                media="(min-width: 660px)">
+              <source type="image/webp" srcset="img/photo-pov-mobile@1x.webp 1x, img/photo-pov-mobile@2x.webp 2x">
 
-            <source srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x"
-              media="(min-width: 1200px)">
-            <source srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x" media="(min-width: 660px)">
-            <img class="user-post__image" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x"
-              alt="Фото пользователя Максим" width="280" height="180">
-          </picture>
+              <source srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x"
+                media="(min-width: 960px)">
+              <source srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x"
+                media="(min-width: 660px)">
+              <img class="user-post__image" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x"
+                alt="Фото пользователя Максим" width="280" height="180">
+            </picture>
+          </a>
           <div class="user-post__content">
             <p class="user-post__info">
               <span class="user-post__user-name">Максим</span> <span class="user-post__time-counter">(40 часов
@@ -236,26 +256,28 @@
             <div class="user-post__action post-action">
               <button class="post-action__like-button" type="button">
                 Лайк
-                <span class="post-action__likes">Нравиться: 150</span>
+                <span class="post-action__likes">Нравится: 150</span>
               </button>
             </div>
           </div>
         </div>
         <div class="user-gallery__post user-post">
-          <picture>
-            <source type="image/webp" srcset="img/photo-wing-desktop@1x.webp 1x, img/photo-wing-desktop@2x.webp 2x"
-              media="(min-width: 1200px)">
-            <source type="image/webp" srcset="img/photo-wing-tablet@1x.webp 1x, img/photo-wing-tablet@2x.webp 2x"
-              media="(min-width: 660px)">
-            <source type="image/webp" srcset="img/photo-wing-mobile@1x.webp 1x, img/photo-wing-mobile@2x.webp 2x">
+          <a href="img/photo-wing-desktop@1x.jpg" class="user-post__image-link" target="_blank">
+            <picture>
+              <source type="image/webp" srcset="img/photo-wing-desktop@1x.webp 1x, img/photo-wing-desktop@2x.webp 2x"
+                media="(min-width: 960px)">
+              <source type="image/webp" srcset="img/photo-wing-tablet@1x.webp 1x, img/photo-wing-tablet@2x.webp 2x"
+                media="(min-width: 660px)">
+              <source type="image/webp" srcset="img/photo-wing-mobile@1x.webp 1x, img/photo-wing-mobile@2x.webp 2x">
 
-            <source srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x"
-              media="(min-width: 1200px)">
-            <source srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x"
-              media="(min-width: 660px)">
-            <img class="user-post__image" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x"
-              alt="Фото пользователя Надежда" width="280" height="180">
-          </picture>
+              <source srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x"
+                media="(min-width: 960px)">
+              <source srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x"
+                media="(min-width: 660px)">
+              <img class="user-post__image" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x"
+                alt="Фото пользователя Надежда" width="280" height="180">
+            </picture>
+          </a>
           <div class="user-post__content">
             <p class="user-post__info">
               <span class="user-post__user-name">Надежда</span> <span class="user-post__time-counter">(45 часов
@@ -267,7 +289,7 @@
             <div class="user-post__action post-action">
               <button class="post-action__like-button" type="button">
                 Лайк
-                <span class="post-action__likes">Нравиться: 2560</span>
+                <span class="post-action__likes">Нравится: 2560</span>
               </button>
             </div>
           </div>
@@ -289,13 +311,13 @@
             <label class="new-post__input-label" for="image-input">
               <picture>
                 <source type="image/webp" srcset="img/photo-road-desktop@1x.webp 1x, img/photo-road-desktop@2x.webp 2x"
-                  media="(min-width: 1200px)">
+                  media="(min-width: 960px)">
                 <source type="image/webp" srcset="img/photo-road-tablet@1x.webp 1x, img/photo-road-tablet@2x.webp 2x"
                   media="(min-width: 660px)">
                 <source type="image/webp" srcset="img/photo-road-mobile@1x.webp 1x, img/photo-road-mobile@2x.webp 2x">
 
                 <source srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x"
-                  media="(min-width: 1200px)">
+                  media="(min-width: 960px)">
                 <source srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x"
                   media="(min-width: 660px)">
                 <img class="post-edit__image" src="img/photo-road-mobile@1x.jpg"
@@ -309,7 +331,7 @@
                     <button class="tabs-controls__control tabs-controls__control--active" type="button">
                       <span class="visually-hidden">Размер</span>
                       <span class="icon icon--size">
-                        <svg width="48px" height="48px">
+                        <svg width="48" height="48">
                           <use xlink:href="#icon-size"></use>
                         </svg>
                       </span>
@@ -319,7 +341,7 @@
                     <button class="tabs-controls__control tabs-controls__control--active" type="button">
                       <span class="visually-hidden">Цвет</span>
                       <span class="icon icon--color">
-                        <svg width="48px" height="48px">
+                        <svg width="48" height="48">
                           <use xlink:href="#icon-color"></use>
                         </svg>
                       </span>
@@ -329,7 +351,7 @@
                     <button class="tabs-controls__control tabs-controls__control--active" type="button">
                       <span class="visually-hidden">Контраст</span>
                       <span class="icon icon--contrast">
-                        <svg width="31.92px" height="31.92px">
+                        <svg width="32" height="32">
                           <use xlink:href="#icon-contrast"></use>
                         </svg>
                       </span>
@@ -373,12 +395,13 @@
     <div class="page-footer__main-info footer-info">
       <div class="footer-info__wrapper">
         <a href="#" class="footer-info__logo logo logo--footer">
-          <svg class="logo__image">
-            <use xlink:href="#logo-footer" width="146.3px" height="40.375px"></use>
+          <svg class="logo__image" width="146" height="40">
+            <use xlink:href="#logo-footer" width="146px" height="40px"></use>
           </svg>
-          <svg class="logo__image logo__image--only-desktop">
-            <use xlink:href="#logo-footer-desktop" width="146.3px" height="40.375px"></use>
+          <svg class="logo__image logo__image--only-desktop-footer" width="146" height="40">
+            <use xlink:href="#logo-footer-desktop" width="146px" height="40px"></use>
           </svg>
+          <span class="visually-hidden">Логотип Pink</span>
         </a>
         <ul class="footer-info__social socials-list">
           <li class="socials-list__item">
@@ -401,8 +424,8 @@
           <span class="copyright__text">Разработано</span>
           <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive" rel="nofollow" target="_blank">
             <span class="visually-hidden">HTML Academy</span>
-            <svg class="copyright__logo-image" width="26.943px" height="34.09px">
-              <use xlink:href="#logo-copyright"></use>
+            <svg class="copyright__logo-image" width="27" height="34">
+              <use xlink:href="#logo-copyright" width="27px" height="34px"></use>
             </svg>
           </a>
         </div>
@@ -525,7 +548,7 @@
       </g>
     </symbol>
     <symbol id="logo-copyright" viewBox="0 0 26.943 34.09">
-      <path fill="#d22856"
+      <path fill="currentColor"
         d="M13.62,0.017L13.472,0L0,1.412v24.661l13.472,8.017l13.43-7.99l0.042-0.026V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 l-0.001-0.104L13.407,5.28l-0.088-0.056v0.109L1.925,12.118V3.147l11.547-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.013,1.415l5.904,3.513l-0.86,0.507l-5.031-2.992l-0.013,1.415l3.827,2.275l-0.782,0.523l-3.032-1.787 l-0.013,1.413l1.852,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.015,1.044l-7.941-4.728L5.395,19.65 l7.979,4.796l0.017,1.076l-7.972-4.741l-0.013,1.415l8.021,4.821l0.045,0.026l8.143-4.872v-1.268l-0.011-0.148v-3.761l3.415-2.036 v10.02L13.472,31.85L1.925,24.979V15.127z" />
     </symbol>
     <symbol id="icon-size" viewBox="0 0 48 48">

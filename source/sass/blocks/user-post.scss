@@ -7,10 +7,8 @@
   &--panorama {
     position: relative;
 
-    max-width: fit-content;
+    max-width: 100%;
     width: 100vw;
-    margin-right: -20px;
-    margin-left: -20px;
 
     &::before {
       content: "Панорама дня";
@@ -26,7 +24,7 @@
       color: $white;
       font-size: 12px;
       font-weight: bold;
-      line-height: 2;
+      line-height: 24px;
       text-align: center;
       text-transform: uppercase;
 
@@ -46,20 +44,25 @@
 
 .user-post__image {
   width: 100%;
+  height: auto;
   margin-bottom: -6px;
 }
 
 .user-post__content {
-  padding-top: 18px;
+  padding-top: 15px;
   padding-right: 10px;
   padding-left: 15px;
-  padding-bottom: 18px;
+  padding-bottom: 16px;
 
   background-color: $light-grey;
 }
 
 .user-post__info {
-  margin-bottom: 2px;
+  margin: 0;
+}
+
+.user-post__text {
+  margin: 0;
 }
 
 .user-post__user-name {
@@ -73,7 +76,8 @@
 }
 
 .user-post__action {
-  margin-top: 13px;
+  margin-top: 8px;
+  margin-left: 2px;
 }
 
 @media (min-width: $tablet-width) {
@@ -88,7 +92,7 @@
       margin-bottom: 50px;
 
       &::before {
-        top: 57px;
+        top: 60px;
         right: 20px;
 
         width: 140px;
@@ -100,10 +104,10 @@
     display: flex;
     flex-direction: column;
     min-height: 155px;
-    padding-top: 25px;
-    padding-right: 25px;
-    padding-left: 25px;
-    padding-bottom: 22px;
+    padding-top: 24px;
+    padding-right: 26px;
+    padding-left: 26px;
+    padding-bottom: 20px;
 
     box-sizing: border-box;
   }
@@ -113,10 +117,12 @@
   }
 
   .user-post--panorama .user-post__image {
-    height: 509px;
+    min-height: 509px;
   }
 
   .user-post--panorama .user-post__content {
+    width: 620px;
+    margin: 0 auto;
     flex-direction: row;
     flex-wrap: wrap;
     min-height: 121px;
@@ -124,6 +130,10 @@
 
   .user-post__info {
     margin-bottom: 0;
+  }
+
+  .user-post__text {
+    margin-top: -4px;
   }
 
   .user-post--panorama .user-post__info {
@@ -139,15 +149,26 @@
 
 @media (min-width: $desktop-width) {
   .user-post {
-    margin-bottom: 54px;
+    margin-bottom: 52px;
 
     &--panorama {
-      margin-left: -130px;
-      margin-right: -130px;
+      max-width: 1200px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      width: 100%;
+
+      margin-left: auto;
+      margin-right: auto;
       margin-bottom: 50px;
 
+      box-sizing: border-box;
+      overflow: hidden;
+
       &::before {
-        right: 130px;
+        top: 55px;
+        right: 10.83%;
       }
     }
 
@@ -156,14 +177,18 @@
     }
   }
 
-  .user-post--panorama .user-post__content {
-    min-height: 96px;
-
-    margin-right: 130px;
-    margin-left: 130px;
+  .user-post--panorama .user-post__image {
+    min-height: unset;
+    width: 1200px;
   }
 
-  .user-post__content {
-    padding-top: 25px;
+  .user-post--panorama .user-post__content {
+    min-height: 96px;
+    width: 940px;
+
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 22px;
+    padding-bottom: 22px;
   }
 }

@@ -6,40 +6,86 @@
   &:not(:last-child) {
     margin-bottom: 17px;
   }
+
+  &--checkbox {
+    display: block;
+    cursor: pointer;
+  }
+
+  &--textarea {
+    width: 100%;
+    min-height: 200px;
+
+    padding-top: 14px;
+    padding-bottom: 17px;
+    padding-left: 19px;
+    padding-right: 19px;
+    margin-top: -15px;
+
+    font-family: inherit;
+    font-size: 18px;
+    line-height: 30px;
+    color: $blue;
+
+    border: 2px solid $border-light;
+    border-radius: 3px;
+    box-sizing: border-box;
+
+    &:hover,
+    &:focus {
+      outline: none;
+      border-color: $blue;
+    }
+
+    &:active {
+      border-color: $pink;
+    }
+  }
 }
 
 .field__label {
   margin-left: 21px;
   margin-bottom: 6px;
 
-  line-height: 2.14;
+  line-height: 30px;
   text-transform: uppercase;
   color: $pink;
-}
 
-.field__input,
-.field__input::placeholder {
-  font-size: 18px;
-  line-height: 1.67;
-  color: $blue;
+  &--change-order {
+    order: -1;
+  }
 }
 
 .field__input {
-  padding-top: 16px;
-  padding-bottom: 13px;
-  padding-left: 22px;
-  padding-right: 22px;
+  min-height: 63px;
+
+  padding-top: 15px;
+  padding-bottom: 14px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 30px;
+  color: $blue;
 
   border: 2px solid $border-light;
   border-radius: 3px;
+  box-sizing: border-box;
 
   &:hover,
   &:focus {
+    outline: none;
     border-color: $blue;
   }
 
   &:active {
     border-color: $pink;
+  }
+
+  &::placeholder {
+    font-family: inherit;
+    color: $blue;
   }
 }
 
@@ -47,16 +93,116 @@
   display: none;
 }
 
+.field__text {
+  position: relative;
+  display: block;
+
+  padding-top: 6px;
+  padding-left: 70px;
+
+  font-size: 18px;
+  line-height: 30px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 39px;
+    height: 39px;
+
+    background-color: $white;
+    border: 2px solid $border-light;
+    border-radius: 3px;
+
+    box-sizing: border-box;
+  }
+
+  &:hover::before {
+    border-color: $blue;
+  }
+
+  &:active::before {
+    border-color: $pink;
+  }
+
+  &--radio {
+    &::before {
+      border-radius: 50%;
+    }
+  }
+}
+
+.field__input:focus + .field__text::before {
+  border-color: $blue;
+}
+
+.field__input:checked + .field__text--checkbox::after {
+  content: "";
+
+  position: absolute;
+  top: 11px;
+  left: 9px;
+
+  width: 22px;
+  height: 16px;
+
+  background-image: url("../img/icon-yes-checkbox.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.field__input:checked + .field__text--radio::after {
+  content: "";
+
+  position: absolute;
+  top: 12px;
+  left: 12px;
+
+  width: 15px;
+  height: 15px;
+
+  border-radius: 50%;
+  background-color: $pink;
+}
+
+.field--textarea,
+.field--textarea::placeholder {
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 30px;
+  color: $blue;
+}
+
 @media (min-width: $tablet-width) {
   .field {
     &:not(:last-child) {
       margin-bottom: 51px;
+    }
+
+    &--textarea {
+      min-height: 194px;
+      margin-top: 0;
+      margin-bottom: 5px;
     }
   }
 
   .field__label {
     margin-left: 0;
     margin-right: 20px;
+    margin-bottom: 0;
+
+    &--change-order {
+      order: 2;
+      margin-left: 20px;
+      margin-top: 10px;
+    }
+  }
+
+  .field__label-points {
+    display: none;
   }
 
   .field__input {
@@ -101,6 +247,10 @@
   .field__input:active + .field__icon {
     border-color: $pink;
   }
+
+  .field__text {
+    padding-left: 56px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -127,5 +277,13 @@
   .field__icon {
     top: 0;
     right: 0;
+  }
+
+  .field__text {
+    padding-left: 60px;
+  }
+
+  .field--textarea {
+    min-height: 128px;
   }
 }

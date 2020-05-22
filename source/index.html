@@ -6,25 +6,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <script src="js/picturefill.js" async></script>
+  <link rel="preload" href="/fonts/opensans.woff2" as="font">
 </head>
 
-<body>
+<body class="body">
   <header class="page-header page-header--static">
     <div class="page-header__wrapper">
       <a href="index.html" class="page-header__logo logo">
-        <svg class="logo__image">
-          <use xlink:href="#logo" width="74.426px" height="22.859px"></use>
+        <svg class="logo__image" width="75" height="23">
+          <use xlink:href="#logo" width="75px" height="23px"></use>
         </svg>
-        <svg class="logo__image logo__image--tablet">
-          <use xlink:href="#logo-tablet" width="146.3px" height="40.375px"></use>
+        <svg class="logo__image logo__image--tablet" width="146" height="40">
+          <use xlink:href="#logo-tablet" width="146px" height="40px"></use>
         </svg>
-        <svg class="logo__image logo__image--desktop">
-          <use xlink:href="#logo-desktop" width="146.3px" height="40.375px"></use>
+        <svg class="logo__image logo__image--desktop" width="146" height="40">
+          <use xlink:href="#logo-desktop" width="146px" height="40px"></use>
         </svg>
+        <span class="visually-hidden">Логотип Pink</span>
       </a>
       <nav class="page-header__nav main-nav main-nav--closed main-nav--no-js">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
+        <div class="page-header__nav-options main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item"><a class="site-list__link"><span class="site-list__link-text">Главная</span></a>
             </li>
@@ -43,25 +46,31 @@
 
   <main class="page-main">
     <h1 class="visually-hidden">Pink — фотоприложение для раскрашивания серых будней</h1>
-    <section class="intro">
+    <section class="intro intro--image">
       <div class="intro__wrapper">
         <h2 class="visually-hidden">Скачайте приложение Pink для вашего устройства</h2>
-        <div class="intro__header intro__header--image">
+        <div class="intro__header">
           <span class="intro__slogan">Взгляните на жизнь иначе!</span>
         </div>
         <div class="intro__downloads download-app">
           <div class="download-app__wrapper">
-            <a href="#" class="download-app__button button button--download-app" rel="nofollow" target="_blank">Скачать
+            <a href="https://www.apple.com/ru/ios/app-store/" class="download-app__button button button--download-app"
+              rel="nofollow" target="_blank">Скачать
               приложение</a>
             <ul class="download-app__list">
-              <li class="download-app__item"><img src="img/logo-apple.svg" alt="Скачать с AppStore"
-                  class="download-app__image" width="47" height="56">
+              <li class="download-app__item">
+                <a href="https://www.apple.com/ru/ios/app-store/" class="download-app__link"><img
+                    src="img/logo-apple.svg" alt="Скачать с AppStore" class="download-app__image" width="47"
+                    height="56"></a>
               </li>
-              <li class="download-app__item"><img src="img/logo-android.svg" alt="Скачать с Play Market"
-                  class="download-app__image" width="43" height="47">
+              <li class="download-app__item">
+                <a href="https://play.google.com/store" class="download-app__link"><img src="img/logo-android.svg"
+                    alt="Скачать с Play Market" class="download-app__image" width="43" height="47"></a>
               </li>
-              <li class="download-app__item"><img src="img/logo-microsoft.svg" alt="Скачать с Microsoft Store"
-                  class="download-app__image" width="44" height="41">
+              <li class="download-app__item">
+                <a href="https://www.microsoft.com/ru-ru/store/apps/windows" class="download-app__link"><img
+                    src="img/logo-microsoft.svg" alt="Скачать с Microsoft Store" class="download-app__image" width="44"
+                    height="41"></a>
               </li>
             </ul>
             <p class="download-app__description">
@@ -77,9 +86,8 @@
         <p class="features__offer-text">Устали от серости мегаполиса?</p>
         <p class="features__offer-text">Нам есть, что вам предложить!</p>
       </div>
-      <svg class="features__triangle" enable-background="new 0 0 1200 94.074" xml:space="preserve"
-        viewBox="0 0 1200 94.074">
-        <use xlink:href="#triangle" width="1200px" height="94.074px"></use>
+      <svg class="features__triangle" viewBox="0 0 1200 94.074" enable-background="new 0 0 1200 94.074" xml:space="preserve" width="1200" height="94" preserveAspectRatio="none">
+        <use xlink:href="#triangle" width="1200px" height="94px"></use>
       </svg>
       <div class="features__wrapper">
         <div class="features__container container">
@@ -97,8 +105,7 @@
           <section class="features__item">
             <h3 class="features__item-title">Меняет мир вокруг</h3>
             <p class="features__item-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
-              усилить
-              эффект</p>
+              усилить&nbsp;эффект</p>
             <picture>
               <source type="image/webp"
                 srcset="img/iphone-screen-2-desktop@1x.webp 1x, img/iphone-screen-2-desktop@2x.webp 2x">
@@ -114,7 +121,7 @@
             <picture>
               <source type="image/webp"
                 srcset="img/iphone-screen-3-desktop@1x.webp 1x, img/iphone-screen-3-desktop@2x.webp 2x"
-                media="(min-width: 1200px)">
+                media="(min-width: 960px)">
               <source type="image/webp"
                 srcset="img/iphone-screen-3-tablet@1x.webp 1x, img/iphone-screen-3-tablet@2x.webp 2x"
                 media="(min-width: 660px)">
@@ -122,7 +129,7 @@
                 srcset="img/iphone-screen-mobile@1x.webp 1x, img/iphone-screen-mobile@2x.webp 2x">
 
               <source srcset="img/iphone-screen-3-desktop@1x.png 1x, img/iphone-screen-3-desktop@2x.png 2x"
-                media="(min-width: 1200px)">
+                media="(min-width: 960px)">
               <source srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x.png 2x"
                 media="(min-width: 660px)">
               <img class="features__image" src="img/iphone-screen-mobile@1x.png"
@@ -139,8 +146,8 @@
           <p class="research__slogan">Эффект<br> на 24 часа!</p>
           <p class="research__text">
             Британские ученые провели исследования
-            и доказали, что положительный эффект
-            от использования приложения длится
+            и доказали, что&nbsp;положительный эффект
+            от&nbsp;использования приложения длится
             целые сутки!
           </p>
           <a href="#" class="research__link">Узнать больше об исследовании</a>
@@ -177,101 +184,101 @@
         </ul>
         <button class="carousel__arrow carousel__arrow--left slide-arrow" type="button">
           Назад
-          <svg class="slide-arrow__image slide-arrow__image--left">
-            <use xlink:href="#slide-arrow" width="21.706px" height="41.719px"></use>
+          <svg class="slide-arrow__image slide-arrow__image--left" width="22" height="42">
+            <use xlink:href="#slide-arrow" width="22px" height="42px"></use>
           </svg>
         </button>
         <button class="carousel__arrow carousel__arrow--right slide-arrow" type="button">
           Вперед
-          <svg class="slide-arrow__image slide-arrow__image--right">
-            <use xlink:href="#slide-arrow" width="21.706px" height="41.719px"></use>
+          <svg class="slide-arrow__image slide-arrow__image--right" width="1200" height="94">
+            <use xlink:href="#slide-arrow" width="22px" height="42px"></use>
           </svg>
         </button>
       </div>
     </section>
-    <section class="price">
-      <svg class="price__triangle" enable-background="new 0 0 1200 94.074" xml:space="preserve"
-        viewBox="0 0 1200 94.074">
-        <use xlink:href="#triangle" width="1200px" height="94.074px"></use>
+    <section class="price-section">
+      <svg class="price-section__triangle" viewBox="0 0 1200 94.074" enable-background="new 0 0 1200 94.074" xml:space="preserve" width="1200"
+        height="94" preserveAspectRatio="none">
+        <use xlink:href="#triangle"></use>
       </svg>
-      <div class="price__wrapper">
+      <div class="price-section__wrapper">
         <h2 class="visually-hidden">Тарифы</h2>
-        <table class="price__table table price-table">
+        <table class="price-section__table table price-table">
           <thead class="table__header">
             <tr class="table__row">
               <th class="table__header-field  price-table__th  price-table__th--hidden-mobile"></th>
               <th class="table__header-field price-table__th">
-                <span class="table__tariff-title">База</span><br>
+                <span class="table__tariff-title price-table__tariff">База</span><br>
                 <span class="table__tariff-value price-table__currency">1,99 USD</span>
               </th>
               <th class="table__header-field price-table__th price-table__th--hit">
-                <span class="table__tariff-title">Стандарт</span><br>
+                <span class="table__tariff-title price-table__tariff">Стандарт</span><br>
                 <span class="table__tariff-value price-table__currency">3,99 USD</span>
               </th>
               <th class="table__header-field price-table__th">
-                <span class="table__tariff-title">Анлим</span><br>
+                <span class="table__tariff-title price-table__tariff">Анлим</span><br>
                 <span class="table__tariff-value price-table__currency">9,99 USD</span>
               </th>
             </tr>
           </thead>
           <tbody class="table__body">
             <tr class="table__row">
-              <td class="table__field price-table__td  price-table__td--hidden-mobile">Розовый Фильтр</td>
-              <td class="table__field">
-                <span class="table__field-text table__field-text--hidden-desktop-n-tablet">Розовый Фильтр</span> <span
+              <td class="table__td price-table__td  price-table__td--hidden-mobile">Розовый Фильтр</td>
+              <td class="table__td">
+                <span class="table__td-text table__td-text--hidden-desktop-n-tablet">Розовый Фильтр</span> <span
                   class="visually-hidden">Да</span>
                 <span class="icon icon--true"></span>
               </td>
-              <td class="table__field">
-                <span class="table__field-text table__field-text--hidden-desktop-n-tablet">Розовый Фильтр</span> <span
+              <td class="table__td">
+                <span class="table__td-text table__td-text--hidden-desktop-n-tablet">Розовый Фильтр</span> <span
                   class="visually-hidden">Да</span>
                 <span class="icon icon--true"></span>
               </td>
-              <td class="table__field">
-                <span class="table__field-text table__field-text--hidden-desktop-n-tablet">Розовый Фильтр</span> <span
-                  class="visually-hidden">Да</span>
-                <span class="icon icon--true"></span>
-              </td>
-            </tr>
-            <tr class="table__row">
-              <td class="table__field price-table__td--hidden-mobile">Смайлики</td>
-              <td class="table__field">
-                <span class="table__field-text table__field-text--hidden-desktop-n-tablet">Смайлики</span> <span
-                  class="visually-hidden">отсутствуют</span>
-                <span class="icon icon--false"></span>
-              </td>
-              <td class="table__field">
-                <span class="table__field-text table__field-text--hidden-desktop-n-tablet">Смайлики</span> <span
-                  class="visually-hidden">Да</span>
-                <span class="icon icon--true"></span>
-              </td>
-              <td class="table__field">
-                <span class="table__field-text table__field-text--hidden-desktop-n-tablet">Смайлики</span> <span
+              <td class="table__td">
+                <span class="table__td-text table__td-text--hidden-desktop-n-tablet">Розовый Фильтр</span> <span
                   class="visually-hidden">Да</span>
                 <span class="icon icon--true"></span>
               </td>
             </tr>
             <tr class="table__row">
-              <td class="table__field price-table__td--hidden-mobile">Комментарии</td>
-              <td class="table__field">
-                <span class="table__field-text table__field-text--hidden-desktop-n-tablet">Комментарии</span> <span
+              <td class="table__td price-table__td price-table__td--hidden-mobile">Смайлики</td>
+              <td class="table__td">
+                <span class="table__td-text table__td-text--hidden-desktop-n-tablet">Смайлики</span> <span
                   class="visually-hidden">отсутствуют</span>
                 <span class="icon icon--false"></span>
               </td>
-              <td class="table__field">
-                <span class="table__field-text table__field-text--hidden-desktop-n-tablet">Комментарии</span> <span
+              <td class="table__td">
+                <span class="table__td-text table__td-text--hidden-desktop-n-tablet">Смайлики</span> <span
+                  class="visually-hidden">Да</span>
+                <span class="icon icon--true"></span>
+              </td>
+              <td class="table__td">
+                <span class="table__td-text table__td-text--hidden-desktop-n-tablet">Смайлики</span> <span
+                  class="visually-hidden">Да</span>
+                <span class="icon icon--true"></span>
+              </td>
+            </tr>
+            <tr class="table__row">
+              <td class="table__td price-table__td price-table__td--hidden-mobile">Комментарии</td>
+              <td class="table__td">
+                <span class="table__td-text table__td-text--hidden-desktop-n-tablet">Комментарии</span> <span
                   class="visually-hidden">отсутствуют</span>
                 <span class="icon icon--false"></span>
               </td>
-              <td class="table__field">
-                <span class="table__field-text table__field-text--hidden-desktop-n-tablet">Комментарии</span> <span
+              <td class="table__td">
+                <span class="table__td-text table__td-text--hidden-desktop-n-tablet">Комментарии</span> <span
+                  class="visually-hidden">отсутствуют</span>
+                <span class="icon icon--false"></span>
+              </td>
+              <td class="table__td">
+                <span class="table__td-text table__td-text--hidden-desktop-n-tablet">Комментарии</span> <span
                   class="visually-hidden">Да</span>
                 <span class="icon icon--true"></span>
               </td>
             </tr>
           </tbody>
         </table>
-        <ul class="price__toggles slide-toggle">
+        <ul class="price-section__toggles slide-toggle">
           <li class="slide-toggle__item">
             <button class="slide-toggle__button" type="button">1</button>
           </li>
@@ -307,27 +314,28 @@
           </span>
         </p>
       </div>
-      <svg class="contacts__triangle" width="595.28px" height="61.905px" viewBox="0 0 595.28 61.905"
+      <svg class="contacts__triangle" width="595" height="62" viewBox="0 0 595.28 61.905"
         enable-background="new 0 0 595.28 61.905" xml:space="preserve" preserveAspectRatio="none">
         <use xlink:href="#footer-triangle"></use>
       </svg>
     </section>
     <div class="page-footer__map map">
-      <a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps"
-        class="visually-hidden">Санкт‑Петербург</a><a class="visually-hidden"
+      <a class="visually-hidden"
         href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.324002%2C59.938200&utm_medium=mapframe&utm_source=maps&z=17.03">Большая
         Конюшенная улица, 19/8 —
-        Яндекс.Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CKv5INO8" width="320" height="167"></iframe>
+        Яндекс.Карты</a><iframe class="map__iframe" src="https://yandex.ru/map-widget/v1/-/CKv5INO8" width="320"
+        height="167"></iframe>
     </div>
     <div class="page-footer__main-info page-footer__main-info--mobile-hidden footer-info">
       <div class="footer-info__wrapper">
         <a href="#" class="footer-info__logo logo logo--footer">
-          <svg class="logo__image">
-            <use xlink:href="#logo-footer" width="146.3px" height="40.375px"></use>
+          <svg class="logo__image" width="146" height="40">
+            <use xlink:href="#logo-footer" width="146px" height="40px"></use>
           </svg>
-          <svg class="logo__image logo__image--only-desktop">
-            <use xlink:href="#logo-footer-desktop" width="146.3px" height="40.375px"></use>
+          <svg class="logo__image logo__image--only-desktop-footer" width="146" height="40">
+            <use xlink:href="#logo-footer-desktop" width="146px" height="40px"></use>
           </svg>
+          <span class="visually-hidden">Логотип Pink</span>
         </a>
         <ul class="footer-info__social socials-list">
           <li class="socials-list__item">
@@ -350,8 +358,8 @@
           <span class="copyright__text">Разработано</span>
           <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive" rel="nofollow" target="_blank">
             <span class="visually-hidden">HTML Academy</span>
-            <svg class="copyright__logo-image">
-              <use xlink:href="#logo-copyright" width="26.943px" height="34.09px"></use>
+            <svg class="copyright__logo-image" width="27" height="34">
+              <use xlink:href="#logo-copyright" width="27px" height="34px"></use>
             </svg>
           </a>
         </div>
@@ -450,7 +458,7 @@
         <path
           d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.063 c0,4.86-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.287-1.289,1.287c-0.676,0-1.256-0.58-1.256-1.287L71.874,18.661 L71.874,18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.062c0-3.221-2.414-4.894-6.053-4.894h-5.699v9.917h5.57V29.641 z" />
         <path
-  <script src="js/main.js"></script>
+          d="M93.603,18.5c0-0.708,0.579-1.288,1.255-1.288c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.287-1.288,1.287c-0.676,0-1.255-0.579-1.255-1.287V18.5z" />
         <path
           d="M102.744,18.532c0-0.676,0.58-1.256,1.256-1.256h0.354c0.58,0,0.935,0.29,1.288,0.74l13.684,17.45V18.468 c0-0.676,0.547-1.256,1.256-1.256c0.676,0,1.225,0.58,1.225,1.256v20.349c0,0.677-0.48,1.19-1.158,1.19h-0.129 c-0.548,0-0.936-0.321-1.318-0.772l-13.976-17.867v17.449c0,0.677-0.547,1.257-1.257,1.257c-0.676,0-1.223-0.58-1.223-1.257V18.532 H102.744z" />
         <path
@@ -484,11 +492,11 @@
       </g>
     </symbol>
     <symbol id="logo-copyright" viewBox="0 0 26.943 34.09">
-      <path fill="#d22856"
+      <path fill="currentColor"
         d="M13.62,0.017L13.472,0L0,1.412v24.661l13.472,8.017l13.43-7.99l0.042-0.026V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 l-0.001-0.104L13.407,5.28l-0.088-0.056v0.109L1.925,12.118V3.147l11.547-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.013,1.415l5.904,3.513l-0.86,0.507l-5.031-2.992l-0.013,1.415l3.827,2.275l-0.782,0.523l-3.032-1.787 l-0.013,1.413l1.852,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.015,1.044l-7.941-4.728L5.395,19.65 l7.979,4.796l0.017,1.076l-7.972-4.741l-0.013,1.415l8.021,4.821l0.045,0.026l8.143-4.872v-1.268l-0.011-0.148v-3.761l3.415-2.036 v10.02L13.472,31.85L1.925,24.979V15.127z" />
     </symbol>
   </svg>
-  <script src="js/main-nav.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>

@@ -44,7 +44,7 @@
     fill: $blue;
   }
 
-  &--only-desktop {
+  &--only-desktop-footer {
     display: none;
   }
 }
@@ -63,7 +63,7 @@
   .logo--footer .logo__image {
     display: block;
 
-    &--only-desktop {
+    &--only-desktop-footer {
       display: none;
     }
   }
@@ -83,7 +83,7 @@
   .logo--footer .logo__image {
     display: none;
 
-    &--only-desktop {
+    &--only-desktop-footer {
       display: block;
     }
   }

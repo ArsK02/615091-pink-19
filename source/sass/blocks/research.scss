@@ -35,7 +35,7 @@
 
       font-size: 96px;
       font-weight: bold;
-      line-height: 1.66;
+      line-height: 160px;
       text-align: center;
       color: $pink;
 
@@ -46,21 +46,24 @@
   }
 
   .research__slogan {
-    margin-bottom: 15px;
+    margin: 0;
+    margin-bottom: 10px;
     padding-right: 140px;
 
     font-size: 30px;
     font-weight: bold;
-    line-height: 1.2;
+    line-height: 36px;
     color: $black;
   }
 
   .research__text {
+    margin: 0;
     margin-bottom: 10px;
     padding-right: 10px;
   }
 
   .research__link {
+    margin: 0;
     color: $pink;
   }
 }
@@ -72,7 +75,7 @@
 
   .research__wrapper {
     align-items: center;
-    padding-top: 160px;
+    padding-top: 165px;
     padding-left: 365px;
     padding-bottom: 112px;
 
@@ -87,13 +90,16 @@
       width: 253px;
 
       font-size: 120px;
+      line-height: 197px;
 
       border: 17px solid $pink;
     }
   }
 
   .research__slogan {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+
+    line-height: 30px;
   }
 
   .research__slogan br {
@@ -103,9 +109,11 @@
   .research__text,
   .research__link {
     font-size: 18px;
+    line-height: 30px;
   }
 
   .research__text {
-    margin-bottom: 33px;
+    margin-bottom: 30px;
+    padding-right: 48px;
   }
 }

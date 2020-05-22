@@ -2,11 +2,32 @@
   width: 100%;
   padding: 0;
   padding-top: 34px;
-  padding-bottom: 44px;
+  padding-bottom: 41px;
   margin: 0;
   border: none;
 
   box-sizing: border-box;
+}
+
+.form-section__list {
+  margin-bottom: 10px;
+
+  &--checkbox {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+}
+
+.form-section__list--checkbox .form-section__item {
+  &:not(:last-child) {
+    margin-bottom: 46px;
+  }
+}
+
+.form-section__list--radio .form-section__item {
+  &:not(:last-child) {
+    margin-bottom: 38px;
+  }
 }
 
 .form-section__legend {
@@ -14,79 +35,68 @@
   width: 100%;
 
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   padding-top: 38px;
   padding-left: 50px;
   padding-right: 50px;
 
-  line-height: 1.29;
+  line-height: 18px;
   text-transform: uppercase;
   text-align: center;
   color: $pink;
 
   background-color: $light-grey;
   box-sizing: border-box;
+
+  &--mobile-hidden {
+    display: none;
+  }
+
+  &--no-background {
+    background-color: inherit;
+  }
 }
 
 .form-section__item {
   padding-right: 20px;
   padding-left: 20px;
-}
 
-.form-section__field--textarea,
-.form-section__field--textarea::placeholder {
-  font-family: inherit;
-  font-size: 18px;
-  line-height: 1.67;
-  color: $blue;
-}
-
-.form-section__field--textarea {
-  width: 100%;
-  min-height: 200px;
-
-  padding-top: 14px;
-  padding-bottom: 17px;
-  padding-left: 19px;
-  padding-right: 19px;
-  margin-top: -15px;
-
-  border: 2px solid $border-light;
-  border-radius: 3px;
-  box-sizing: border-box;
-
-  &:hover,
-  &:focus {
-    border-color: $blue;
-  }
-
-  &:active {
-    border-color: $pink;
+  &--custom {
+    display: flex;
+    flex-direction: column;
   }
 }
 
 @media (min-width: $tablet-width) {
   .form-section {
     padding-bottom: 58px;
-    padding-top: 35px;
-  }
-
-  .form-section__field--textarea {
-    min-height: 194px;
+    padding-top: 33px;
   }
 
   .form-section__legend {
-    width: unset;
+    width: auto;
     padding-top: 0;
     padding-right: 30px;
     padding-left: 30px;
 
-    background-color: unset;
+    line-height: 30px;
+
+    background-color: transparent;
+
+    &--mobile-hidden {
+      display: block;
+    }
   }
 
   .form-section__list {
     padding-left: 60px;
-    margin-top: 10px;
+    margin-top: 5px;
+    margin-bottom: 0;
+
+    &--checkbox {
+      margin-bottom: -5px;
+      margin-top: 0;
+    }
   }
 
   .form-section__item {
@@ -95,15 +105,98 @@
 
     padding-right: 0;
     padding-left: 0;
+
+    &--custom {
+      flex-direction: column;
+      align-items: stretch;
+      padding-right: 58px;
+      padding-left: 58px;
+      margin-bottom: 28px;
+
+      &:not(:last-child) {
+        margin-bottom: 28px;
+      }
+    }
+
+    &--textarea {
+      padding-right: 58px;
+      padding-left: 58px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
-  .form-section__list {
-    padding-left: 75px;
+  .form-section {
+    padding-top: 28px;
   }
 
-  .form-section__field--textarea {
-    min-height: 128px;
+  .form-section__list--checkbox .form-section__item {
+    width: 260px;
+    padding-left: 15px;
+    box-sizing: border-box;
+
+    &:first-child {
+      order: -6;
+      padding-left: 0;
+      margin-right: auto;
+    }
+
+    &:nth-child(2) {
+      order: -3;
+      padding-left: 0;
+      margin-right: auto;
+    }
+
+    &:nth-child(3) {
+      order: -5;
+    }
+
+    &:nth-child(4) {
+      order: -2;
+    }
+
+    &:nth-child(5) {
+      order: -4;
+      padding-left: 50px;
+    }
+
+    &:nth-child(6) {
+      order: -1;
+      padding-left: 50px;
+    }
+  }
+
+  .form-section__list {
+    padding-left: 75px;
+    margin-top: 10px;
+
+    &--checkbox {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-between;
+
+      padding-left: 60px;
+      padding-right: 60px;
+      margin-top: 10px;
+      margin-bottom: -2px;
+    }
+  }
+
+  .form-section__item {
+    &--custom {
+      display: inline-block;
+      width: 375px;
+      padding: 0;
+      margin-bottom: 12px;
+
+      &:nth-of-type(2n) {
+        margin-left: 65px;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 0;
+      }
+    }
   }
 }

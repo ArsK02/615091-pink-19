@@ -1,5 +1,5 @@
 .post-edit {
-  padding-top: 25px;
+  padding-top: 20px;
   padding-bottom: 40px;
 }
 
@@ -7,8 +7,14 @@
   background-color: $light-grey;
 }
 
+.post-edit__image {
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
 .post-edit__tabs {
-  margin-bottom: 38px;
+  margin-bottom: 35px;
   padding-top: 35px;
 }
 
@@ -40,19 +46,12 @@
     box-sizing: border-box;
   }
 
-  .post-edit__image {
-    width: 100%;
-    margin: 0;
-  }
-
   .post-edit__tabs {
     display: flex;
     justify-content: space-between;
-    min-width: 275px;
     width: 100%;
-    height: min-content;
 
-    margin-left: 45px;
+    margin-left: 42px;
     margin-bottom: 58px;
     padding-top: 0;
 
@@ -72,20 +71,25 @@
 }
 
 @media (min-width: $desktop-width) {
+  .post-edit {
+    padding-top: 55px;
+    padding-bottom: 30px;
+  }
+
   .post-edit__wrapper {
-    padding-top: 57px;
+    padding-top: 58px;
     padding-left: 80px;
     padding-right: 60px;
     padding-bottom: 50px;
   }
 
   .post-edit__tabs {
+    min-width: auto;
     margin-left: 90px;
   }
 
   .post-edit__button {
-    min-width: 183px;
-    width: unset;
+    width: 183px;
     margin: 0;
     margin-top: auto;
     margin-bottom: 6px;
@@ -97,5 +101,6 @@
 
   .post-edit__button:not(:last-of-type) {
     margin-left: 90px;
+    margin-bottom: 6px;
   }
 }
