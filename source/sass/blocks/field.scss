@@ -31,13 +31,14 @@
     border-radius: 3px;
     box-sizing: border-box;
 
-    &:hover,
-    &:focus {
+    &:hover {
       outline: none;
       border-color: $blue;
     }
 
-    &:active {
+    &:active,
+    &:focus {
+      outline: none;
       border-color: $pink;
     }
   }
@@ -73,14 +74,15 @@
   border-radius: 3px;
   box-sizing: border-box;
 
-  &:hover,
-  &:focus {
+  &:hover {
     outline: none;
     border-color: $blue;
   }
 
-  &:active {
+  &:active,
+  &:focus {
     border-color: $pink;
+    outline: none;
   }
 
   &::placeholder {
@@ -136,7 +138,7 @@
 }
 
 .field__input:focus + .field__text::before {
-  border-color: $blue;
+  border-color: $pink;
 }
 
 .field__input:checked + .field__text--checkbox::after {

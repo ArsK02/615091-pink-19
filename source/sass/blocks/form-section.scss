@@ -1,8 +1,8 @@
 .form-section {
   width: 100%;
   padding: 0;
-  padding-top: 34px;
-  padding-bottom: 41px;
+  padding-top: 32px;
+  padding-bottom: 40px;
   margin: 0;
   border: none;
 
@@ -13,7 +13,7 @@
   margin-bottom: 10px;
 
   &--checkbox {
-    margin-top: 5px;
+    margin-top: 8px;
     margin-bottom: 5px;
   }
 }
@@ -70,7 +70,7 @@
 @media (min-width: $tablet-width) {
   .form-section {
     padding-bottom: 58px;
-    padding-top: 33px;
+    padding-top: 32px;
   }
 
   .form-section__legend {
